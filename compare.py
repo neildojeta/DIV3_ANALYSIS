@@ -323,330 +323,181 @@ def compare_cash_collected(sheet_previous, sheet_latest):
         logger.error(f"Error comparing Cash Collected: {e}")
         raise
 
-def compare_operators(sheet_previous, sheet_latest):
+def compare_TotRevHrs(sheet_previous, sheet_latest):
     try:
-        global prev_operator, lat_operator
-        logger.info("Comparing operators between previous and latest sheets.")
-        
-        # Extract and store unique pairs of (OPERATOR NAME, PARTNER NAME)
-        operators_previous = set(sheet_previous[["Operator Name per Trip Revenue", "PARTNER"]].dropna().itertuples(index=False, name=None))
-        operators_latest = set(sheet_latest[["Operator Name per Trip Revenue", "PARTNER"]].dropna().itertuples(index=False, name=None))
-
-        # Identify added and removed operators
-        added = operators_latest - operators_previous
-        removed = operators_previous - operators_latest
-
-        # Convert to DataFrame format
-        added_list = [{"OPERATOR NAME": op, "PARTNER": partner, "CHANGE": "Added"} for op, partner in added]
-        removed_list = [{"OPERATOR NAME": op, "PARTNER": partner, "CHANGE": "Removed"} for op, partner in removed]
-
-        # Create DataFrames
-        added_df = pd.DataFrame(added_list)
-        removed_df = pd.DataFrame(removed_list)
-
-        # Ensure DataFrames always have the necessary columns
-        if added_df.empty:
-            added_df = pd.DataFrame(columns=["OPERATOR NAME", "PARTNER", "CHANGE"])
-        if removed_df.empty:
-            removed_df = pd.DataFrame(columns=["OPERATOR NAME", "PARTNER", "CHANGE"])
-
-        # Combine the results
-        operator_changes_df = pd.concat([added_df, removed_df], ignore_index=True)
-
-        if operator_changes_df.empty:
-            operator_changes_df = pd.DataFrame({"OPERATOR NAME": ["No changes"], "PARTNER": ["No changes"], "CHANGE": ["No changes"]})
-
-        prev_operator = sheet_previous["Operator Name per Trip Revenue"].nunique()
-        lat_operator = sheet_latest["Operator Name per Trip Revenue"].nunique()
-        logger.info("Operator comparison completed.")
-        return operator_changes_df
-
-    except Exception as e:
-        logger.error(f"Error comparing operators: {e}")
-        raise
-def compare_dates(sheet_previous, sheet_latest):
-    try:
-        global prev_date, lat_date
-        logger.info("Comparing dates between previous and latest sheets.")
-
-        # Extracting the Date column and dropping NaN values
-        dates_previous = set(sheet_previous["Date"].dropna())
-        dates_latest = set(sheet_latest["Date"].dropna())
-
-        # Identifying added and removed dates
-        added_dates = dates_latest - dates_previous
-        removed_dates = dates_previous - dates_latest
-
-        # Formatting the results as lists of dictionaries
-        added_list = [{"Date": date} for date in added_dates]
-        removed_list = [{"Date": date} for date in removed_dates]
-
-        prev_date = sheet_previous["Date"].nunique()
-        lat_date = sheet_latest["Date"].nunique()
-        logger.info("Date comparison completed.")
-        return {"Added": added_list, "Removed": removed_list}
-    except Exception as e:
-        logger.error(f"Error comparing dates: {e}")
-        raise
-    
-def find_missing_dates(sheet_previous, sheet_latest):
-    try:
-        logger.info("Checking for missing dates in the consecutive range.")
-        
-        # Extracting the Date column and dropping NaN values
-        dates_previous = set(pd.to_datetime(sheet_previous["Date"].dropna()))
-        dates_latest = set(pd.to_datetime(sheet_latest["Date"].dropna()))
-        
-        # Finding the full expected date range
-        all_dates = pd.date_range(min(dates_previous.union(dates_latest)), 
-                                  max(dates_previous.union(dates_latest)))
-        
-        # Finding missing dates
-        missing_dates = sorted(set(all_dates) - dates_previous - dates_latest)
-        
-        # Converting to DataFrame
-        if not missing_dates:
-            missing_df = pd.DataFrame({"Missing Dates of Work": ["There are no missing dates of work."]})
-        else:
-            # missing_df = pd.DataFrame(missing_dates, columns=["Missing Dates"])
-            missing_df = pd.DataFrame([date.strftime("-----  %B %d, %Y  -----") for date in missing_dates], columns=["Missing Dates of Work"])
-        
-        logger.info("Missing date check completed.")
-        return missing_df
-    except Exception as e:
-        logger.error(f"Error finding missing dates: {e}")
-        raise
-
-def compare_Dec_Hours(sheet_previous, sheet_latest):
-    try:
-        logger.info("Comparing Payable Online Hours for NIGHT AND WEEKEND operators.")
-
-        # Filter for "NIGHT AND WEEKEND" operators
-        sheet_previous_filtered = sheet_previous[sheet_previous["TYPE OF OPERATOR"] == "NIGHT AND WEEKEND"]
-        sheet_latest_filtered = sheet_latest[sheet_latest["TYPE OF OPERATOR"] == "NIGHT AND WEEKEND"]
+        logger.info("Comparing Total Revenue Hours")
 
         # Group by PARTNER NAME and sum each metric
-        prev_grouped = sheet_previous_filtered.groupby("PARTNER", as_index=False)["Decimal Pay Hours"].sum()
-        latest_grouped = sheet_latest_filtered.groupby("PARTNER", as_index=False)["Decimal Pay Hours"].sum()
+        prev_grouped = sheet_previous.groupby("PARTNER NAME", as_index=False)["Total Revenue Hours"].sum()
+        latest_grouped = sheet_latest.groupby("PARTNER NAME", as_index=False)["Total Revenue Hours"].sum()
 
         # Merge the grouped dataframes
         comparison = latest_grouped.merge(
-            prev_grouped, on="PARTNER", how="outer", suffixes=("_LATEST", "_PREVIOUS")
+            prev_grouped, on="PARTNER NAME", how="outer", suffixes=("_LATEST", "_PREVIOUS")
         ).fillna(0)
 
        # Calculate the change
-        comparison["CHANGE"] = comparison["Decimal Pay Hours_LATEST"] - comparison["Decimal Pay Hours_PREVIOUS"]
+        comparison["CHANGE"] = comparison["Total Revenue Hours_LATEST"] - comparison["Total Revenue Hours_PREVIOUS"]
 
         # Format columns as percentages with 4 significant digits
-        for col in ["Decimal Pay Hours_LATEST", "Decimal Pay Hours_PREVIOUS", "CHANGE"]:
+        for col in ["Total Revenue Hours_LATEST", "Total Revenue Hours_PREVIOUS", "CHANGE"]:
             comparison[col] = comparison[col].round(2)
 
         # Rename columns
         comparison.columns = ["PARTNER", "LATEST", "PREVIOUS", "CHANGE"]
 
-        logger.info("Comparison of Payable Online Hours and other metrics completed.")
+        logger.info("Comparison of Total Revenue Hours and other metrics completed.")
         return comparison
 
     except Exception as e:
-        logger.error(f"Error comparing Payable Online Hours: {e}")
+        logger.error(f"Error comparing Total Revenue Hours: {e}")
         raise
 
-def compare_Fares_Collected(sheet_previous, sheet_latest):
+def compare_PRevHrs(sheet_previous, sheet_latest):
     try:
-        logger.info("Comparing Fares Collected for NIGHT AND WEEKEND operators.")
-
-        # Filter for "NIGHT AND WEEKEND" operators
-        sheet_previous_filtered = sheet_previous[sheet_previous["TYPE OF OPERATOR"] == "NIGHT AND WEEKEND"]
-        sheet_latest_filtered = sheet_latest[sheet_latest["TYPE OF OPERATOR"] == "NIGHT AND WEEKEND"]
+        logger.info("Comparing % of Revenue Hours to Forecast")
 
         # Group by PARTNER NAME and sum each metric
-        prev_grouped = sheet_previous_filtered.groupby("PARTNER", as_index=False)["Fares Collected"].sum()
-        latest_grouped = sheet_latest_filtered.groupby("PARTNER", as_index=False)["Fares Collected"].sum()
+        prev_grouped = sheet_previous.groupby("PARTNER NAME", as_index=False)["% of Revenue Hours to Forecast"].sum()
+        latest_grouped = sheet_latest.groupby("PARTNER NAME", as_index=False)["% of Revenue Hours to Forecast"].sum()
 
         # Merge the grouped dataframes
         comparison = latest_grouped.merge(
-            prev_grouped, on="PARTNER", how="outer", suffixes=("_LATEST", "_PREVIOUS")
+            prev_grouped, on="PARTNER NAME", how="outer", suffixes=("_LATEST", "_PREVIOUS")
         ).fillna(0)
 
        # Calculate the change
-        comparison["CHANGE"] = comparison["Fares Collected_LATEST"] - comparison["Fares Collected_PREVIOUS"]
+        comparison["CHANGE"] = comparison["% of Revenue Hours to Forecast_LATEST"] - comparison["% of Revenue Hours to Forecast_PREVIOUS"]
 
         # Format columns as percentages with 4 significant digits
-        for col in ["Fares Collected_LATEST", "Fares Collected_PREVIOUS", "CHANGE"]:
+        for col in ["% of Revenue Hours to Forecast_LATEST", "% of Revenue Hours to Forecast_PREVIOUS", "CHANGE"]:
             comparison[col] = comparison[col].round(2)
 
         # Rename columns
         comparison.columns = ["PARTNER", "LATEST", "PREVIOUS", "CHANGE"]
 
-        logger.info("Comparison of Fares Collected completed.")
+        logger.info("Comparison of % of Revenue Hours to Forecast and other metrics completed.")
         return comparison
 
     except Exception as e:
-        logger.error(f"Error comparing Fares Collected: {e}")
+        logger.error(f"Error comparing % of Revenue Hours to Forecast: {e}")
         raise
 
-def compare_Tickets_Collected(sheet_previous, sheet_latest):
+def compare_BonusHrs(sheet_previous, sheet_latest):
     try:
-        logger.info("Comparing Tickets Collected for NIGHT AND WEEKEND operators.")
-
-        # Filter for "NIGHT AND WEEKEND" operators
-        sheet_previous_filtered = sheet_previous[sheet_previous["TYPE OF OPERATOR"] == "NIGHT AND WEEKEND"]
-        sheet_latest_filtered = sheet_latest[sheet_latest["TYPE OF OPERATOR"] == "NIGHT AND WEEKEND"]
+        logger.info("Comparing Bonus Hours")
 
         # Group by PARTNER NAME and sum each metric
-        prev_grouped = sheet_previous_filtered.groupby("PARTNER", as_index=False)["Tickets Collected"].sum()
-        latest_grouped = sheet_latest_filtered.groupby("PARTNER", as_index=False)["Tickets Collected"].sum()
+        prev_grouped = sheet_previous.groupby("PARTNER NAME", as_index=False)["Bonus Hours"].sum()
+        latest_grouped = sheet_latest.groupby("PARTNER NAME", as_index=False)["Bonus Hours"].sum()
 
         # Merge the grouped dataframes
         comparison = latest_grouped.merge(
-            prev_grouped, on="PARTNER", how="outer", suffixes=("_LATEST", "_PREVIOUS")
+            prev_grouped, on="PARTNER NAME", how="outer", suffixes=("_LATEST", "_PREVIOUS")
         ).fillna(0)
 
        # Calculate the change
-        comparison["CHANGE"] = comparison["Tickets Collected_LATEST"] - comparison["Tickets Collected_PREVIOUS"]
+        comparison["CHANGE"] = comparison["Bonus Hours_LATEST"] - comparison["Bonus Hours_PREVIOUS"]
 
         # Format columns as percentages with 4 significant digits
-        for col in ["Tickets Collected_LATEST", "Tickets Collected_PREVIOUS", "CHANGE"]:
+        for col in ["Bonus Hours_LATEST", "Bonus Hours_PREVIOUS", "CHANGE"]:
             comparison[col] = comparison[col].round(2)
 
         # Rename columns
         comparison.columns = ["PARTNER", "LATEST", "PREVIOUS", "CHANGE"]
 
-        logger.info("Comparison of Tickets Collected completed.")
+        logger.info("Comparison of Bonus Hours and other metrics completed.")
         return comparison
 
     except Exception as e:
-        logger.error(f"Error comparing Tickets Collected: {e}")
+        logger.error(f"Error comparing Bonus Hours: {e}")
         raise
 
-def compare_Booking(sheet_previous, sheet_latest):
+def compare_CoreRev(sheet_previous, sheet_latest):
     try:
-        logger.info("Comparing Booking Count between previous and latest sheets.")
-
-        sheet_previous_filtered = sheet_previous[sheet_previous["TYPE OF OPERATOR"] == "DAILY"]
-        sheet_latest_filtered = sheet_latest[sheet_latest["TYPE OF OPERATOR"] == "DAILY"]
-
-        # Group by "PARTNER NAME" 
-        prev_values = sheet_previous_filtered.groupby("PARTNER", as_index=False)["Booking ID"].count()
-        latest_values = sheet_latest_filtered.groupby("PARTNER", as_index=False)["Booking ID"].count()
-
-        # Merge both datasets
-        comparison = latest_values.merge(
-            prev_values, on="PARTNER", how="outer", suffixes=("_LATEST", "_PREVIOUS")
-        ).fillna(0)
-
-        # Calculate the change
-        comparison["CHANGE"] = comparison["Booking ID_LATEST"] - comparison["Booking ID_PREVIOUS"]
-
-        # Format columns as percentages with 4 significant digits
-        for col in ["Booking ID_LATEST", "Booking ID_PREVIOUS", "CHANGE"]:
-            comparison[col] = comparison[col].round(2)
-
-        # Rename columns
-        comparison.columns = ["PARTNER", "LATEST", "PREVIOUS", "CHANGE"]
-
-        logger.info("Booking Count comparison completed.")
-        return comparison
-    except Exception as e:
-        logger.error(f"Error comparing Booking Count: {e}")
-        raise
-
-def compare_Per_Trip_Revenue(sheet_previous, sheet_latest):
-    try:
-        logger.info("Comparing Booking Count between previous and latest sheets.")
-
-        sheet_previous_filtered = sheet_previous[sheet_previous["TYPE OF OPERATOR"] == "DAILY"]
-        sheet_latest_filtered = sheet_latest[sheet_latest["TYPE OF OPERATOR"] == "DAILY"]
-
-        # Group by "PARTNER NAME" 
-        prev_values = sheet_previous_filtered.groupby("PARTNER", as_index=False)["Per Trip Revenue"].count()
-        latest_values = sheet_latest_filtered.groupby("PARTNER", as_index=False)["Per Trip Revenue"].count()
-
-        # Merge both datasets
-        comparison = latest_values.merge(
-            prev_values, on="PARTNER", how="outer", suffixes=("_LATEST", "_PREVIOUS")
-        ).fillna(0)
-
-        # Calculate the change
-        comparison["CHANGE"] = comparison["Per Trip Revenue_LATEST"] - comparison["Per Trip Revenue_PREVIOUS"]
-
-        # Format columns as percentages with 4 significant digits
-        for col in ["Per Trip Revenue_LATEST", "Per Trip Revenue_PREVIOUS", "CHANGE"]:
-            comparison[col] = comparison[col].round(2)
-
-        # Rename columns
-        comparison.columns = ["PARTNER", "LATEST", "PREVIOUS", "CHANGE"]
-
-        logger.info("Per Trip Revenue comparison completed.")
-        return comparison
-    except Exception as e:
-        logger.error(f"Error comparing Per Trip Revenue: {e}")
-        raise
-
-def compare_Per_Trip_Revenue(sheet_previous, sheet_latest):
-    try:
-        logger.info("Comparing Booking Count between previous and latest sheets.")
-
-        sheet_previous_filtered = sheet_previous[sheet_previous["TYPE OF OPERATOR"] == "DAILY"]
-        sheet_latest_filtered = sheet_latest[sheet_latest["TYPE OF OPERATOR"] == "DAILY"]
-
-        # Group by "PARTNER NAME" 
-        prev_values = sheet_previous_filtered.groupby("PARTNER", as_index=False)["Per Trip Revenue"].sum()
-        latest_values = sheet_latest_filtered.groupby("PARTNER", as_index=False)["Per Trip Revenue"].sum()
-
-        # Merge both datasets
-        comparison = latest_values.merge(
-            prev_values, on="PARTNER", how="outer", suffixes=("_LATEST", "_PREVIOUS")
-        ).fillna(0)
-
-        # Calculate the change
-        comparison["CHANGE"] = comparison["Per Trip Revenue_LATEST"] - comparison["Per Trip Revenue_PREVIOUS"]
-
-        # Format columns as percentages with 4 significant digits
-        for col in ["Per Trip Revenue_LATEST", "Per Trip Revenue_PREVIOUS", "CHANGE"]:
-            comparison[col] = comparison[col].round(2)
-
-        # Rename columns
-        comparison.columns = ["PARTNER", "LATEST", "PREVIOUS", "CHANGE"]
-
-        logger.info("Per Trip Revenue comparison completed.")
-        return comparison
-    except Exception as e:
-        logger.error(f"Error comparing Per Trip Revenue: {e}")
-        raise
-
-def compare_tFares_Collected(sheet_previous, sheet_latest):
-    try:
-        logger.info("Comparing Fare Collected for NIGHT AND WEEKEND operators.")
-
-        # Filter for "NIGHT AND WEEKEND" operators
-        sheet_previous_filtered = sheet_previous[sheet_previous["TYPE OF OPERATOR"] == "DAILY"]
-        sheet_latest_filtered = sheet_latest[sheet_latest["TYPE OF OPERATOR"] == "DAILY"]
+        logger.info("Comparing Core Revenue")
 
         # Group by PARTNER NAME and sum each metric
-        prev_grouped = sheet_previous_filtered.groupby("PARTNER", as_index=False)["Fare Collected"].sum()
-        latest_grouped = sheet_latest_filtered.groupby("PARTNER", as_index=False)["Fare Collected"].sum()
+        prev_grouped = sheet_previous.groupby("PARTNER NAME", as_index=False)["Core Revenue"].sum()
+        latest_grouped = sheet_latest.groupby("PARTNER NAME", as_index=False)["Core Revenue"].sum()
 
         # Merge the grouped dataframes
         comparison = latest_grouped.merge(
-            prev_grouped, on="PARTNER", how="outer", suffixes=("_LATEST", "_PREVIOUS")
+            prev_grouped, on="PARTNER NAME", how="outer", suffixes=("_LATEST", "_PREVIOUS")
         ).fillna(0)
 
        # Calculate the change
-        comparison["CHANGE"] = comparison["Fare Collected_LATEST"] - comparison["Fare Collected_PREVIOUS"]
+        comparison["CHANGE"] = comparison["Core Revenue_LATEST"] - comparison["Core Revenue_PREVIOUS"]
 
         # Format columns as percentages with 4 significant digits
-        for col in ["Fare Collected_LATEST", "Fare Collected_PREVIOUS", "CHANGE"]:
+        for col in ["Core Revenue_LATEST", "Core Revenue_PREVIOUS", "CHANGE"]:
             comparison[col] = comparison[col].round(2)
 
         # Rename columns
         comparison.columns = ["PARTNER", "LATEST", "PREVIOUS", "CHANGE"]
 
-        logger.info("Comparison of Fare Collected completed.")
+        logger.info("Comparison of Core Revenue and other metrics completed.")
         return comparison
 
     except Exception as e:
-        logger.error(f"Error comparing Fare Collected: {e}")
+        logger.error(f"Error comparing Core Revenue: {e}")
+        raise
+
+def compare_TotalEarnings(sheet_previous, sheet_latest):
+    try:
+        logger.info("Comparing Total Earnings")
+
+        # Group by PARTNER NAME and sum each metric
+        prev_grouped = sheet_previous.groupby("PARTNER NAME", as_index=False)["Total Earnings"].sum()
+        latest_grouped = sheet_latest.groupby("PARTNER NAME", as_index=False)["Total Earnings"].sum()
+
+        # Merge the grouped dataframes
+        comparison = latest_grouped.merge(
+            prev_grouped, on="PARTNER NAME", how="outer", suffixes=("_LATEST", "_PREVIOUS")
+        ).fillna(0)
+
+       # Calculate the change
+        comparison["CHANGE"] = comparison["Total Earnings_LATEST"] - comparison["Total Earnings_PREVIOUS"]
+
+        # Format columns as percentages with 4 significant digits
+        for col in ["Total Earnings_LATEST", "Total Earnings_PREVIOUS", "CHANGE"]:
+            comparison[col] = comparison[col].round(2)
+
+        # Rename columns
+        comparison.columns = ["PARTNER", "LATEST", "PREVIOUS", "CHANGE"]
+
+        logger.info("Comparison of Total Earnings and other metrics completed.")
+        return comparison
+
+    except Exception as e:
+        logger.error(f"Error comparing Total Earnings: {e}")
+        raise
+
+def compare_drivers(sheet_previous, sheet_latest):
+    try:
+        logger.info("Comparing OS Operators between previous and latest sheets.")
+
+        # Extract unique Drivers and sort them
+        previous_values = sheet_previous[["Driver Name"]].drop_duplicates().rename(columns={"Driver Name": "PREVIOUS"}).sort_values(by="PREVIOUS")
+        latest_values = sheet_latest[["Driver Name"]].drop_duplicates().rename(columns={"Driver Name": "LATEST"}).sort_values(by="LATEST")
+
+        # Reset index to align properly
+        previous_values = previous_values.reset_index(drop=True)
+        latest_values = latest_values.reset_index(drop=True)
+
+        # Ensure both columns have the same length by padding with empty strings
+        max_length = max(len(previous_values), len(latest_values))
+        previous_values = previous_values.reindex(range(max_length), fill_value="")
+        latest_values = latest_values.reindex(range(max_length), fill_value="")
+
+        # Combine into a single DataFrame
+        comparison = pd.concat([previous_values, latest_values], axis=1)
+
+        logger.info("Drivers comparison completed.")
+        return comparison
+
+    except Exception as e:
+        logger.error(f"Error comparing Drivers: {e}")
         raise
 
 def apply_formatting(sheet_name, wb):
@@ -660,7 +511,7 @@ def apply_formatting(sheet_name, wb):
 
         for col in ws.columns:
             max_length = max(len(str(cell.value)) for cell in col if cell.value)
-            ws.column_dimensions[col[0].column_letter].width = max_length + 2
+            ws.column_dimensions[col[0].column_letter].width = max_length + 2.3
 
         # for col in ws.columns:
         #     max_length = 0
@@ -678,7 +529,7 @@ def apply_formatting(sheet_name, wb):
         #         if header_length > max_length:
         #             max_length = header_length
 
-        #     adjusted_width = (max_length + 0.5) # add scaling
+        #     adjusted_width = (max_length) * 1.2 # add scaling
         #     ws.column_dimensions[column].width = adjusted_width
 
         thin_border = Border(left=Side(style="thin"), right=Side(style="thin"), top=Side(style="thin"), bottom=Side(style="thin"))
@@ -765,28 +616,12 @@ def main(file_previous, file_latest):
         compare_cash_collected_df = compare_cash_collected(sheet_pr_previous, sheet_pr_latest)
         logger.info(f"Cash Collected DF: {compare_cash_collected_df}")
 
-        # # 4. Compare operators
-        # operator_changes_df = compare_operators(sheet_operator_previous, sheet_operator_latest)
-        # logger.info(f"Operator Changes DF:{operator_changes_df}")
-
-        # # Compare dates
-        # date_changes = compare_dates(sheet_hours_previous, sheet_hours_latest)
-        # Dadded_df = pd.DataFrame(date_changes["Added"])
-        # Dremoved_df = pd.DataFrame(date_changes["Removed"])
-        # Dadded_df["Change"] = "Added"
-        # Dremoved_df["Change"] = "Removed"
-        # Doperator_changes_df = pd.concat([Dadded_df, Dremoved_df], ignore_index=True)
-        # # 5. Compare Dates
-        # missing_dates_df = find_missing_dates(sheet_hours_previous, sheet_hours_latest)
-        # logger.info(f"Missing Dates DF:{missing_dates_df}")
-
         # Save the full comparison results
-
-        full_comparison_file = os.path.join(output_folder, "DIV3_Main_Tables.xlsm")
+        full_comparison_file = os.path.join(output_folder, "DIV3_Main_Tables.xlsx")
         excel_sheets = []
-        with pd.ExcelWriter(full_comparison_file,engine="xlsxwriter") as writer:
+        # with pd.ExcelWriter(full_comparison_file,engine="xlsxwriter") as writer:
             # full_comparison_file = os.path.join(output_folder, "DIV3_Main_Tables.xlsx")     
-            # with pd.ExcelWriter(full_comparison_file, engine="openpyxl") as writer:
+        with pd.ExcelWriter(full_comparison_file, engine="openpyxl") as writer:
             totals_comparison_df.to_excel(writer, sheet_name="TotalInvoicePayment", index=False)
             excel_sheets.append("TotalInvoicePayment")
             ttl_rev_comparison_df.to_excel(writer, sheet_name="HourlyTTLRevComparison", index=False)
@@ -797,8 +632,6 @@ def main(file_previous, file_latest):
             excel_sheets.append("ViolationsComparison")
             compare_cash_collected_df.to_excel(writer, sheet_name="CashCollectedComparison", index=False)
             excel_sheets.append("CashCollectedComparison")
-            writer.book.add_vba_project('path_to_your_vbaProject.bin')
-            writer.save()
 
         # # Doperator_changes_df.to_excel(writer, sheet_name="DateComparison", index=False)
 
@@ -810,70 +643,60 @@ def main(file_previous, file_latest):
         wb_full.close()
 
         logger.info(f"Main comparison process completed successfully. File saved to {full_comparison_file}.")
-
-        # # Save the DecHours comparison results --------------------------
-        # hours_comparison_df = compare_Dec_Hours(sheet_hours_previous, sheet_hours_latest)
-        # logger.info(f"Dec Hours Comparison DF: {hours_comparison_df}")
-
-        # # Save the Fares Collected comparison results
-        # fares_collected_comparison_df = compare_Fares_Collected(sheet_hours_previous, sheet_hours_latest)
-        # logger.info(f"Fares Collected Comparison DF: {fares_collected_comparison_df}")
-
-        # # Save the Tickets Collected comparison results
-        # tickets_collected_comparison_df = compare_Tickets_Collected(sheet_hours_previous, sheet_hours_latest)
-        # logger.info(f"Tickets Collected Comparison DF: {tickets_collected_comparison_df}")
-
-        # # Save the comparison results to an Excel file
-        # hours_comparison_file = os.path.join(output_folder, "DIV8_Hours_Comparison.xlsx")
-        # excel_sheets = []
-        # with pd.ExcelWriter(hours_comparison_file, engine="openpyxl") as writer:
-        #     hours_comparison_df.to_excel(writer, sheet_name="DecHoursComparison", index=False)
-        #     excel_sheets.append("DecHoursComparison")
-        #     fares_collected_comparison_df.to_excel(writer, sheet_name="FaresCollectedComparison", index=False)
-        #     excel_sheets.append("FaresCollectedComparison")
-        #     tickets_collected_comparison_df.to_excel(writer, sheet_name="TicketsCollectedComparison", index=False)
-        #     excel_sheets.append("TicketsCollectedComparison")
-
-        # # Apply formatting to the full comparison file
-        # wb_full = load_workbook(hours_comparison_file)
-        # for sheet in excel_sheets:                                                                                                
-        #     apply_formatting(sheet, wb_full)
-        # wb_full.save(hours_comparison_file)
-        # wb_full.close()
-
-        # logger.info(f"Hours comparison process completed successfully. File saved to {hours_comparison_file}.")
-
-        # # Save the Booking Count comparison results
-        # booking_count_comparison_df = compare_Booking(sheet_trips_previous, sheet_trips_latest)
-        # logger.info(f"Booking Count Comparison DF: {booking_count_comparison_df}")
         
-        # # Save Fares Collected comparison results
-        # tfares_collected_comparison_df = compare_tFares_Collected(sheet_trips_previous, sheet_trips_latest)
-        # logger.info(f"Fares Collected Comparison DF: {tfares_collected_comparison_df}")
-        
-        # # Save the comparison results to an Excel file
-        # trips_comparison_file = os.path.join(output_folder, "DIV8_Trips_Comparison.xlsx")
-        # excel_sheets = []
-        # with pd.ExcelWriter(trips_comparison_file, engine="openpyxl") as writer:
-        #     booking_count_comparison_df.to_excel(writer, sheet_name="BookingCountComparison", index=False)
-        #     excel_sheets.append("BookingCountComparison")
-            
-        #     tfares_collected_comparison_df.to_excel(writer, sheet_name="FaresCollectedComparison", index=False)
-        #     excel_sheets.append("FaresCollectedComparison")
-        
-        # wb_full = load_workbook(trips_comparison_file)
-        # for sheet in excel_sheets:
-        #     apply_formatting(sheet, wb_full)
-        # wb_full.save(trips_comparison_file)
-        # wb_full.close()
+        # Save ADA comparison results
+        compare_totRev_df = compare_TotRevHrs(sheet_ADA_Hours_previous, sheet_ADA_Hours_latest)
+        logger.info(f"ADA Total Revenue Hours DF: {compare_totRev_df}")
 
-        # logger.info(f"Trips comparison process completed successfully. File saved to {trips_comparison_file}.")
+        compare_PRevHrs_df = compare_PRevHrs(sheet_ADA_Hours_previous, sheet_ADA_Hours_latest)
+        logger.info(f"ADA % of Revenue Hours to Forecast DF: {compare_PRevHrs_df}")
+
+        compare_BonusHrs_df = compare_BonusHrs(sheet_ADA_Hours_previous, sheet_ADA_Hours_latest)
+        logger.info(f"ADA Bonus Hours DF: {compare_BonusHrs_df}")
+
+        compare_CoreRev_df = compare_CoreRev(sheet_ADA_Hours_previous, sheet_ADA_Hours_latest)
+        logger.info(f"ADA Core Revenue DF: {compare_CoreRev_df}")
+
+        compare_TotalEarnings_df = compare_TotalEarnings(sheet_ADA_Hours_previous, sheet_ADA_Hours_latest)
+        logger.info(f"ADA Total Earnings DF: {compare_TotalEarnings_df}")
+
+        compare_drivers_df = compare_drivers(sheet_ADA_previous, sheet_ADA_latest)
+        logger.info(f"ADA Drivers DF: {compare_drivers_df}")
+
+        # Save the full comparison results
+        full_comparison_file = os.path.join(output_folder, "DIV3_ADA_Tables.xlsx")
+        excel_sheets = []
+        # with pd.ExcelWriter(full_comparison_file,engine="xlsxwriter") as writer:
+            # full_comparison_file = os.path.join(output_folder, "DIV3_Main_Tables.xlsx")     
+        with pd.ExcelWriter(full_comparison_file, engine="openpyxl") as writer:
+            compare_totRev_df.to_excel(writer, sheet_name="TotalRevHrsComparison", index=False)
+            excel_sheets.append("TotalRevHrsComparison")
+            compare_PRevHrs_df.to_excel(writer, sheet_name="%oRevHrsComparison", index=False)
+            excel_sheets.append("%oRevHrsComparison")
+            compare_BonusHrs_df.to_excel(writer, sheet_name="BonusHrsComparison", index=False)
+            excel_sheets.append("BonusHrsComparison")
+            compare_CoreRev_df.to_excel(writer, sheet_name="CoreRevComparison", index=False)
+            excel_sheets.append("CoreRevComparison")
+            compare_TotalEarnings_df.to_excel(writer, sheet_name="TotEarningsComparison", index=False)
+            excel_sheets.append("TotEarningsComparison")
+            compare_drivers_df.to_excel(writer, sheet_name="DriversComparison", index=False)
+            excel_sheets.append("DriversComparison")
+
+        # Apply formatting to the full comparison file
+        wb_full = load_workbook(full_comparison_file)
+        for sheet in excel_sheets:                                                                                                
+            apply_formatting(sheet, wb_full)
+        wb_full.save(full_comparison_file)
+        wb_full.close()
+
+        logger.info(f"Main comparison process completed successfully. File saved to {full_comparison_file}.")
 
         # time.sleep(2)
         # db.main(file_previous, file_latest, prev_operator, prev_date, lat_operator, lat_date)
     except Exception as e:
         logger.error(f"Error in main comparison process: {e}")
         raise
+
 
 
     # finally:

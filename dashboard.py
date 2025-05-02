@@ -296,10 +296,10 @@ def paste_picture():
     
     # Target cells for each sheet in the comparison file
     target_cells = {
-        'HourlyTTLRevComparison': (14, 12),
-        'LiftLeaseComparison': (5, 20),
-        'ViolationsComparison': (5, 28),
-        'CashCollectedComparison': (5, 36)
+        'HourlyTTLRevComparison': (11, 12),
+        'LiftLeaseComparison': (11, 22),
+        'ViolationsComparison': (11, 30),
+        'CashCollectedComparison': (11, 41)
     }
 
     relative_dashboard_path = "ComparedResults\\Dashboard.xlsm"
@@ -362,10 +362,10 @@ def paste_picture():
             comparison_file_path = os.path.join(script_dir, comparison_file)
 
             target_cells = {
-                'HourlyTTLRevComparison': (14, 12),
-                'LiftLeaseComparison': (5, 20),
-                'ViolationsComparison': (5, 28),
-                'CashCollectedComparison': (5, 36)
+                'HourlyTTLRevComparison': (11, 12),
+                'LiftLeaseComparison': (11, 22),
+                'ViolationsComparison': (11, 30),
+                'CashCollectedComparison': (11, 41)
             }
                     
             # Check if the comparison file exists
