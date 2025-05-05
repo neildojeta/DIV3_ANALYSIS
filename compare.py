@@ -357,9 +357,10 @@ def compare_PRevHrs(sheet_previous, sheet_latest):
     try:
         logger.info("Comparing % of Revenue Hours to Forecast")
 
-        # Group by PARTNER NAME and sum each metric
-        prev_grouped = sheet_previous.groupby("PARTNER NAME", as_index=False)["% of Revenue Hours to Forecast"].sum()
-        latest_grouped = sheet_latest.groupby("PARTNER NAME", as_index=False)["% of Revenue Hours to Forecast"].sum()
+        # Group by PARTNER NAME and take the average of each metric
+        prev_grouped = sheet_previous.groupby("PARTNER NAME", as_index=False)["% of Revenue Hours to Forecast"].mean()
+        latest_grouped = sheet_latest.groupby("PARTNER NAME", as_index=False)["% of Revenue Hours to Forecast"].mean()
+
 
         # Merge the grouped dataframes
         comparison = latest_grouped.merge(
@@ -498,6 +499,126 @@ def compare_drivers(sheet_previous, sheet_latest):
 
     except Exception as e:
         logger.error(f"Error comparing Drivers: {e}")
+        raise
+
+def compare_CoreHrs(sheet_previous, sheet_latest):
+    try:
+        logger.info("Comparing Core Hours Worked")
+
+        # Group by PARTNER NAME and sum each metric
+        prev_grouped = sheet_previous.groupby("PARTNER NAME", as_index=False)["Core Hours Worked"].sum()
+        latest_grouped = sheet_latest.groupby("PARTNER NAME", as_index=False)["Core Hours Worked"].sum()
+
+        # Merge the grouped dataframes
+        comparison = latest_grouped.merge(
+            prev_grouped, on="PARTNER NAME", how="outer", suffixes=("_LATEST", "_PREVIOUS")
+        ).fillna(0)
+
+       # Calculate the change
+        comparison["CHANGE"] = comparison["Core Hours Worked_LATEST"] - comparison["Core Hours Worked_PREVIOUS"]
+
+        # Format columns as percentages with 4 significant digits
+        for col in ["Core Hours Worked_LATEST", "Core Hours Worked_PREVIOUS", "CHANGE"]:
+            comparison[col] = comparison[col].round(2)
+
+        # Rename columns
+        comparison.columns = ["PARTNER", "LATEST", "PREVIOUS", "CHANGE"]
+
+        logger.info("Comparison of Core Hours Worked and other metrics completed.")
+        return comparison
+
+    except Exception as e:
+        logger.error(f"Error comparing Core Hours Worked: {e}")
+        raise
+
+def compare_TotDutyViolations(sheet_previous, sheet_latest):
+    try:
+        logger.info("Comparing Total Duty Violation")
+
+        # Group by PARTNER NAME and sum each metric
+        prev_grouped = sheet_previous.groupby("PARTNER NAME", as_index=False)["Total Duty Violation"].sum()
+        latest_grouped = sheet_latest.groupby("PARTNER NAME", as_index=False)["Total Duty Violation"].sum()
+
+        # Merge the grouped dataframes
+        comparison = latest_grouped.merge(
+            prev_grouped, on="PARTNER NAME", how="outer", suffixes=("_LATEST", "_PREVIOUS")
+        ).fillna(0)
+
+       # Calculate the change
+        comparison["CHANGE"] = comparison["Total Duty Violation_LATEST"] - comparison["Total Duty Violation_PREVIOUS"]
+
+        # Format columns as percentages with 4 significant digits
+        for col in ["Total Duty Violation_LATEST", "Total Duty Violation_PREVIOUS", "CHANGE"]:
+            comparison[col] = comparison[col].round(2)
+
+        # Rename columns
+        comparison.columns = ["PARTNER", "LATEST", "PREVIOUS", "CHANGE"]
+
+        logger.info("Comparison of Total Duty Violation and other metrics completed.")
+        return comparison
+
+    except Exception as e:
+        logger.error(f"Error comparing Total Duty Violation: {e}")
+        raise
+
+def compare_stdPayHrs(sheet_previous, sheet_latest):
+    try:
+        logger.info("Comparing StandBy Pay Hours")
+
+        # Group by PARTNER NAME and sum each metric
+        prev_grouped = sheet_previous.groupby("PARTNER NAME", as_index=False)["StandBy Pay Hours"].sum()
+        latest_grouped = sheet_latest.groupby("PARTNER NAME", as_index=False)["StandBy Pay Hours"].sum()
+
+        # Merge the grouped dataframes
+        comparison = latest_grouped.merge(
+            prev_grouped, on="PARTNER NAME", how="outer", suffixes=("_LATEST", "_PREVIOUS")
+        ).fillna(0)
+
+       # Calculate the change
+        comparison["CHANGE"] = comparison["StandBy Pay Hours_LATEST"] - comparison["StandBy Pay Hours_PREVIOUS"]
+
+        # Format columns as percentages with 4 significant digits
+        for col in ["StandBy Pay Hours_LATEST", "StandBy Pay Hours_PREVIOUS", "CHANGE"]:
+            comparison[col] = comparison[col].round(2)
+
+        # Rename columns
+        comparison.columns = ["PARTNER", "LATEST", "PREVIOUS", "CHANGE"]
+
+        logger.info("Comparison of StandBy Pay Hours and other metrics completed.")
+        return comparison
+
+    except Exception as e:
+        logger.error(f"Error comparing StandBy Pay Hours: {e}")
+        raise
+
+def comapre_stdExtraHrs(sheet_previous, sheet_latest):
+    try:
+        logger.info("Comparing StandbyExtraHours")
+
+        # Group by PARTNER NAME and sum each metric
+        prev_grouped = sheet_previous.groupby("PARTNER NAME", as_index=False)["StandbyExtraHours"].sum()
+        latest_grouped = sheet_latest.groupby("PARTNER NAME", as_index=False)["StandbyExtraHours"].sum()
+
+        # Merge the grouped dataframes
+        comparison = latest_grouped.merge(
+            prev_grouped, on="PARTNER NAME", how="outer", suffixes=("_LATEST", "_PREVIOUS")
+        ).fillna(0)
+
+       # Calculate the change
+        comparison["CHANGE"] = comparison["StandbyExtraHours_LATEST"] - comparison["StandbyExtraHours_PREVIOUS"]
+
+        # Format columns as percentages with 4 significant digits
+        for col in ["StandbyExtraHours_LATEST", "StandbyExtraHours_PREVIOUS", "CHANGE"]:
+            comparison[col] = comparison[col].round(2)
+
+        # Rename columns
+        comparison.columns = ["PARTNER", "LATEST", "PREVIOUS", "CHANGE"]
+
+        logger.info("Comparison of StandbyExtraHours and other metrics completed.")
+        return comparison
+
+    except Exception as e:
+        logger.error(f"Error comparing StandbyExtraHours: {e}")
         raise
 
 def apply_formatting(sheet_name, wb):
@@ -671,8 +792,8 @@ def main(file_previous, file_latest):
         with pd.ExcelWriter(full_comparison_file, engine="openpyxl") as writer:
             compare_totRev_df.to_excel(writer, sheet_name="TotalRevHrsComparison", index=False)
             excel_sheets.append("TotalRevHrsComparison")
-            compare_PRevHrs_df.to_excel(writer, sheet_name="%oRevHrsComparison", index=False)
-            excel_sheets.append("%oRevHrsComparison")
+            compare_PRevHrs_df.to_excel(writer, sheet_name="%RevHrsComparison", index=False)
+            excel_sheets.append("%RevHrsComparison")
             compare_BonusHrs_df.to_excel(writer, sheet_name="BonusHrsComparison", index=False)
             excel_sheets.append("BonusHrsComparison")
             compare_CoreRev_df.to_excel(writer, sheet_name="CoreRevComparison", index=False)
@@ -689,10 +810,76 @@ def main(file_previous, file_latest):
         wb_full.save(full_comparison_file)
         wb_full.close()
 
-        logger.info(f"Main comparison process completed successfully. File saved to {full_comparison_file}.")
+        logger.info(f"ADA comparison process completed successfully. File saved to {full_comparison_file}.")
+
+        # Save GOLINK comparison results
+        compare_CoreHrs_df = compare_CoreHrs(sheet_GOLINK_Hours_previous, sheet_GOLINK_Hours_latest)
+        logger.info(f"GOLINK Core Hours Worked DF: {compare_CoreHrs_df}")
+
+        compare_GPRevHrs_df = compare_PRevHrs(sheet_GOLINK_Hours_previous, sheet_GOLINK_Hours_latest)
+        logger.info(f"GOLINK % Revenue Hours DF: {compare_GPRevHrs_df}")
+
+        compare_GTotalEarnings_df = compare_TotalEarnings(sheet_GOLINK_Hours_previous, sheet_GOLINK_Hours_latest)
+        logger.info(f"GOLINK Total Earnings DF: {compare_GTotalEarnings_df}")
+
+        compare_TotDutyiolations_df = compare_TotDutyViolations(sheet_GOLINK_Hours_previous, sheet_GOLINK_Hours_latest)
+        logger.info(f"GOLINK Total Duty Violation DF: {compare_TotDutyiolations_df}")
+
+        compare_GDrivers_df = compare_drivers(sheet_GOLINK_previous, sheet_GOLINK_latest)
+        logger.info(f"GOLINK Drivers DF: {compare_GDrivers_df}")
+
+        full_comparison_file = os.path.join(output_folder, "DIV3_GOLINK_Tables.xlsx")
+        excel_sheets = []
+        with pd.ExcelWriter(full_comparison_file, engine="openpyxl") as writer:
+            compare_CoreHrs_df.to_excel(writer, sheet_name="CoreHoursComparison", index=False)
+            excel_sheets.append("CoreHoursComparison")
+            compare_GPRevHrs_df.to_excel(writer, sheet_name="%RevHrsComparison", index=False)
+            excel_sheets.append("%RevHrsComparison")
+            compare_GTotalEarnings_df.to_excel(writer, sheet_name="TotEarningsComparison", index=False)
+            excel_sheets.append("TotEarningsComparison")
+            compare_TotDutyiolations_df.to_excel(writer, sheet_name="TotDutyViolationComparison", index=False)
+            excel_sheets.append("TotDutyViolationComparison")
+            compare_GDrivers_df.to_excel(writer, sheet_name="DriversComparison", index=False)
+            excel_sheets.append("DriversComparison")
+
+        wb_full = load_workbook(full_comparison_file)
+        for sheet in excel_sheets:                                                                                                
+            apply_formatting(sheet, wb_full)
+        wb_full.save(full_comparison_file)
+        wb_full.close()
+
+        logger.info(f"GOLINK comparison process completed successfully. File saved to {full_comparison_file}.")
+
+        # For ADAGOLINK comparison results
+        compare_stdPayHrs_df = compare_stdPayHrs(sheet_StandbyADAGOLINK_previous, sheet_StandbyADAGOLINK_latest)
+        logger.info(f"ADAGOLINK StandBy Pay Hours DF: {compare_stdPayHrs_df}")
+
+        compare_stdExtraHrs_df = comapre_stdExtraHrs(sheet_StandbyADAGOLINK_previous, sheet_StandbyADAGOLINK_latest)
+        logger.info(f"ADAGOLINK StandBy Extra Hours DF: {compare_stdExtraHrs_df}")
+
+        compare_stdTotEarnings_df = compare_TotalEarnings(sheet_StandbyADAGOLINK_previous, sheet_StandbyADAGOLINK_latest)
+        logger.info(f"ADAGOLINK Total Earnings DF: {compare_stdTotEarnings_df}")
+
+        full_comparison_file = os.path.join(output_folder, "DIV3_ADAGOLINK_Tables.xlsx")
+        excel_sheets = []
+        with pd.ExcelWriter(full_comparison_file, engine="openpyxl") as writer:
+            compare_stdPayHrs_df.to_excel(writer, sheet_name="StdByPayHrsComparison", index=False)
+            excel_sheets.append("StdByPayHrsComparison")
+            compare_stdExtraHrs_df.to_excel(writer, sheet_name="StByExtraHrsComparison", index=False)
+            excel_sheets.append("StByExtraHrsComparison")
+            compare_stdTotEarnings_df.to_excel(writer, sheet_name="TotEarningsComparison", index=False)
+            excel_sheets.append("TotEarningsComparison")
+
+        wb_full = load_workbook(full_comparison_file)
+        for sheet in excel_sheets:                                                                                                
+            apply_formatting(sheet, wb_full)
+        wb_full.save(full_comparison_file)
+        wb_full.close()
+
+        logger.info(f"ADAGOLINK comparison process completed successfully. File saved to {full_comparison_file}.")
 
         # time.sleep(2)
-        # db.main(file_previous, file_latest, prev_operator, prev_date, lat_operator, lat_date)
+        db.main(file_previous, file_latest, prev_operator, prev_date, lat_operator, lat_date)
     except Exception as e:
         logger.error(f"Error in main comparison process: {e}")
         raise

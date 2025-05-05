@@ -26,9 +26,10 @@ logger = logging.getLogger()
 def main(file_previous, file_latest, prev_operator, prev_date, lat_operator, lat_date): 
     logger.info(f"{file_previous} + {file_latest}")
     comparison_files = [
-        ('ComparedResults/DIV3_Main_Tables.xlsx', 'Dashboard')
-        # ('ComparedResults/DIV8_Hours_Comparison.xlsx', 'Hours'),
-        # ('ComparedResults/DIV8_Trips_Comparison.xlsx', 'Trips')
+        ('ComparedResults/DIV3_Main_Tables.xlsx', 'Dashboard'),
+        ('ComparedResults/DIV3_ADA_Tables.xlsx', 'ADA'),
+        ('ComparedResults/DIV3_GOLINK_Tables.xlsx', 'GOLINK'),
+        ('ComparedResults/DIV3_ADAGOLINK_Tables.xlsx', 'ADAGOLINK')
     ]
 
     # Open the Dashboard workbook
@@ -47,17 +48,6 @@ def main(file_previous, file_latest, prev_operator, prev_date, lat_operator, lat
             # sheet_OperatorComparison = wb_comparison['OperatorChanges']
             # sheet_DatesComparison = wb_comparison['MissingDates']
 
-
-            sheet_DecHoursComparison = None
-            lat_DecHoursComp, lat_HTTLRevComp, lat_TrTTLRevCompt, lat_FaresComp, lat_Tickets_Comp = None, None, None, None, None
-            prev_DecHoursComp, prev_HTTLRevComp, prev_TrTTLRevCompt, prev_FaresComp, prev_Tickets_Comp = None, None, None, None, None
-            diff_DecHoursComp, diff_HTTLRevComp, diff_TrTTLRevCompt, diff_FaresComp, diff_Tickets_Comp = None, None, None, None, None
-            txt_DecHours, txt_HTTLRevComp, txt_TrTTLRevComp, txt_Fares, txt_Tickets = None, None, None, None, None
-            txt_DecHours_diff, txt_HTTLRevComp_diff, txt_TrTTLRevComp_diff, txt_Fares_diff, txt_Tickets_diff = None, None, None, None, None
-
-            lat_TripsComp, prev_TripsComp, diff_TripsComp, txt_Trips, txt_Trips_diff = None, None, None, None, None
-            # lat_TTLRevCompt, prev_TTLRevCompt, diff_TTLRevCompt, txt_TTLRevt, txt_TTL_Revt_diff = None, None, None, None, None
-            lat_FaresCompt, prev_FaresCompt, diff_FaresCompt, txt_FaresCompt, txt_FaresCompt_diff = None, None, None, None, None
 
             if sheet_name == 'Dashboard':
                 sheet_TotalInvoicePayment = wb_comparison['TotalInvoicePayment']
@@ -161,69 +151,169 @@ def main(file_previous, file_latest, prev_operator, prev_date, lat_operator, lat
                 # txt_Date_diff = sheet_dashboard.shapes['txtDatesDiff'].api
                 # txt_Date_diff.TextFrame2.TextRange.Text = f"{diff_DateChanges} days"
 
-            elif sheet_name == 'Hours':
-                sheet_DecHoursComparison = wb_comparison['DecHoursComparison']
-                lat_DecHoursComp = f"{sum(cell.value for row in sheet_DecHoursComparison.iter_rows(min_row=2, max_row=50, min_col=2, max_col=2) for cell in row if cell.value is not None):,.2f}"
-                prev_DecHoursComp = f"{sum(cell.value for row in sheet_DecHoursComparison.iter_rows(min_row=2, max_row=50, min_col=3, max_col=3) for cell in row if cell.value is not None):,.2f}"
-                diff_DecHoursComp = f"{sum(cell.value for row in sheet_DecHoursComparison.iter_rows(min_row=2, max_row=50, min_col=4, max_col=4) for cell in row if cell.value is not None):,.2f}"
+            elif sheet_name == 'ADA':
+                sheet_TotalRevHrsComparison = wb_comparison['TotalRevHrsComparison']
+                lat_TotalRevHrsComp = f"{sum(cell.value for row in sheet_TotalRevHrsComparison.iter_rows(min_row=2, max_row=50, min_col=2, max_col=2) for cell in row if cell.value is not None):,.2f}"
+                prev_TotalRevHrsComp = f"{sum(cell.value for row in sheet_TotalRevHrsComparison.iter_rows(min_row=2, max_row=50, min_col=3, max_col=3) for cell in row if cell.value is not None):,.2f}"
+                diff_TotalRevHrsComp = f"{sum(cell.value for row in sheet_TotalRevHrsComparison.iter_rows(min_row=2, max_row=50, min_col=4, max_col=4) for cell in row if cell.value is not None):,.2f}"
 
-                sheet_FaresComparison = wb_comparison['FaresCollectedComparison']
-                lat_FaresComp = f"{sum(cell.value for row in sheet_FaresComparison.iter_rows(min_row=2, max_row=50, min_col=2, max_col=2) for cell in row if cell.value is not None):,.2f}"
-                prev_FaresComp = f"{sum(cell.value for row in sheet_FaresComparison.iter_rows(min_row=2, max_row=50, min_col=3, max_col=3) for cell in row if cell.value is not None):,.2f}"
-                diff_FaresComp = f"{sum(cell.value for row in sheet_FaresComparison.iter_rows(min_row=2, max_row=50, min_col=4, max_col=4) for cell in row if cell.value is not None):,.2f}"
+                sheet_PRevHrsComparison = wb_comparison['%RevHrsComparison']
+                lat_PRevHrs = f"{(lambda v: (sum(v)/len(v)*100 if v else 0))([cell.value for row in sheet_PRevHrsComparison.iter_rows(min_row=2, max_row=50, min_col=2, max_col=2) for cell in row if cell.value is not None]):,.2f}"
+                prev_PRevHrs = f"{(lambda v: (sum(v)/len(v)*100 if v else 0))([cell.value for row in sheet_PRevHrsComparison.iter_rows(min_row=2, max_row=50, min_col=3, max_col=3) for cell in row if cell.value is not None]):,.2f}"
+                diff_PRevHrs = f"{(lambda v: (sum(v)/len(v)*100 if v else 0))([cell.value for row in sheet_PRevHrsComparison.iter_rows(min_row=2, max_row=50, min_col=4, max_col=4) for cell in row if cell.value is not None]):,.2f}"
 
-                sheet_TicketsComparison = wb_comparison['TicketsCollectedComparison']
-                lat_Tickets_Comp = f"{sum(cell.value for row in sheet_TicketsComparison.iter_rows(min_row=2, max_row=50, min_col=2, max_col=2) for cell in row if cell.value is not None):,}"
-                prev_Tickets_Comp = f"{sum(cell.value for row in sheet_TicketsComparison.iter_rows(min_row=2, max_row=50, min_col=3, max_col=3) for cell in row if cell.value is not None):,}"
-                diff_Tickets_Comp = f"{sum(cell.value for row in sheet_TicketsComparison.iter_rows(min_row=2, max_row=50, min_col=4, max_col=4) for cell in row if cell.value is not None):,}"
+                sheet_BonusHrsComparison = wb_comparison['BonusHrsComparison']
+                lat_BonusHrs_Comp = f"{sum(cell.value for row in sheet_BonusHrsComparison.iter_rows(min_row=2, max_row=50, min_col=2, max_col=2) for cell in row if cell.value is not None):,}"
+                prev_BonusHrs_Comp = f"{sum(cell.value for row in sheet_BonusHrsComparison.iter_rows(min_row=2, max_row=50, min_col=3, max_col=3) for cell in row if cell.value is not None):,}"
+                diff_BonusHrs_Comp = f"{sum(cell.value for row in sheet_BonusHrsComparison.iter_rows(min_row=2, max_row=50, min_col=4, max_col=4) for cell in row if cell.value is not None):,}"
 
-                sheet_dashboard = wb_dashboard.sheets[sheet_name]
+                sheet_CoreRevComparison = wb_comparison['CoreRevComparison']
+                lat_CoreRev_Comp = f"{sum(cell.value for row in sheet_CoreRevComparison.iter_rows(min_row=2, max_row=50, min_col=2, max_col=2) for cell in row if cell.value is not None):,.2f}"
+                prev_CoreRev_Comp = f"{sum(cell.value for row in sheet_CoreRevComparison.iter_rows(min_row=2, max_row=50, min_col=3, max_col=3) for cell in row if cell.value is not None):,.2f}"
+                diff_CoreRev_Comp = f"{sum(cell.value for row in sheet_CoreRevComparison.iter_rows(min_row=2, max_row=50, min_col=4, max_col=4) for cell in row if cell.value is not None):,.2f}"
 
-                #For Decimal Hours
-                txt_DecHours = sheet_dashboard.shapes['txtDDecHoursDiff'].api
-                txt_DecHours.TextFrame2.TextRange.Text = f"{prev_DecHoursComp} to {lat_DecHoursComp} hours"
-                txt_DecHours_diff = sheet_dashboard.shapes['txtDecHoursDiff'].api
-                txt_DecHours_diff.TextFrame2.TextRange.Text = f"{diff_DecHoursComp} hours"
+                sheet_TotEarningsComparison = wb_comparison['TotEarningsComparison']
+                lat_TotEarnings_Comp = f"{sum(cell.value for row in sheet_TotEarningsComparison.iter_rows(min_row=2, max_row=50, min_col=2, max_col=2) for cell in row if cell.value is not None):,.2f}"
+                prev_TotEarnings_Comp = f"{sum(cell.value for row in sheet_TotEarningsComparison.iter_rows(min_row=2, max_row=50, min_col=3, max_col=3) for cell in row if cell.value is not None):,.2f}"
+                diff_TotEarnings_Comp = f"{sum(cell.value for row in sheet_TotEarningsComparison.iter_rows(min_row=2, max_row=50, min_col=4, max_col=4) for cell in row if cell.value is not None):,.2f}"
 
-            
-                #For Fares
-                txt_Fares = sheet_dashboard.shapes['txtDFaresDiff'].api
-                txt_Fares.TextFrame2.TextRange.Text = f"${prev_FaresComp} to ${lat_FaresComp}"
-                txt_Fares_diff = sheet_dashboard.shapes['txtFaresDiff'].api
-                txt_Fares_diff.TextFrame2.TextRange.Text = f"${diff_FaresComp}"
+                sheet_DriversComparison = wb_comparison['DriversComparison']
+                lat_Drivers_Comp = sum(1 for row in sheet_DriversComparison.iter_rows(min_row=2, max_row=50, min_col=2, max_col=2) for cell in row if cell.value is not None)
+                prev_Drivers_Comp = sum(1 for row in sheet_DriversComparison.iter_rows(min_row=2, max_row=50, min_col=1, max_col=1) for cell in row if cell.value is not None)
+                diff_Drivers_Comp = lat_Drivers_Comp - prev_Drivers_Comp
 
-                # For Tickets
-                txt_Tickets = sheet_dashboard.shapes['txtDTicketsDiff'].api
-                txt_Tickets.TextFrame2.TextRange.Text = f"{prev_Tickets_Comp} to {lat_Tickets_Comp} tickets"
-                txt_Tickets_diff = sheet_dashboard.shapes['txtTicketsDiff'].api
-                txt_Tickets_diff.TextFrame2.TextRange.Text = f"{diff_Tickets_Comp} tickets"
-            
-            elif sheet_name == 'Trips':
-                sheet_TripsComparison = wb_comparison['BookingCountComparison']
-                lat_TripsComp = f"{sum(cell.value for row in sheet_TripsComparison.iter_rows(min_row=2, max_row=50, min_col=2, max_col=2) for cell in row if cell.value is not None):,}"
-                prev_TripsComp = f"{sum(cell.value for row in sheet_TripsComparison.iter_rows(min_row=2, max_row=50, min_col=3, max_col=3) for cell in row if cell.value is not None):,}"
-                diff_TripsComp = f"{sum(cell.value for row in sheet_TripsComparison.iter_rows(min_row=2, max_row=50, min_col=4, max_col=4) for cell in row if cell.value is not None):,}"
-
-                sheet_FarestComparison = wb_comparison['FaresCollectedComparison']
-                lat_FaresCompt = f"{sum(cell.value for row in sheet_FarestComparison.iter_rows(min_row=2, max_row=50, min_col=2, max_col=2) for cell in row if cell.value is not None):,}"
-                prev_FaresCompt = f"{sum(cell.value for row in sheet_FarestComparison.iter_rows(min_row=2, max_row=50, min_col=3, max_col=3) for cell in row if cell.value is not None):,}"
-                diff_FaresCompt = f"{sum(cell.value for row in sheet_FarestComparison.iter_rows(min_row=2, max_row=50, min_col=4, max_col=4) for cell in row if cell.value is not None):,}"
 
                 sheet_dashboard = wb_dashboard.sheets[sheet_name]
 
-                # For Trips
-                txt_Trips = sheet_dashboard.shapes['txtDTripsDiff'].api
-                txt_Trips.TextFrame2.TextRange.Text = f"{prev_TripsComp} to {lat_TripsComp} trips"
-                txt_Trips_diff = sheet_dashboard.shapes['txtTripsDiff'].api
-                txt_Trips_diff.TextFrame2.TextRange.Text = f"{diff_TripsComp} trips"
+                #For TotalRev Hours
+                txt_TotalRevHrs = sheet_dashboard.shapes['txtDTotalRevHrsDiff'].api
+                txt_TotalRevHrs.TextFrame2.TextRange.Text = f"${prev_TotalRevHrsComp} to ${lat_TotalRevHrsComp}"
+                txt_TotalRevHrs_diff = sheet_dashboard.shapes['txtTotalRevHrsDiff'].api
+                txt_TotalRevHrs_diff.TextFrame2.TextRange.Text = f"${diff_TotalRevHrsComp}"
+            
+                # For PRevHrs
+                txt_PRevHrs = sheet_dashboard.shapes['txtDPRevHrsDiff'].api
+                txt_PRevHrs.TextFrame2.TextRange.Text = f"{prev_PRevHrs}% to {lat_PRevHrs}%"
+                txt_PRevHrs_diff = sheet_dashboard.shapes['txtPRevHrsDiff'].api
+                txt_PRevHrs_diff.TextFrame2.TextRange.Text = f"{diff_PRevHrs}%"
 
-                
+                # For BonusHrs
+                txt_BonusHrs = sheet_dashboard.shapes['txtDBonusHrsDiff'].api
+                txt_BonusHrs.TextFrame2.TextRange.Text = f"{prev_BonusHrs_Comp} to {lat_BonusHrs_Comp} hours"
+                txt_BonusHrs_diff = sheet_dashboard.shapes['txtBonusHrsDiff'].api
+                txt_BonusHrs_diff.TextFrame2.TextRange.Text = f"{diff_BonusHrs_Comp} hours"
 
-                # For Fares
-                txt_FaresCompt = sheet_dashboard.shapes['txtDFarestDiff'].api
-                txt_FaresCompt.TextFrame2.TextRange.Text = f"${prev_FaresCompt} to ${lat_FaresCompt}"
-                txt_FaresCompt_diff = sheet_dashboard.shapes['txtFarestDiff'].api
-                txt_FaresCompt_diff.TextFrame2.TextRange.Text = f"${diff_FaresCompt}"
+                # For CoreRev
+                txt_CoreRev = sheet_dashboard.shapes['txtDCoreRevDiff'].api
+                txt_CoreRev.TextFrame2.TextRange.Text = f"${prev_CoreRev_Comp} to ${lat_CoreRev_Comp}"
+                txt_CoreRev_diff = sheet_dashboard.shapes['txtCoreRevDiff'].api
+                txt_CoreRev_diff.TextFrame2.TextRange.Text = f"${diff_CoreRev_Comp}"
+
+                # For TotEarnings
+                txt_TotEarnings = sheet_dashboard.shapes['txtDTotEarningsDiff'].api
+                txt_TotEarnings.TextFrame2.TextRange.Text = f"${prev_TotEarnings_Comp} to ${lat_TotEarnings_Comp}"
+                txt_TotEarnings_diff = sheet_dashboard.shapes['txtTotEarningsDiff'].api
+                txt_TotEarnings_diff.TextFrame2.TextRange.Text = f"${diff_TotEarnings_Comp}"
+
+                # For Drivers
+                txt_Drivers = sheet_dashboard.shapes['txtDDriversDiff'].api
+                txt_Drivers.TextFrame2.TextRange.Text = f"{prev_Drivers_Comp} to {lat_Drivers_Comp} drivers"
+                txt_Drivers_diff = sheet_dashboard.shapes['txtDriversDiff'].api
+                txt_Drivers_diff.TextFrame2.TextRange.Text = f"{diff_Drivers_Comp} drivers"
+            
+            elif sheet_name == 'GOLINK':
+                sheet_CoreHrsComparison = wb_comparison['CoreHoursComparison']
+                lat_CoreHrsComp = f"{sum(cell.value for row in sheet_CoreHrsComparison.iter_rows(min_row=2, max_row=50, min_col=2, max_col=2) for cell in row if cell.value is not None):,.2f}"
+                prev_CoreHrsComp = f"{sum(cell.value for row in sheet_CoreHrsComparison.iter_rows(min_row=2, max_row=50, min_col=3, max_col=3) for cell in row if cell.value is not None):,.2f}"
+                diff_CoreHrsComp = f"{sum(cell.value for row in sheet_CoreHrsComparison.iter_rows(min_row=2, max_row=50, min_col=4, max_col=4) for cell in row if cell.value is not None):,.2f}"
+
+                sheet_GPRevHrsComparison = wb_comparison['%RevHrsComparison']
+                lat_GPRevHrsCompt = f"{(lambda v: (sum(v)/len(v)*100 if v else 0))([cell.value for row in sheet_GPRevHrsComparison.iter_rows(min_row=2, max_row=50, min_col=2, max_col=2) for cell in row if cell.value is not None]):,.2f}"
+                prev_GPRevHrsCompt = f"{(lambda v: (sum(v)/len(v)*100 if v else 0))([cell.value for row in sheet_GPRevHrsComparison.iter_rows(min_row=2, max_row=50, min_col=3, max_col=3) for cell in row if cell.value is not None]):,.2f}"
+                diff_GPRevHrsCompt = f"{(lambda v: (sum(v)/len(v)*100 if v else 0))([cell.value for row in sheet_GPRevHrsComparison.iter_rows(min_row=2, max_row=50, min_col=4, max_col=4) for cell in row if cell.value is not None]):,.2f}"
+
+                sheet_GTotEarningsComparison = wb_comparison['TotEarningsComparison']
+                lat_GTotEarningsCompt = f"{sum(cell.value for row in sheet_GTotEarningsComparison.iter_rows(min_row=2, max_row=50, min_col=2, max_col=2) for cell in row if cell.value is not None):,.2f}"
+                prev_GTotEarningsCompt = f"{sum(cell.value for row in sheet_GTotEarningsComparison.iter_rows(min_row=2, max_row=50, min_col=3, max_col=3) for cell in row if cell.value is not None):,.2f}"
+                diff_GTotEarningsCompt = f"{sum(cell.value for row in sheet_GTotEarningsComparison.iter_rows(min_row=2, max_row=50, min_col=4, max_col=4) for cell in row if cell.value is not None):,.2f}"
+
+                sheet_totDutyViolationsComparison = wb_comparison['TotDutyViolationComparison']
+                lat_totDutyViolationsCompt = f"{sum(cell.value for row in sheet_totDutyViolationsComparison.iter_rows(min_row=2, max_row=50, min_col=2, max_col=2) for cell in row if cell.value is not None):,.2f}"
+                prev_totDutyViolationsCompt = f"{sum(cell.value for row in sheet_totDutyViolationsComparison.iter_rows(min_row=2, max_row=50, min_col=3, max_col=3) for cell in row if cell.value is not None):,.2f}"
+                diff_totDutyViolationsCompt = f"{sum(cell.value for row in sheet_totDutyViolationsComparison.iter_rows(min_row=2, max_row=50, min_col=4, max_col=4) for cell in row if cell.value is not None):,.2f}"
+
+                sheet_GDriversComparison = wb_comparison['DriversComparison']
+                lat_GDrivers_Comp = sum(1 for row in sheet_GDriversComparison.iter_rows(min_row=2, max_row=50, min_col=2, max_col=2) for cell in row if cell.value is not None)
+                prev_GDrivers_Comp = sum(1 for row in sheet_GDriversComparison.iter_rows(min_row=2, max_row=50, min_col=1, max_col=1) for cell in row if cell.value is not None)
+                diff_GDrivers_Comp = lat_GDrivers_Comp - prev_GDrivers_Comp
+
+                sheet_dashboard = wb_dashboard.sheets[sheet_name]
+
+                # For Core Hours
+                txt_CoreHrs = sheet_dashboard.shapes['txtDCoreHrsDiff'].api
+                txt_CoreHrs .TextFrame2.TextRange.Text = f"{prev_CoreHrsComp} to {lat_CoreHrsComp} hours"
+                txt_CoreHrs_diff = sheet_dashboard.shapes['txtCoreHrsDiff'].api
+                txt_CoreHrs_diff.TextFrame2.TextRange.Text = f"{diff_CoreHrsComp} hours"
+
+                # For GPRevHrs
+                txt_GPRevHrs = sheet_dashboard.shapes['txtDPRevHrsDiff'].api
+                txt_GPRevHrs.TextFrame2.TextRange.Text = f"{prev_GPRevHrsCompt}% to {lat_GPRevHrsCompt}%"
+                txt_GPRevHrs_diff = sheet_dashboard.shapes['txtPRevHrsDiff'].api
+                txt_GPRevHrs_diff.TextFrame2.TextRange.Text = f"{diff_GPRevHrsCompt}%"
+
+                # For GTotEarnings
+                txt_GTotEarnings = sheet_dashboard.shapes['txtDTotEarningsDiff'].api
+                txt_GTotEarnings.TextFrame2.TextRange.Text = f"${prev_GTotEarningsCompt} to ${lat_GTotEarningsCompt}"
+                txt_GTotEarnings_diff = sheet_dashboard.shapes['txtTotEarningsDiff'].api
+                txt_GTotEarnings_diff.TextFrame2.TextRange.Text = f"${diff_GTotEarningsCompt}"
+
+                # For totDutyViolations
+                txt_totDutyViolations = sheet_dashboard.shapes['txtDTotalViolationsDiff'].api
+                txt_totDutyViolations.TextFrame2.TextRange.Text = f"${prev_totDutyViolationsCompt} to ${lat_totDutyViolationsCompt}"
+                txt_totDutyViolations_diff = sheet_dashboard.shapes['txtTotalViolationsDiff'].api
+                txt_totDutyViolations_diff.TextFrame2.TextRange.Text = f"${diff_totDutyViolationsCompt}"
+
+                # For Drivers
+                txt_GDrivers = sheet_dashboard.shapes['txtDDriversDiff'].api
+                txt_GDrivers.TextFrame2.TextRange.Text = f"{prev_GDrivers_Comp} to {lat_GDrivers_Comp} drivers"
+                txt_GDrivers_diff = sheet_dashboard.shapes['txtDriversDiff'].api
+                txt_GDrivers_diff.TextFrame2.TextRange.Text = f"{diff_GDrivers_Comp} drivers"
+
+            elif sheet_name == 'ADAGOLINK':
+                sheet_StdByPayHrsComparison = wb_comparison['StdByPayHrsComparison']
+                lat_StdByPayHrsComp = f"{sum(cell.value for row in sheet_StdByPayHrsComparison.iter_rows(min_row=2, max_row=50, min_col=2, max_col=2) for cell in row if cell.value is not None):,.2f}"
+                prev_StdByPayHrsComp = f"{sum(cell.value for row in sheet_StdByPayHrsComparison.iter_rows(min_row=2, max_row=50, min_col=3, max_col=3) for cell in row if cell.value is not None):,.2f}"
+                diff_StdByPayHrsComp = f"{sum(cell.value for row in sheet_StdByPayHrsComparison.iter_rows(min_row=2, max_row=50, min_col=4, max_col=4) for cell in row if cell.value is not None):,.2f}"
+
+                sheet_StByExtraHrsComparison = wb_comparison['StByExtraHrsComparison']
+                lat_StdByExtraHrsComp = f"{sum(cell.value for row in sheet_StByExtraHrsComparison.iter_rows(min_row=2, max_row=50, min_col=2, max_col=2) for cell in row if cell.value is not None):,.2f}"
+                prev_StdByExtraHrsComp = f"{sum(cell.value for row in sheet_StByExtraHrsComparison.iter_rows(min_row=2, max_row=50, min_col=3, max_col=3) for cell in row if cell.value is not None):,.2f}"
+                diff_StdByExtraHrsComp = f"{sum(cell.value for row in sheet_StByExtraHrsComparison.iter_rows(min_row=2, max_row=50, min_col=4, max_col=4) for cell in row if cell.value is not None):,.2f}"
+
+                sheet_StdByTotEarningsComparison = wb_comparison['TotEarningsComparison']
+                lat_StdByTotEarningsComp = f"{sum(cell.value for row in sheet_StdByTotEarningsComparison.iter_rows(min_row=2, max_row=50, min_col=2, max_col=2) for cell in row if cell.value is not None):,.2f}"
+                prev_StdByTotEarningsComp = f"{sum(cell.value for row in sheet_StdByTotEarningsComparison.iter_rows(min_row=2, max_row=50, min_col=3, max_col=3) for cell in row if cell.value is not None):,.2f}"
+                diff_StdByTotEarningsComp = f"{sum(cell.value for row in sheet_StdByTotEarningsComparison.iter_rows(min_row=2, max_row=50, min_col=4, max_col=4) for cell in row if cell.value is not None):,.2f}"
+
+                sheet_dashboard = wb_dashboard.sheets[sheet_name]
+
+                # For StdByPayHrs
+                txt_StdByPayHrs = sheet_dashboard.shapes['txtDstdPayHrsDiff'].api
+                txt_StdByPayHrs.TextFrame2.TextRange.Text = f"${prev_StdByPayHrsComp} to ${lat_StdByPayHrsComp}"
+                txt_StdByPayHrs_diff = sheet_dashboard.shapes['txtstdPayHrsDiff'].api
+                txt_StdByPayHrs_diff.TextFrame2.TextRange.Text = f"${diff_StdByPayHrsComp}"
+
+                # For StdByExtraHrs
+                txt_StdByExtraHrs = sheet_dashboard.shapes['txtDstdExtraHrsDiff'].api
+                txt_StdByExtraHrs.TextFrame2.TextRange.Text = f"{prev_StdByExtraHrsComp} to {lat_StdByExtraHrsComp} hours"
+                txt_StdByExtraHrs_diff = sheet_dashboard.shapes['txtstdExtraHrsDiff'].api
+                txt_StdByExtraHrs_diff.TextFrame2.TextRange.Text = f"{diff_StdByExtraHrsComp} hours"
+
+                # For StdByTotEarnings
+                txt_StdByTotEarnings = sheet_dashboard.shapes['txtDTotEarningsDiff'].api
+                txt_StdByTotEarnings.TextFrame2.TextRange.Text = f"${prev_StdByTotEarningsComp} to ${lat_StdByTotEarningsComp}"
+                txt_StdByTotEarnings_diff = sheet_dashboard.shapes['txtTotEarningsDiff'].api
+                txt_StdByTotEarnings_diff.TextFrame2.TextRange.Text = f"${diff_StdByTotEarningsComp}"
 
             # paste_picture(comparison_files, dashboard_file)
 
@@ -250,12 +340,15 @@ def main(file_previous, file_latest, prev_operator, prev_date, lat_operator, lat
                 if sheet_name == 'Dashboard':
                     textBoxNames = ["txtHTTLRevtDiff", "txtLLeaseDiff", "txtViolationsDiff", "txtCashCollectedDiff"]
                     values = [diff_HTTLRevComp, diff_LeaseComp, diff_ViolationComp, diff_CashCollectedComp]
-                elif sheet_name == 'Hours':
-                    textBoxNames = ["txtDecHoursDiff", "txtFaresDiff", "txtTicketsDiff"]
-                    values = [diff_DecHoursComp, diff_FaresComp, diff_Tickets_Comp]
-                elif sheet_name == 'Trips':
-                    textBoxNames = ["txtTripsDiff", "txtFarestDiff"]
-                    values = [diff_TripsComp, diff_FaresCompt]
+                elif sheet_name == 'ADA':
+                    textBoxNames = ["txtTotalRevHrsDiff", "txtPRevHrsDiff", "txtBonusHrsDiff", "txtCoreRevDiff", "txtTotEarningsDiff", "txtDriversDiff"]
+                    values = [diff_TotalRevHrsComp, diff_PRevHrs, diff_BonusHrs_Comp, diff_CoreRev_Comp, diff_TotEarnings_Comp, diff_Drivers_Comp]
+                elif sheet_name == 'GOLINK':
+                    textBoxNames = ["txtCoreHrsDiff", "txtPRevHrsDiff", "txtTotEarningsDiff", "txtTotalViolationsDiff", "txtDriversDiff"]
+                    values = [diff_CoreHrsComp, diff_GPRevHrsCompt, diff_GTotEarningsCompt, diff_totDutyViolationsCompt, diff_GDrivers_Comp]
+                elif sheet_name == 'ADAGOLINK':
+                    textBoxNames = ["txtstdPayHrsDiff", "txtstdExtraHrsDiff", "txtTotEarningsDiff"]
+                    values = [diff_StdByPayHrsComp, diff_StdByExtraHrsComp, diff_StdByTotEarningsComp]
 
                 # Loop through the text boxes and update colors based on the values
                 for i, textBoxName in enumerate(textBoxNames):
@@ -289,9 +382,10 @@ def main(file_previous, file_latest, prev_operator, prev_date, lat_operator, lat
 
 def paste_picture():
     comparison_files = [
-        ('ComparedResults/DIV3_Main_Tables.xlsx', 'Dashboard')
-        # ('ComparedResults/DIV8_Hours_Comparison.xlsx', 'Hours'),
-        # ('ComparedResults/DIV8_Trips_Comparison.xlsx', 'Trips')
+        ('ComparedResults/DIV3_Main_Tables.xlsx', 'Dashboard'),
+        ('ComparedResults/DIV3_ADA_Tables.xlsx', 'ADA'),
+        ('ComparedResults/DIV3_GOLINK_Tables.xlsx', 'GOLINK'),
+        ('ComparedResults/DIV3_ADAGOLINK_Tables.xlsx', 'ADAGOLINK')
     ]
     
     # Target cells for each sheet in the comparison file
@@ -336,16 +430,18 @@ def paste_picture():
             return
 
         # Delete existing pictures if they exist
-        sheet_names = ['Dashboard']
+        sheet_names = ['Dashboard', 'ADA']
         for target_sheet_name in sheet_names:
             ws_dashboard = wb_dashboard.Sheets(target_sheet_name)
             ws_dashboard.Activate()
             # for picture_name in ['ViolationsTable', 'HoursTable', 'OperatorTable', 'LeaseTable']:
             picname = ['HTTLRevTable', 'LeaseTable', 'ViolationsTable', 'CashTable']
-            if target_sheet_name == 'Hours': 
-                picname = ['DecHoursTable', 'FaresTable', 'TicketsTable']
-            elif target_sheet_name == 'Trips':
-                picname = ['TripsTable', 'FaresTable']
+            if target_sheet_name == 'ADA': 
+                picname = ['TotalRevHrsTable', 'PRevHrsTable', 'BonusHrsTable', 'CoreRevTable', 'TotEarningsTable', 'DriversTable']
+            elif target_sheet_name == 'GOLINK':
+                picname = ['TotalCoreHrsTable', 'PRevHrsTable', 'TotEarningsTable', 'TotalViolationsTable', 'DriversTable']
+            elif target_sheet_name == 'ADAGOLINK':
+                picname = ['stdPayHrsTable', 'stdExtraHrsTable', 'TotEarningsTable']
             for picture_name in picname:
                 logger.info(f"Picture name: {picture_name} found in {target_sheet_name}") 
                 try:
@@ -378,16 +474,28 @@ def paste_picture():
             if wb_comparison is None:
                 logger.info(f"Failed to open the comparison workbook at {comparison_file_path}")
                 continue
-            if target_sheet_name == 'Hours':
+            if target_sheet_name == 'ADA':
                 target_cells = {
-                    'DecHoursComparison': (10, 12),
-                    'FaresCollectedComparison': (10, 20),
-                    'TicketsCollectedComparison': (10, 28)
+                    'TotalRevHrsComparison': (5, 12),
+                    '%RevHrsComparison': (5, 20),
+                    'BonusHrsComparison': (5, 28),
+                    'CoreRevComparison': (37, 12),
+                    'TotEarningsComparison': (37, 20),
+                    'DriversComparison': (37, 28)
                 }
-            elif target_sheet_name == 'Trips':
+            elif target_sheet_name == 'GOLINK':
                 target_cells = {
-                    'BookingCountComparison': (5, 12),
-                    'FaresCollectedComparison': (5, 20)
+                    'CoreHoursComparison': (10, 12),
+                    '%RevHrsComparison': (10, 20),
+                    'TotEarningsComparison': (23, 12),
+                    'TotDutyViolationComparison': (23, 20),
+                    'DriversComparison': (10, 28)
+                }
+            elif target_sheet_name == 'ADAGOLINK':
+                target_cells = {
+                    'StdByPayHrsComparison': (10, 12),
+                    'StByExtraHrsComparison': (10, 20),
+                    'TotEarningsComparison': (10, 28)
                 }
 
 
@@ -446,6 +554,26 @@ def paste_picture():
                     pasted_picture.Name = 'HTTLRevTable'
                 elif sheet_name == 'CashCollectedComparison':
                     pasted_picture.Name = 'CashTable'
+                elif sheet_name == 'TotalRevHrsComparison':
+                    pasted_picture.Name = 'TotalRevHrsTable'
+                elif sheet_name == '%RevHrsComparison':
+                    pasted_picture.Name = 'PRevHrsTable'
+                elif sheet_name == 'BonusHrsComparison':
+                    pasted_picture.Name = 'BonusHrsTable'
+                elif sheet_name == 'CoreRevComparison':
+                    pasted_picture.Name = 'CoreRevTable'
+                elif sheet_name == 'TotEarningsComparison':
+                    pasted_picture.Name = 'TotEarningsTable'
+                elif sheet_name == 'DriversComparison':
+                    pasted_picture.Name = 'DriversTable'
+                elif sheet_name == 'CoreHoursComparison':
+                    pasted_picture.Name = 'TotalCoreHrsTable'
+                elif sheet_name == 'TotDutyViolationComparison':
+                    pasted_picture.Name = 'TotalViolationsTable'
+                elif sheet_name == 'StdByPayHrsComparison':
+                    pasted_picture.Name = 'stdPayHrsTable'
+                elif sheet_name == 'StByExtraHrsComparison':
+                    pasted_picture.Name = 'stdExtraHrsTable'
 
                 table_name = pasted_picture.Name
                 logger.info(f"Table Name: {table_name}")
