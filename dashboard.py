@@ -459,9 +459,9 @@ def paste_picture():
 
             target_cells = {
                 'HourlyTTLRevComparison': (11, 12),
-                'LiftLeaseComparison': (11, 22),
-                'ViolationsComparison': (11, 30),
-                'CashCollectedComparison': (11, 41)
+                'LiftLeaseComparison': (11, 24),
+                'ViolationsComparison': (11, 33),
+                'CashCollectedComparison': (11, 44)
             }
                     
             # Check if the comparison file exists
@@ -477,11 +477,11 @@ def paste_picture():
             if target_sheet_name == 'ADA':
                 target_cells = {
                     'TotalRevHrsComparison': (5, 12),
-                    '%RevHrsComparison': (5, 20),
-                    'BonusHrsComparison': (5, 28),
-                    'CoreRevComparison': (37, 12),
-                    'TotEarningsComparison': (37, 20),
-                    'DriversComparison': (37, 28)
+                    '%RevHrsComparison': (5, 21),
+                    'BonusHrsComparison': (5, 30),
+                    'CoreRevComparison': (40, 12),
+                    'TotEarningsComparison': (40, 21),
+                    'DriversComparison': (40, 30)
                 }
             elif target_sheet_name == 'GOLINK':
                 target_cells = {

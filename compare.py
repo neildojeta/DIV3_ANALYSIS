@@ -135,7 +135,7 @@ def calculate_totals(deductions_sheet, pr_sheet):
         total_amount = 0
 
         # Sum the Amount column (column 13, index 13) for valid partners
-        total_amount = valid_partner_rows.iloc[:, 13].sum()
+        total_amount = valid_partner_rows.iloc[:, 14].sum()
 
         calculated_totals += total_amount
 
@@ -905,25 +905,25 @@ def create_gui():
     root.title("Comparison Tool")
 
     # Create and place labels, entry boxes, and buttons
-    # tk.Label(root, text="Previous File:").grid(row=0, column=0, padx=10, pady=5)
-    # entry_previous = tk.Entry(root, width=50)
-    # entry_previous.grid(row=0, column=1, padx=10, pady=5)
+    tk.Label(root, text="Previous File:").grid(row=0, column=0, padx=10, pady=5)
+    entry_previous = tk.Entry(root, width=50)
+    entry_previous.grid(row=0, column=1, padx=10, pady=5)
     
-    # # tk.Button(root, text="Browse", command=lambda: open_file_dialog(entry_previous)).grid(row=0, column=2, padx=10, pady=5)
+    # tk.Button(root, text="Browse", command=lambda: open_file_dialog(entry_previous)).grid(row=0, column=2, padx=10, pady=5)
 
-    # tk.Label(root, text="Latest File:").grid(row=1, column=0, padx=10, pady=5)
-    # entry_latest = tk.Entry(root, width=50)
-    # entry_latest.grid(row=1, column=1, padx=10, pady=5)
+    tk.Label(root, text="Latest File:").grid(row=1, column=0, padx=10, pady=5)
+    entry_latest = tk.Entry(root, width=50)
+    entry_latest.grid(row=1, column=1, padx=10, pady=5)
 
-    prev = "VDP_DIV3_0310_0323 FINAL.xlsm"
-    latest = "VDP_DIV3_0324_0406 FINAL.xlsm"
+    # prev = "VDP_DIV3_0310_0323 FINAL.xlsm"
+    # latest = "VDP_DIV3 UPDATED TEMPLATE.xlsm"
     
     # tk.Button(root, text="Browse", command=lambda: open_file_dialog(entry_latest)).grid(row=1, column=2, padx=10, pady=5)
 
     # Button to trigger the comparison process
     # tk.Button(root, text="Compare", command=lambda: (main(entry_previous.get(), entry_latest.get()), root.destroy())).grid(row=2, column=1, pady=20)
-    # tk.Button(root, text="Compare", command=lambda: handle_comparison(entry_previous.get(), entry_latest.get(), root)).grid(row=2, column=1, pady=20)
-    tk.Button(root, text="Compare", command=lambda: handle_comparison(prev, latest, root)).grid(row=2, column=1, pady=20)
+    tk.Button(root, text="Compare", command=lambda: handle_comparison(entry_previous.get(), entry_latest.get(), root)).grid(row=2, column=1, pady=20)
+    # tk.Button(root, text="Compare", command=lambda: handle_comparison(prev, latest, root)).grid(row=2, column=1, pady=20)
 
     def handle_comparison(file_previous, file_latest, root):
         try:

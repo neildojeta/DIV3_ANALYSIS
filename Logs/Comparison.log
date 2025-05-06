@@ -17893,3 +17893,2303 @@ Totals DF:       LATEST   PREVIOUS  DIFFERENCE     CHANGE
 2025-05-03 15:34:12,402 - INFO - 'TotEarningsTable' successfully pasted in the TotEarningsComparison Sheet.
 2025-05-03 15:34:12,430 - INFO - Resized TotEarningsContainer to width: 9.17 cm, height: 4.09 cm
 2025-05-03 15:34:14,328 - INFO - Data pasted as pictures successfully.
+2025-05-06 10:21:29,594 - INFO - Starting main comparison process.
+2025-05-06 10:21:29,596 - INFO - Loading sheets from the provided Excel files.
+2025-05-06 10:21:32,882 - INFO - Sheets loaded successfully.
+2025-05-06 10:21:32,889 - INFO - Total valid partners: 30
+2025-05-06 10:21:32,889 - INFO - Partner names: ['ANGELS WAY TRANSIT', 'ASH ELITE TRANSPORTATION', 'BM3 TRANSPORTATION LLC', 'BOM TRANSPORTATION', 'BRANDON JACKSON', 'BREISHABREE TRANSPORTATION LLC', 'BROOKES TRANSPORTATION, LLC', 'BTS INVESTORS GROUP, LLC', 'CEASAR WS LLC', 'DAESHA SAFE TRANSPORT', 'HUB SOLUTIONS', 'HUNDREDFOLD SERVICES, LLC', 'INNER CITY LOGISTICS LLC', 'LA PATRONA SERVICES LLC', 'LADY K HEALTHCARE', 'LAQUESHA HENDERSON', "LIZZY'S TRANSPORTATION LLC", 'LOVEDAY IGWE', 'LYNN TRAVELING', 'MELINIO TRANSIT (TX)', 'ON THE MOVE LLC', 'ON-DIME LLC', 'ORION TRANSIT, LLC', 'PICKUP PARTNERS LLC', 'QUNIFIA JACKSON', 'RESILIENT LOGISTICS MGMT LLC', 'ROYAL T KARE LLC', 'SERENITY CARE TRANSPORTATION', 'TRAVEL GALS AND GENTS LLC', 'UAD TRANSPORTATION']
+2025-05-06 10:21:32,889 - INFO - Total amount: 0.0
+2025-05-06 10:21:32,889 - INFO - Total calculated amount: 0.0
+2025-05-06 10:21:32,890 - INFO - Total valid partners: 27
+2025-05-06 10:21:32,891 - INFO - Partner names: ['ANGELS WAY TRANSIT', 'ASH ELITE TRANSPORTATION', 'BM3 TRANSPORTATION LLC', 'BOM TRANSPORTATION', 'BREISHABREE TRANSPORTATION LLC', 'BROOKES TRANSPORTATION, LLC', 'BTS INVESTORS GROUP, LLC', 'CEASAR WS LLC', 'DEECAL ENTERPRISE', 'GRAND TOUR TRANSPORTATION', 'HEALTH DIRECT TRANSPORTATION SERVICES INC.', 'HOUND OF JUSTICE', 'HUB SOLUTIONS', 'HUNDREDFOLD SERVICES, LLC', 'IGWE SIX TRANSIT LLC', 'INNER CITY LOGISTICS LLC', 'LA PATRONA SERVICES LLC', "LIZZY'S TRANSPORTATION LLC", 'LYNN TRAVELING', 'MELINIO TRANSIT (TX)', 'ON-DIME LLC', 'ORION TRANSIT, LLC', 'PICKUP PARTNERS LLC', 'ROYAL T KARE LLC', 'SERENITY CARE TRANSPORTATION LCC', 'TIFFANY MURDOCK', 'UAD TRANSPORTATION']
+2025-05-06 10:21:32,891 - INFO - Total amount: 136476.94150000002
+2025-05-06 10:21:32,891 - INFO - Total calculated amount: 136476.94150000002
+2025-05-06 10:21:32,891 - INFO - Comparing Totals between previous and latest values.
+2025-05-06 10:21:32,895 - INFO - Totals comparison completed.
+2025-05-06 10:21:32,900 - INFO - 
+Totals DF:       LATEST  PREVIOUS  DIFFERENCE     CHANGE
+0  136476.94       0.0   136476.94  Increased
+2025-05-06 10:21:32,912 - INFO - Hourly TTL Rev Comparison DF:                                        PARTNER      LATEST    PREVIOUS     CHANGE
+1                           ANGELS WAY TRANSIT   2504.7680   2774.0800  -269.3120
+2                     ASH ELITE TRANSPORTATION   2473.2800   1764.1600   709.1200
+3                       BM3 TRANSPORTATION LLC   1938.8160   2073.4080  -134.5920
+4                           BOM TRANSPORTATION   2751.3600   3262.2062  -510.8462
+5                              BRANDON JACKSON      0.0000   1639.9360 -1639.9360
+6               BREISHABREE TRANSPORTATION LLC   1996.2880   1833.2160   163.0720
+7                  BROOKES TRANSPORTATION, LLC  34320.6011  34210.4566   110.1445
+8                     BTS INVESTORS GROUP, LLC   1873.6640   2335.0720  -461.4080
+9                                CEASAR WS LLC   4876.9600   4902.1200   -25.1600
+10                       DAESHA SAFE TRANSPORT      0.0000      0.0000     0.0000
+11                           DEECAL ENTERPRISE   1551.3600      0.0000  1551.3600
+12                   GRAND TOUR TRANSPORTATION    698.6240      0.0000   698.6240
+13  HEALTH DIRECT TRANSPORTATION SERVICES INC.   1422.9120      0.0000  1422.9120
+14                            HOUND OF JUSTICE    891.1360      0.0000   891.1360
+15                               HUB SOLUTIONS   3246.4000   2665.8560   580.5440
+16                   HUNDREDFOLD SERVICES, LLC   7691.8577  10947.1274 -3255.2697
+17                        IGWE SIX TRANSIT LLC    407.2960      0.0000   407.2960
+18                    INNER CITY LOGISTICS LLC   3096.9920   4847.7200 -1750.7280
+19                     LA PATRONA SERVICES LLC   1948.4800   2514.2400  -565.7600
+20                           LADY K HEALTHCARE      0.0000   1948.5440 -1948.5440
+21                          LAQUESHA HENDERSON      0.0000   1372.6720 -1372.6720
+22                  LIZZY'S TRANSPORTATION LLC   1937.5360   2195.1360  -257.6000
+23                                LOVEDAY IGWE      0.0000   1889.3440 -1889.3440
+24                              LYNN TRAVELING   2268.1600   2394.8800  -126.7200
+25                        MELINIO TRANSIT (TX)  54510.8107  48378.1306  6132.6801
+26                             ON THE MOVE LLC      0.0000      0.0000     0.0000
+27                                 ON-DIME LLC   2059.5840   1902.5920   156.9920
+28                          ORION TRANSIT, LLC  37909.3049  37769.0378   140.2671
+29                                    Operator      0.0000      0.0000     0.0000
+30                         PICKUP PARTNERS LLC   3036.6773   2771.4133   265.2640
+31                             QUNIFIA JACKSON      0.0000      0.0000     0.0000
+32                RESILIENT LOGISTICS MGMT LLC      0.0000   1289.0080 -1289.0080
+33                            ROYAL T KARE LLC   9603.2698  11229.5200 -1626.2502
+34                SERENITY CARE TRANSPORTATION      0.0000    633.6000  -633.6000
+35            SERENITY CARE TRANSPORTATION LCC    346.6240      0.0000   346.6240
+36                             TIFFANY MURDOCK    815.3600      0.0000   815.3600
+37                   TRAVEL GALS AND GENTS LLC      0.0000      0.0000     0.0000
+38                          UAD TRANSPORTATION   2304.0000   2304.0000     0.0000
+2025-05-06 10:21:32,922 - INFO - Lift Lease DF:                                        PARTNER  LATEST  PREVIOUS  CHANGE
+1                     ASH ELITE TRANSPORTATION   685.0     685.0     0.0
+2                       BM3 TRANSPORTATION LLC   685.0     685.0     0.0
+3                           BOM TRANSPORTATION   685.0     685.0     0.0
+4                              BRANDON JACKSON     0.0     685.0  -685.0
+5               BREISHABREE TRANSPORTATION LLC   685.0     685.0     0.0
+6                  BROOKES TRANSPORTATION, LLC  6850.0    6850.0     0.0
+7                     BTS INVESTORS GROUP, LLC   685.0     685.0     0.0
+8                                CEASAR WS LLC   685.0     685.0     0.0
+9                        DAESHA SAFE TRANSPORT     0.0       0.0     0.0
+10                           DEECAL ENTERPRISE   548.0       0.0   548.0
+11                   GRAND TOUR TRANSPORTATION   274.0       0.0   274.0
+12  HEALTH DIRECT TRANSPORTATION SERVICES INC.   548.0       0.0   548.0
+13                            HOUND OF JUSTICE   685.0       0.0   685.0
+14                               HUB SOLUTIONS   685.0     685.0     0.0
+15                   HUNDREDFOLD SERVICES, LLC  2055.0    2055.0     0.0
+16                        IGWE SIX TRANSIT LLC   342.5       0.0   342.5
+17                    INNER CITY LOGISTICS LLC   685.0     685.0     0.0
+18                     LA PATRONA SERVICES LLC   685.0     685.0     0.0
+19                           LADY K HEALTHCARE     0.0     685.0  -685.0
+20                          LAQUESHA HENDERSON     0.0     685.0  -685.0
+21                  LIZZY'S TRANSPORTATION LLC   685.0     685.0     0.0
+22                                LOVEDAY IGWE     0.0     685.0  -685.0
+23                              LYNN TRAVELING   685.0     685.0     0.0
+24                        MELINIO TRANSIT (TX)  8220.0    8220.0     0.0
+25                             ON THE MOVE LLC     0.0       0.0     0.0
+26                                 ON-DIME LLC   685.0     685.0     0.0
+27                          ORION TRANSIT, LLC  4795.0    4795.0     0.0
+28                                    Operator     0.0       0.0     0.0
+29                         PICKUP PARTNERS LLC   685.0     685.0     0.0
+30                             QUNIFIA JACKSON     0.0       0.0     0.0
+31                RESILIENT LOGISTICS MGMT LLC     0.0     342.5  -342.5
+32                            ROYAL T KARE LLC  2740.0    2740.0     0.0
+33                SERENITY CARE TRANSPORTATION     0.0     205.5  -205.5
+34            SERENITY CARE TRANSPORTATION LCC   342.5       0.0   342.5
+35                             TIFFANY MURDOCK   205.5       0.0   205.5
+36                   TRAVEL GALS AND GENTS LLC     0.0       0.0     0.0
+37                          UAD TRANSPORTATION   685.0     685.0     0.0
+2025-05-06 10:21:32,931 - INFO - Violations DF:                                        PARTNER   LATEST  PREVIOUS  CHANGE
+1                     ASH ELITE TRANSPORTATION     0.00     76.47  -76.47
+2                       BM3 TRANSPORTATION LLC     0.00     57.80  -57.80
+3                           BOM TRANSPORTATION    50.00    177.24 -127.24
+4                              BRANDON JACKSON     0.00     14.54  -14.54
+5               BREISHABREE TRANSPORTATION LLC   106.36     89.48   16.88
+6                  BROOKES TRANSPORTATION, LLC  1948.52   2828.90 -880.38
+7                     BTS INVESTORS GROUP, LLC    16.32     24.44   -8.12
+8                                CEASAR WS LLC     0.00    301.82 -301.82
+9                        DAESHA SAFE TRANSPORT     0.00      0.00    0.00
+10                           DEECAL ENTERPRISE     0.00      0.00    0.00
+11                   GRAND TOUR TRANSPORTATION     0.00      0.00    0.00
+12  HEALTH DIRECT TRANSPORTATION SERVICES INC.     0.00      0.00    0.00
+13                            HOUND OF JUSTICE   100.00      0.00  100.00
+14                               HUB SOLUTIONS     0.00     55.23  -55.23
+15                   HUNDREDFOLD SERVICES, LLC   232.60    257.33  -24.73
+16                        IGWE SIX TRANSIT LLC     0.00      0.00    0.00
+17                    INNER CITY LOGISTICS LLC   263.98    149.93  114.05
+18                     LA PATRONA SERVICES LLC     0.00     27.00  -27.00
+19                           LADY K HEALTHCARE     0.00     48.97  -48.97
+20                          LAQUESHA HENDERSON     0.00     26.60  -26.60
+21                  LIZZY'S TRANSPORTATION LLC     0.00     33.64  -33.64
+22                                LOVEDAY IGWE     0.00     16.90  -16.90
+23                              LYNN TRAVELING     0.00     57.28  -57.28
+24                        MELINIO TRANSIT (TX)  3870.31   3276.19  594.12
+25                             ON THE MOVE LLC     0.00      0.00    0.00
+26                                 ON-DIME LLC     0.00    108.30 -108.30
+27                          ORION TRANSIT, LLC   400.00    829.67 -429.67
+28                                    Operator     0.00      0.00    0.00
+29                         PICKUP PARTNERS LLC   400.00    107.47  292.53
+30                             QUNIFIA JACKSON     0.00      0.00    0.00
+31                RESILIENT LOGISTICS MGMT LLC     0.00     36.34  -36.34
+32                            ROYAL T KARE LLC  1096.24   1058.33   37.91
+33                SERENITY CARE TRANSPORTATION     0.00     25.16  -25.16
+34            SERENITY CARE TRANSPORTATION LCC     0.00      0.00    0.00
+35                             TIFFANY MURDOCK     0.00      0.00    0.00
+36                   TRAVEL GALS AND GENTS LLC     0.00      0.00    0.00
+37                          UAD TRANSPORTATION   265.40     12.78  252.62
+2025-05-06 10:21:32,939 - INFO - Cash Collected DF:                                        PARTNER  LATEST  PREVIOUS  CHANGE
+1                     ASH ELITE TRANSPORTATION   197.5     255.5   -58.0
+2                       BM3 TRANSPORTATION LLC    76.0     210.0  -134.0
+3                           BOM TRANSPORTATION   137.5     388.5  -251.0
+4                              BRANDON JACKSON     0.0     227.5  -227.5
+5               BREISHABREE TRANSPORTATION LLC   252.0     227.5    24.5
+6                  BROOKES TRANSPORTATION, LLC  1232.0    1407.0  -175.0
+7                     BTS INVESTORS GROUP, LLC    77.0     332.5  -255.5
+8                                CEASAR WS LLC   396.0     355.5    40.5
+9                        DAESHA SAFE TRANSPORT     0.0       0.0     0.0
+10                           DEECAL ENTERPRISE   105.5       0.0   105.5
+11                   GRAND TOUR TRANSPORTATION    70.0       0.0    70.0
+12  HEALTH DIRECT TRANSPORTATION SERVICES INC.   196.0       0.0   196.0
+13                            HOUND OF JUSTICE    35.5       0.0    35.5
+14                               HUB SOLUTIONS   -14.0     315.0  -329.0
+15                   HUNDREDFOLD SERVICES, LLC     0.0      24.5   -24.5
+16                        IGWE SIX TRANSIT LLC     2.5       0.0     2.5
+17                    INNER CITY LOGISTICS LLC    88.5     521.5  -433.0
+18                     LA PATRONA SERVICES LLC   166.0     270.0  -104.0
+19                           LADY K HEALTHCARE     0.0     217.0  -217.0
+20                          LAQUESHA HENDERSON     0.0     182.0  -182.0
+21                  LIZZY'S TRANSPORTATION LLC   143.5     290.5  -147.0
+22                                LOVEDAY IGWE     0.0     269.5  -269.5
+23                              LYNN TRAVELING   171.0     266.0   -95.0
+24                        MELINIO TRANSIT (TX)   311.5     434.0  -122.5
+25                             ON THE MOVE LLC     0.0       0.0     0.0
+26                                 ON-DIME LLC   245.0     170.0    75.0
+27                          ORION TRANSIT, LLC  -282.5     441.0  -723.5
+28                                    Operator     0.0       0.0     0.0
+29                         PICKUP PARTNERS LLC     6.0     374.5  -368.5
+30                             QUNIFIA JACKSON     0.0       0.0     0.0
+31                RESILIENT LOGISTICS MGMT LLC     0.0     171.5  -171.5
+32                            ROYAL T KARE LLC   -66.5    1547.0 -1613.5
+33                SERENITY CARE TRANSPORTATION     0.0      98.0   -98.0
+34            SERENITY CARE TRANSPORTATION LCC    42.0       0.0    42.0
+35                             TIFFANY MURDOCK    65.0       0.0    65.0
+36                   TRAVEL GALS AND GENTS LLC     0.0       0.0     0.0
+37                          UAD TRANSPORTATION   168.0     245.0   -77.0
+2025-05-06 10:21:33,010 - INFO - Applying formatting to sheet: TotalInvoicePayment.
+2025-05-06 10:21:33,011 - INFO - Formatting applied successfully to sheet: TotalInvoicePayment.
+2025-05-06 10:21:33,011 - INFO - Applying formatting to sheet: HourlyTTLRevComparison.
+2025-05-06 10:21:33,017 - INFO - Formatting applied successfully to sheet: HourlyTTLRevComparison.
+2025-05-06 10:21:33,018 - INFO - Applying formatting to sheet: LiftLeaseComparison.
+2025-05-06 10:21:33,023 - INFO - Formatting applied successfully to sheet: LiftLeaseComparison.
+2025-05-06 10:21:33,023 - INFO - Applying formatting to sheet: ViolationsComparison.
+2025-05-06 10:21:33,031 - INFO - Formatting applied successfully to sheet: ViolationsComparison.
+2025-05-06 10:21:33,032 - INFO - Applying formatting to sheet: CashCollectedComparison.
+2025-05-06 10:21:33,038 - INFO - Formatting applied successfully to sheet: CashCollectedComparison.
+2025-05-06 10:21:33,083 - INFO - Main comparison process completed successfully. File saved to ComparedResults\DIV3_Main_Tables.xlsx.
+2025-05-06 10:21:33,084 - INFO - Comparing Total Revenue Hours
+2025-05-06 10:21:33,089 - INFO - Comparison of Total Revenue Hours and other metrics completed.
+2025-05-06 10:21:33,093 - INFO - ADA Total Revenue Hours DF:                                        PARTNER  LATEST  PREVIOUS  CHANGE
+0                           ANGELS WAY TRANSIT   84.13     86.69   -2.56
+1                     ASH ELITE TRANSPORTATION   77.29     66.81   10.48
+2                       BM3 TRANSPORTATION LLC   66.67     71.44   -4.77
+3                              BRANDON JACKSON    0.00     55.06  -55.06
+4               BREISHABREE TRANSPORTATION LLC   68.55     62.83    5.72
+5                  BROOKES TRANSPORTATION, LLC  351.51    388.70  -37.19
+6                     BTS INVESTORS GROUP, LLC   62.18     78.32  -16.14
+7                                CEASAR WS LLC  143.44    144.18   -0.74
+8                            DEECAL ENTERPRISE   60.60      0.00   60.60
+9   HEALTH DIRECT TRANSPORTATION SERVICES INC.   46.41      0.00   46.41
+10                            HOUND OF JUSTICE   34.81      0.00   34.81
+11                               HUB SOLUTIONS  101.45     89.86   11.59
+12                   HUNDREDFOLD SERVICES, LLC    0.00      7.36   -7.36
+13                        IGWE SIX TRANSIT LLC   15.91      0.00   15.91
+14                    INNER CITY LOGISTICS LLC  113.86    142.58  -28.72
+15                     LA PATRONA SERVICES LLC   67.15     78.57  -11.42
+16                           LADY K HEALTHCARE    0.00     67.26  -67.26
+17                          LAQUESHA HENDERSON    0.00     44.10  -44.10
+18                  LIZZY'S TRANSPORTATION LLC   66.61     74.25   -7.64
+19                                LOVEDAY IGWE    0.00     64.08  -64.08
+20                              LYNN TRAVELING   70.88     74.84   -3.96
+21                        MELINIO TRANSIT (TX)   76.66    113.64  -36.98
+22                                 ON-DIME LLC   70.31     74.32   -4.01
+23                          ORION TRANSIT, LLC  126.50    120.71    5.79
+24                RESILIENT LOGISTICS MGMT LLC    0.00     47.39  -47.39
+25                            ROYAL T KARE LLC  344.33    412.85  -68.52
+26                SERENITY CARE TRANSPORTATION    0.00     24.75  -24.75
+27            SERENITY CARE TRANSPORTATION LCC   13.54      0.00   13.54
+2025-05-06 10:21:33,094 - INFO - Comparing % of Revenue Hours to Forecast
+2025-05-06 10:21:33,097 - INFO - Comparison of % of Revenue Hours to Forecast and other metrics completed.
+2025-05-06 10:21:33,101 - INFO - ADA % of Revenue Hours to Forecast DF:                                        PARTNER  LATEST  PREVIOUS  CHANGE
+0                           ANGELS WAY TRANSIT    0.97      1.00   -0.03
+1                     ASH ELITE TRANSPORTATION    1.00      0.90    0.10
+2                       BM3 TRANSPORTATION LLC    0.89      0.96   -0.06
+3                              BRANDON JACKSON    0.00      0.75   -0.75
+4               BREISHABREE TRANSPORTATION LLC    0.92      0.92    0.01
+5                  BROOKES TRANSPORTATION, LLC    0.75      0.80   -0.05
+6                     BTS INVESTORS GROUP, LLC    0.75      0.98   -0.23
+7                                CEASAR WS LLC    0.99      0.99    0.00
+8                            DEECAL ENTERPRISE    0.82      0.00    0.82
+9   HEALTH DIRECT TRANSPORTATION SERVICES INC.    0.62      0.00    0.62
+10                            HOUND OF JUSTICE    0.51      0.00    0.51
+11                               HUB SOLUTIONS    1.00      0.97    0.03
+12                   HUNDREDFOLD SERVICES, LLC    0.00      0.20   -0.20
+13                        IGWE SIX TRANSIT LLC    0.48      0.00    0.48
+14                    INNER CITY LOGISTICS LLC    0.85      1.00   -0.15
+15                     LA PATRONA SERVICES LLC    0.93      1.00   -0.07
+16                           LADY K HEALTHCARE    0.00      0.89   -0.89
+17                          LAQUESHA HENDERSON    0.00      0.60   -0.60
+18                  LIZZY'S TRANSPORTATION LLC    0.91      0.97   -0.06
+19                                LOVEDAY IGWE    0.00      0.89   -0.89
+20                              LYNN TRAVELING    1.00      1.00    0.00
+21                        MELINIO TRANSIT (TX)    0.17      0.24   -0.07
+22                                 ON-DIME LLC    0.87      0.81    0.06
+23                          ORION TRANSIT, LLC    0.64      0.60    0.04
+24                RESILIENT LOGISTICS MGMT LLC    0.00      0.60   -0.60
+25                            ROYAL T KARE LLC    0.89      0.68    0.22
+26                SERENITY CARE TRANSPORTATION    0.00      0.61   -0.61
+27            SERENITY CARE TRANSPORTATION LCC    0.37      0.00    0.37
+2025-05-06 10:21:33,101 - INFO - Comparing Bonus Hours
+2025-05-06 10:21:33,105 - INFO - Comparison of Bonus Hours and other metrics completed.
+2025-05-06 10:21:33,109 - INFO - ADA Bonus Hours DF:                                        PARTNER  LATEST  PREVIOUS  CHANGE
+0                           ANGELS WAY TRANSIT     0.0       0.0     0.0
+1                     ASH ELITE TRANSPORTATION     0.0       0.0     0.0
+2                       BM3 TRANSPORTATION LLC     0.0       0.0     0.0
+3                              BRANDON JACKSON     0.0       0.0     0.0
+4               BREISHABREE TRANSPORTATION LLC     0.0       0.0     0.0
+5                  BROOKES TRANSPORTATION, LLC     0.0       0.0     0.0
+6                     BTS INVESTORS GROUP, LLC     0.0       0.0     0.0
+7                                CEASAR WS LLC     0.0       0.0     0.0
+8                            DEECAL ENTERPRISE     0.0       0.0     0.0
+9   HEALTH DIRECT TRANSPORTATION SERVICES INC.     0.0       0.0     0.0
+10                            HOUND OF JUSTICE     0.0       0.0     0.0
+11                               HUB SOLUTIONS     0.0       0.0     0.0
+12                   HUNDREDFOLD SERVICES, LLC     0.0       0.0     0.0
+13                        IGWE SIX TRANSIT LLC     0.0       0.0     0.0
+14                    INNER CITY LOGISTICS LLC     0.0       0.0     0.0
+15                     LA PATRONA SERVICES LLC     0.0       0.0     0.0
+16                           LADY K HEALTHCARE     0.0       0.0     0.0
+17                          LAQUESHA HENDERSON     0.0       0.0     0.0
+18                  LIZZY'S TRANSPORTATION LLC     0.0       0.0     0.0
+19                                LOVEDAY IGWE     0.0       0.0     0.0
+20                              LYNN TRAVELING     0.0       0.0     0.0
+21                        MELINIO TRANSIT (TX)     0.0       0.0     0.0
+22                                 ON-DIME LLC     0.0       0.0     0.0
+23                          ORION TRANSIT, LLC     0.0       0.0     0.0
+24                RESILIENT LOGISTICS MGMT LLC     0.0       0.0     0.0
+25                            ROYAL T KARE LLC     0.0       0.0     0.0
+26                SERENITY CARE TRANSPORTATION     0.0       0.0     0.0
+27            SERENITY CARE TRANSPORTATION LCC     0.0       0.0     0.0
+2025-05-06 10:21:33,109 - INFO - Comparing Core Revenue
+2025-05-06 10:21:33,112 - INFO - Comparison of Core Revenue and other metrics completed.
+2025-05-06 10:21:33,116 - INFO - ADA Core Revenue DF:                                        PARTNER   LATEST  PREVIOUS   CHANGE
+0                           ANGELS WAY TRANSIT  2153.73   2219.26   -65.54
+1                     ASH ELITE TRANSPORTATION  1978.62   1710.34   268.29
+2                       BM3 TRANSPORTATION LLC  1706.75   1828.86  -122.11
+3                              BRANDON JACKSON     0.00   1409.54 -1409.54
+4               BREISHABREE TRANSPORTATION LLC  1754.88   1608.45   146.43
+5                  BROOKES TRANSPORTATION, LLC  9561.07  10572.64 -1011.57
+6                     BTS INVESTORS GROUP, LLC  1591.81   2004.99  -413.18
+7                                CEASAR WS LLC  3901.57   3921.70   -20.13
+8                            DEECAL ENTERPRISE  1551.36      0.00  1551.36
+9   HEALTH DIRECT TRANSPORTATION SERVICES INC.  1188.10      0.00  1188.10
+10                            HOUND OF JUSTICE   891.14      0.00   891.14
+11                               HUB SOLUTIONS  2597.12   2300.42   296.70
+12                   HUNDREDFOLD SERVICES, LLC     0.00    200.19  -200.19
+13                        IGWE SIX TRANSIT LLC   407.30      0.00   407.30
+14                    INNER CITY LOGISTICS LLC  3096.99   3878.18  -781.18
+15                     LA PATRONA SERVICES LLC  1719.04   2011.39  -292.35
+16                           LADY K HEALTHCARE     0.00   1721.86 -1721.86
+17                          LAQUESHA HENDERSON     0.00   1128.96 -1128.96
+18                  LIZZY'S TRANSPORTATION LLC  1705.22   1900.80  -195.58
+19                                LOVEDAY IGWE     0.00   1640.45 -1640.45
+20                              LYNN TRAVELING  1814.53   1915.90  -101.38
+21                        MELINIO TRANSIT (TX)  2085.15   3091.01 -1005.86
+22                                 ON-DIME LLC  1799.94   1902.59  -102.66
+23                          ORION TRANSIT, LLC  3440.80   3283.31   157.49
+24                RESILIENT LOGISTICS MGMT LLC     0.00   1289.01 -1289.01
+25                            ROYAL T KARE LLC  9365.78  11229.52 -1863.74
+26                SERENITY CARE TRANSPORTATION     0.00    633.60  -633.60
+27            SERENITY CARE TRANSPORTATION LCC   346.62      0.00   346.62
+2025-05-06 10:21:33,116 - INFO - Comparing Total Earnings
+2025-05-06 10:21:33,118 - INFO - Comparison of Total Earnings and other metrics completed.
+2025-05-06 10:21:33,123 - INFO - ADA Total Earnings DF:                                        PARTNER   LATEST  PREVIOUS   CHANGE
+0                           ANGELS WAY TRANSIT  2504.77   2774.08  -269.31
+1                     ASH ELITE TRANSPORTATION  2473.28   1764.16   709.12
+2                       BM3 TRANSPORTATION LLC  1938.82   2073.41  -134.59
+3                              BRANDON JACKSON     0.00   1639.94 -1639.94
+4               BREISHABREE TRANSPORTATION LLC  1996.29   1833.22   163.07
+5                  BROOKES TRANSPORTATION, LLC  9561.07  10572.64 -1011.57
+6                     BTS INVESTORS GROUP, LLC  1873.66   2335.07  -461.41
+7                                CEASAR WS LLC  4876.96   4902.12   -25.16
+8                            DEECAL ENTERPRISE  1551.36      0.00  1551.36
+9   HEALTH DIRECT TRANSPORTATION SERVICES INC.  1422.91      0.00  1422.91
+10                            HOUND OF JUSTICE   891.14      0.00   891.14
+11                               HUB SOLUTIONS  3246.40   2665.86   580.54
+12                   HUNDREDFOLD SERVICES, LLC     0.00    200.19  -200.19
+13                        IGWE SIX TRANSIT LLC   407.30      0.00   407.30
+14                    INNER CITY LOGISTICS LLC  3096.99   4847.72 -1750.73
+15                     LA PATRONA SERVICES LLC  1948.48   2514.24  -565.76
+16                           LADY K HEALTHCARE     0.00   1948.54 -1948.54
+17                          LAQUESHA HENDERSON     0.00   1372.67 -1372.67
+18                  LIZZY'S TRANSPORTATION LLC  1937.54   2195.14  -257.60
+19                                LOVEDAY IGWE     0.00   1889.34 -1889.34
+20                              LYNN TRAVELING  2268.16   2394.88  -126.72
+21                        MELINIO TRANSIT (TX)  2085.15   3091.01 -1005.86
+22                                 ON-DIME LLC  2059.58   1902.59   156.99
+23                          ORION TRANSIT, LLC  3440.80   3283.31   157.49
+24                RESILIENT LOGISTICS MGMT LLC     0.00   1289.01 -1289.01
+25                            ROYAL T KARE LLC  9365.78  11229.52 -1863.74
+26                SERENITY CARE TRANSPORTATION     0.00    633.60  -633.60
+27            SERENITY CARE TRANSPORTATION LCC   346.62      0.00   346.62
+2025-05-06 10:21:33,123 - INFO - Comparing OS Operators between previous and latest sheets.
+2025-05-06 10:21:33,126 - INFO - Drivers comparison completed.
+2025-05-06 10:21:33,128 - INFO - ADA Drivers DF:                  PREVIOUS                 LATEST
+0            ASHLEY BROWN            ALEX THOMAS
+1          ASHLEY CHATMAN           ASHLEY BROWN
+2            AYANAH TERRY         ASHLEY CHATMAN
+3             BENNY YOUNG           AYANAH TERRY
+4         BRANDON JACKSON            BENNY YOUNG
+5          BRITTANY GREEN        BRANDON JACKSON
+6         BRYANT MATTHEWS         BRITTANY GREEN
+7       CATREANA ROBINSON        BRYANT MATTHEWS
+8         CHADWICK MILLER      CATREANA ROBINSON
+9      CHRISTOPHER BUTLER        CHADWICK MILLER
+10  COLYNN TENNYSON-NIXON     CHRISTOPHER BUTLER
+11            DAVID OAKES  COLYNN TENNYSON-NIXON
+12         DEDRICC WILSON            DAVID OAKES
+13        DIAMOND LEGGETT         DEDRICC WILSON
+14       ELIZABETH GARCIA        DIAMOND LEGGETT
+15            ELVA GARCIA      DIANA VILLALPANDO
+16      JACQUELINE HARRIS       ELIZABETH GARCIA
+17       JALICEA MAYBERRY            ELVA GARCIA
+18         JAMES PHILLIPS      JACQUELINE HARRIS
+19           JANET SUTTON       JALICEA MAYBERRY
+20     JOHNATHAN DELAROSA           JANET SUTTON
+21             JOSHUA GEE     JOHNATHAN DELAROSA
+22       KARINA HERNANDEZ            JOY JENKINS
+23      KENDRICK GASSAWAY         KENNETH CALVIN
+24          KENNETH SMITH              LEON KING
+25       KIMBERLY ROBBINS          LINDA HOLLAND
+26     LAQUESHA HENDERSON           LOVEDAY IGWE
+27          LINDA HOLLAND            MANNY GOMEZ
+28           LOVEDAY IGWE             MARK KABAH
+29            MANNY GOMEZ            MIA VORTICE
+30             MARK BROWN          MIRO PASKALEV
+31             MARK KABAH         NATASHA TITTLE
+32            MIA VORTICE        QAYSSAR ALGBURI
+33          MICHAEL SMITH          RAE MESHA LEE
+34          MIRO PASKALEV        RAPHELS UBAWIKE
+35         NATASHA TITTLE      RIC SHANA SANDERS
+36        QAYSSAR ALGBURI            SARAH JONES
+37      RIC SHANA SANDERS         SHAMARA SCALES
+38        ROCHELLE DAWSON    SHAMBREISHA SPENCER
+39            SARAH JONES           SHEILA JONES
+40         SHAMARA SCALES          TAIESHA MAJOR
+41    SHAMBREISHA SPENCER        TIFFANY MURDOCK
+42           SHEILA JONES          TMYRA FRANCIS
+43         SHIQWEDA BROWN              TROY SIMS
+44        SHURONDA MOSLEY            URECHA DUNN
+45          TAIESHA MAJOR      YOHANNES MEKONNEN
+46          TMYRA FRANCIS                    NaN
+47              TROY SIMS                       
+48        ULYSSES GRIFFIN                       
+49            URECHA DUNN                       
+50                    NaN                       
+2025-05-06 10:21:33,195 - INFO - Applying formatting to sheet: TotalRevHrsComparison.
+2025-05-06 10:21:33,200 - INFO - Formatting applied successfully to sheet: TotalRevHrsComparison.
+2025-05-06 10:21:33,200 - INFO - Applying formatting to sheet: %RevHrsComparison.
+2025-05-06 10:21:33,205 - INFO - Formatting applied successfully to sheet: %RevHrsComparison.
+2025-05-06 10:21:33,205 - INFO - Applying formatting to sheet: BonusHrsComparison.
+2025-05-06 10:21:33,209 - INFO - Formatting applied successfully to sheet: BonusHrsComparison.
+2025-05-06 10:21:33,209 - INFO - Applying formatting to sheet: CoreRevComparison.
+2025-05-06 10:21:33,215 - INFO - Formatting applied successfully to sheet: CoreRevComparison.
+2025-05-06 10:21:33,215 - INFO - Applying formatting to sheet: TotEarningsComparison.
+2025-05-06 10:21:33,220 - INFO - Formatting applied successfully to sheet: TotEarningsComparison.
+2025-05-06 10:21:33,220 - INFO - Applying formatting to sheet: DriversComparison.
+2025-05-06 10:21:33,223 - INFO - Formatting applied successfully to sheet: DriversComparison.
+2025-05-06 10:21:33,274 - INFO - ADA comparison process completed successfully. File saved to ComparedResults\DIV3_ADA_Tables.xlsx.
+2025-05-06 10:21:33,274 - INFO - Comparing Core Hours Worked
+2025-05-06 10:21:33,276 - INFO - Comparison of Core Hours Worked and other metrics completed.
+2025-05-06 10:21:33,279 - INFO - GOLINK Core Hours Worked DF:                        PARTNER   LATEST  PREVIOUS  CHANGE
+0  BROOKES TRANSPORTATION, LLC   728.22    728.17    0.06
+1    HUNDREDFOLD SERVICES, LLC   282.79    316.09  -33.30
+2         MELINIO TRANSIT (TX)  1622.13   1564.79   57.34
+3           ORION TRANSIT, LLC  1013.78   1014.29   -0.51
+4             ROYAL T KARE LLC     8.73      0.00    8.73
+2025-05-06 10:21:33,279 - INFO - Comparing % of Revenue Hours to Forecast
+2025-05-06 10:21:33,281 - INFO - Comparison of % of Revenue Hours to Forecast and other metrics completed.
+2025-05-06 10:21:33,284 - INFO - GOLINK % Revenue Hours DF:                        PARTNER  LATEST  PREVIOUS  CHANGE
+0  BROOKES TRANSPORTATION, LLC    1.00      0.98    0.02
+1    HUNDREDFOLD SERVICES, LLC    0.88      0.99   -0.10
+2         MELINIO TRANSIT (TX)    0.99      0.95    0.03
+3           ORION TRANSIT, LLC    1.00      1.00    0.00
+4             ROYAL T KARE LLC    0.04      0.00    0.04
+2025-05-06 10:21:33,284 - INFO - Comparing Total Earnings
+2025-05-06 10:21:33,287 - INFO - Comparison of Total Earnings and other metrics completed.
+2025-05-06 10:21:33,289 - INFO - GOLINK Total Earnings DF:                        PARTNER    LATEST  PREVIOUS   CHANGE
+0  BROOKES TRANSPORTATION, LLC  24759.53  23637.82  1121.71
+1    HUNDREDFOLD SERVICES, LLC   7691.86  10746.94 -3055.08
+2         MELINIO TRANSIT (TX)  52425.66  45287.12  7138.54
+3           ORION TRANSIT, LLC  34468.50  34485.73   -17.22
+4             ROYAL T KARE LLC    237.49      0.00   237.49
+2025-05-06 10:21:33,289 - INFO - Comparing Total Duty Violation
+2025-05-06 10:21:33,291 - INFO - Comparison of Total Duty Violation and other metrics completed.
+2025-05-06 10:21:33,294 - INFO - GOLINK Total Duty Violation DF:                        PARTNER  LATEST  PREVIOUS  CHANGE
+0  BROOKES TRANSPORTATION, LLC    1000    1450.0  -450.0
+1    HUNDREDFOLD SERVICES, LLC     100     200.0  -100.0
+2         MELINIO TRANSIT (TX)    1700    1500.0   200.0
+3           ORION TRANSIT, LLC     350     500.0  -150.0
+4             ROYAL T KARE LLC      50       0.0    50.0
+2025-05-06 10:21:33,294 - INFO - Comparing OS Operators between previous and latest sheets.
+2025-05-06 10:21:33,296 - INFO - Drivers comparison completed.
+2025-05-06 10:21:33,298 - INFO - GOLINK Drivers DF:            PREVIOUS          LATEST
+0       ALEX MOUTON     ALEX MOUTON
+1         AMIR KHAN     ALEX THOMAS
+2    ASHLEY CHATMAN     ALI MOHAMED
+3       BENNY YOUNG       AMIR KHAN
+4   BRYANT MATTHEWS     BENNY YOUNG
+..              ...             ...
+58        WAYNE LEE     URECHA DUNN
+59  WILLIE WILLIAMS  VALECIA BROOKS
+60    YURANA HARRIS       WAYNE LEE
+61    ZAINAB MPIANA   YURANA HARRIS
+62                    ZAINAB MPIANA
+
+[63 rows x 2 columns]
+2025-05-06 10:21:33,353 - INFO - Applying formatting to sheet: CoreHoursComparison.
+2025-05-06 10:21:33,355 - INFO - Formatting applied successfully to sheet: CoreHoursComparison.
+2025-05-06 10:21:33,355 - INFO - Applying formatting to sheet: %RevHrsComparison.
+2025-05-06 10:21:33,356 - INFO - Formatting applied successfully to sheet: %RevHrsComparison.
+2025-05-06 10:21:33,356 - INFO - Applying formatting to sheet: TotEarningsComparison.
+2025-05-06 10:21:33,357 - INFO - Formatting applied successfully to sheet: TotEarningsComparison.
+2025-05-06 10:21:33,357 - INFO - Applying formatting to sheet: TotDutyViolationComparison.
+2025-05-06 10:21:33,358 - INFO - Formatting applied successfully to sheet: TotDutyViolationComparison.
+2025-05-06 10:21:33,358 - INFO - Applying formatting to sheet: DriversComparison.
+2025-05-06 10:21:33,362 - INFO - Formatting applied successfully to sheet: DriversComparison.
+2025-05-06 10:21:33,407 - INFO - GOLINK comparison process completed successfully. File saved to ComparedResults\DIV3_GOLINK_Tables.xlsx.
+2025-05-06 10:21:33,407 - INFO - Comparing StandBy Pay Hours
+2025-05-06 10:21:33,410 - INFO - Comparison of StandBy Pay Hours and other metrics completed.
+2025-05-06 10:21:33,413 - INFO - ADAGOLINK StandBy Pay Hours DF:                      PARTNER  LATEST  PREVIOUS  CHANGE
+0         BOM TRANSPORTATION   78.73     81.10   -2.37
+1  GRAND TOUR TRANSPORTATION   27.29      0.00   27.29
+2        PICKUP PARTNERS LLC   83.15     81.31    1.84
+3            TIFFANY MURDOCK   31.85      0.00   31.85
+4         UAD TRANSPORTATION   78.88     80.63   -1.75
+2025-05-06 10:21:33,413 - INFO - Comparing StandbyExtraHours
+2025-05-06 10:21:33,415 - INFO - Comparison of StandbyExtraHours and other metrics completed.
+2025-05-06 10:21:33,418 - INFO - ADAGOLINK StandBy Extra Hours DF:                      PARTNER  LATEST  PREVIOUS  CHANGE
+0         BOM TRANSPORTATION   13.98     29.94  -15.96
+1  GRAND TOUR TRANSPORTATION    0.00      0.00    0.00
+2        PICKUP PARTNERS LLC   22.90     14.61    8.29
+3            TIFFANY MURDOCK    0.00      0.00    0.00
+4         UAD TRANSPORTATION    0.00      0.00    0.00
+2025-05-06 10:21:33,418 - INFO - Comparing Total Earnings
+2025-05-06 10:21:33,421 - INFO - Comparison of Total Earnings and other metrics completed.
+2025-05-06 10:21:33,424 - INFO - ADAGOLINK Total Earnings DF:                      PARTNER   LATEST  PREVIOUS  CHANGE
+0         BOM TRANSPORTATION  2751.36   3262.21 -510.85
+1  GRAND TOUR TRANSPORTATION   698.62      0.00  698.62
+2        PICKUP PARTNERS LLC  3036.68   2771.41  265.26
+3            TIFFANY MURDOCK   815.36      0.00  815.36
+4         UAD TRANSPORTATION  2304.00   2304.00    0.00
+2025-05-06 10:21:33,462 - INFO - Applying formatting to sheet: StdByPayHrsComparison.
+2025-05-06 10:21:33,464 - INFO - Formatting applied successfully to sheet: StdByPayHrsComparison.
+2025-05-06 10:21:33,464 - INFO - Applying formatting to sheet: StByExtraHrsComparison.
+2025-05-06 10:21:33,465 - INFO - Formatting applied successfully to sheet: StByExtraHrsComparison.
+2025-05-06 10:21:33,465 - INFO - Applying formatting to sheet: TotEarningsComparison.
+2025-05-06 10:21:33,466 - INFO - Formatting applied successfully to sheet: TotEarningsComparison.
+2025-05-06 10:21:33,492 - INFO - ADAGOLINK comparison process completed successfully. File saved to ComparedResults\DIV3_ADAGOLINK_Tables.xlsx.
+2025-05-06 10:21:33,492 - INFO - VDP_DIV3_0310_0323 FINAL.xlsm + VDP_DIV3 UPDATED TEMPLATE.xlsm
+2025-05-06 10:21:35,160 - INFO - Successfully updated color for TextBox 90 with status 'Increased'.
+2025-05-06 10:21:35,178 - INFO - Successfully updated color for txtHTTLRevtDiff with value '-3,365.35'.
+2025-05-06 10:21:35,192 - INFO - Successfully updated color for txtLLeaseDiff with value '-342.50'.
+2025-05-06 10:21:35,206 - INFO - Successfully updated color for txtViolationsDiff with value '-948.08'.
+2025-05-06 10:21:35,219 - INFO - Successfully updated color for txtCashCollectedDiff with value '-5,420.00'.
+2025-05-06 10:21:35,288 - INFO - Successfully updated color for txtTotalRevHrsDiff with value '-327.80'.
+2025-05-06 10:21:35,290 - INFO - Successfully updated color for txtPRevHrsDiff with value '-7.14'.
+2025-05-06 10:21:35,291 - INFO - Successfully updated color for txtBonusHrsDiff with value '0'.
+2025-05-06 10:21:35,292 - INFO - Successfully updated color for txtCoreRevDiff with value '-8,745.46'.
+2025-05-06 10:21:35,294 - INFO - Successfully updated color for txtTotEarningsDiff with value '-10,059.20'.
+2025-05-06 10:21:35,295 - INFO - Successfully updated color for txtDriversDiff with value '-3'.
+2025-05-06 10:21:35,349 - INFO - Successfully updated color for txtCoreHrsDiff with value '32.32'.
+2025-05-06 10:21:35,350 - INFO - Successfully updated color for txtPRevHrsDiff with value '-0.20'.
+2025-05-06 10:21:35,351 - INFO - Successfully updated color for txtTotEarningsDiff with value '5,425.44'.
+2025-05-06 10:21:35,353 - INFO - Successfully updated color for txtTotalViolationsDiff with value '-450.00'.
+2025-05-06 10:21:35,356 - INFO - Successfully updated color for txtDriversDiff with value '0'.
+2025-05-06 10:21:35,391 - INFO - Successfully updated color for txtstdPayHrsDiff with value '56.86'.
+2025-05-06 10:21:35,392 - INFO - Successfully updated color for txtstdExtraHrsDiff with value '-7.67'.
+2025-05-06 10:21:35,394 - INFO - Successfully updated color for txtTotEarningsDiff with value '1,268.39'.
+2025-05-06 10:21:36,506 - INFO - ComparedResults/Dashboard.xlsm has been successfully updated and saved.
+2025-05-06 10:21:39,456 - INFO - Picture name: HTTLRevTable found in Dashboard
+2025-05-06 10:21:39,466 - INFO - Deleted existing picture: HTTLRevTable in Dashboard
+2025-05-06 10:21:39,466 - INFO - Picture name: LeaseTable found in Dashboard
+2025-05-06 10:21:39,469 - INFO - Deleted existing picture: LeaseTable in Dashboard
+2025-05-06 10:21:39,469 - INFO - Picture name: ViolationsTable found in Dashboard
+2025-05-06 10:21:39,517 - INFO - Deleted existing picture: ViolationsTable in Dashboard
+2025-05-06 10:21:39,518 - INFO - Picture name: CashTable found in Dashboard
+2025-05-06 10:21:39,563 - INFO - Deleted existing picture: CashTable in Dashboard
+2025-05-06 10:21:39,612 - INFO - Picture name: TotalRevHrsTable found in ADA
+2025-05-06 10:21:39,647 - INFO - Deleted existing picture: TotalRevHrsTable in ADA
+2025-05-06 10:21:39,647 - INFO - Picture name: PRevHrsTable found in ADA
+2025-05-06 10:21:39,659 - INFO - Deleted existing picture: PRevHrsTable in ADA
+2025-05-06 10:21:39,659 - INFO - Picture name: BonusHrsTable found in ADA
+2025-05-06 10:21:39,669 - INFO - Deleted existing picture: BonusHrsTable in ADA
+2025-05-06 10:21:39,669 - INFO - Picture name: CoreRevTable found in ADA
+2025-05-06 10:21:39,679 - INFO - Deleted existing picture: CoreRevTable in ADA
+2025-05-06 10:21:39,680 - INFO - Picture name: TotEarningsTable found in ADA
+2025-05-06 10:21:39,693 - INFO - Deleted existing picture: TotEarningsTable in ADA
+2025-05-06 10:21:39,694 - INFO - Picture name: DriversTable found in ADA
+2025-05-06 10:21:39,711 - INFO - Deleted existing picture: DriversTable in ADA
+2025-05-06 10:21:42,919 - INFO - Copied picture from HourlyTTLRevComparison, width: 17.81 cm, height: 20.64 cm
+2025-05-06 10:21:44,011 - INFO - Table Name: HTTLRevTable
+2025-05-06 10:21:45,012 - INFO - 'HTTLRevTable' successfully pasted in the HourlyTTLRevComparison Sheet.
+2025-05-06 10:21:45,034 - INFO - Resized HTTLRevContainer to width: 17.88 cm, height: 22.61 cm
+2025-05-06 10:21:46,055 - INFO - Copied picture from LiftLeaseComparison, width: 13.18 cm, height: 20.11 cm
+2025-05-06 10:21:47,137 - INFO - Table Name: LeaseTable
+2025-05-06 10:21:48,139 - INFO - 'LeaseTable' successfully pasted in the LiftLeaseComparison Sheet.
+2025-05-06 10:21:48,161 - INFO - Resized LeaseContainer to width: 13.25 cm, height: 22.08 cm
+2025-05-06 10:21:49,185 - INFO - Copied picture from ViolationsComparison, width: 17.25 cm, height: 20.11 cm
+2025-05-06 10:21:50,260 - INFO - Table Name: ViolationsTable
+2025-05-06 10:21:51,261 - INFO - 'ViolationsTable' successfully pasted in the ViolationsComparison Sheet.
+2025-05-06 10:21:51,281 - INFO - Resized ViolationsContainer to width: 17.32 cm, height: 22.08 cm
+2025-05-06 10:21:52,303 - INFO - Copied picture from CashCollectedComparison, width: 13.36 cm, height: 20.11 cm
+2025-05-06 10:21:53,390 - INFO - Table Name: CashTable
+2025-05-06 10:21:54,391 - INFO - 'CashTable' successfully pasted in the CashCollectedComparison Sheet.
+2025-05-06 10:21:54,417 - INFO - Resized CashContainer to width: 13.43 cm, height: 22.08 cm
+2025-05-06 10:21:55,643 - INFO - Copied picture from TotalRevHrsComparison, width: 13.18 cm, height: 15.35 cm
+2025-05-06 10:21:56,769 - INFO - Table Name: TotalRevHrsTable
+2025-05-06 10:21:57,771 - INFO - 'TotalRevHrsTable' successfully pasted in the TotalRevHrsComparison Sheet.
+2025-05-06 10:21:57,791 - INFO - Resized TotalRevHrsContainer to width: 13.25 cm, height: 17.32 cm
+2025-05-06 10:21:58,813 - INFO - Copied picture from %RevHrsComparison, width: 13.18 cm, height: 15.35 cm
+2025-05-06 10:21:59,901 - INFO - Table Name: PRevHrsTable
+2025-05-06 10:22:00,902 - INFO - 'PRevHrsTable' successfully pasted in the %RevHrsComparison Sheet.
+2025-05-06 10:22:00,920 - INFO - Resized PRevHrsContainer to width: 13.25 cm, height: 17.32 cm
+2025-05-06 10:22:01,941 - INFO - Copied picture from BonusHrsComparison, width: 13.18 cm, height: 15.35 cm
+2025-05-06 10:22:03,034 - INFO - Table Name: BonusHrsTable
+2025-05-06 10:22:04,036 - INFO - 'BonusHrsTable' successfully pasted in the BonusHrsComparison Sheet.
+2025-05-06 10:22:04,056 - INFO - Resized BonusHrsContainer to width: 13.25 cm, height: 17.32 cm
+2025-05-06 10:22:05,084 - INFO - Copied picture from CoreRevComparison, width: 13.73 cm, height: 15.35 cm
+2025-05-06 10:22:06,164 - INFO - Table Name: CoreRevTable
+2025-05-06 10:22:07,166 - INFO - 'CoreRevTable' successfully pasted in the CoreRevComparison Sheet.
+2025-05-06 10:22:07,186 - INFO - Resized CoreRevContainer to width: 13.80 cm, height: 17.32 cm
+2025-05-06 10:22:08,210 - INFO - Copied picture from TotEarningsComparison, width: 13.73 cm, height: 15.35 cm
+2025-05-06 10:22:09,298 - INFO - Table Name: TotEarningsTable
+2025-05-06 10:22:10,299 - INFO - 'TotEarningsTable' successfully pasted in the TotEarningsComparison Sheet.
+2025-05-06 10:22:10,316 - INFO - Resized TotEarningsContainer to width: 13.80 cm, height: 17.32 cm
+2025-05-06 10:22:11,340 - INFO - Copied picture from DriversComparison, width: 8.63 cm, height: 27.52 cm
+2025-05-06 10:22:12,413 - INFO - Table Name: DriversTable
+2025-05-06 10:22:13,415 - INFO - 'DriversTable' successfully pasted in the DriversComparison Sheet.
+2025-05-06 10:22:13,442 - INFO - Resized DriversContainer to width: 8.70 cm, height: 29.49 cm
+2025-05-06 10:22:14,666 - INFO - Copied picture from CoreHoursComparison, width: 10.58 cm, height: 3.18 cm
+2025-05-06 10:22:15,814 - INFO - Table Name: TotalCoreHrsTable
+2025-05-06 10:22:16,816 - INFO - 'TotalCoreHrsTable' successfully pasted in the CoreHoursComparison Sheet.
+2025-05-06 10:22:16,838 - INFO - Resized TotalCoreHrsContainer to width: 10.65 cm, height: 5.15 cm
+2025-05-06 10:22:17,857 - INFO - Copied picture from %RevHrsComparison, width: 10.40 cm, height: 3.18 cm
+2025-05-06 10:22:18,931 - INFO - Table Name: PRevHrsTable
+2025-05-06 10:22:19,933 - INFO - 'PRevHrsTable' successfully pasted in the %RevHrsComparison Sheet.
+2025-05-06 10:22:19,953 - INFO - Resized PRevHrsContainer to width: 10.47 cm, height: 5.15 cm
+2025-05-06 10:22:20,971 - INFO - Copied picture from TotEarningsComparison, width: 11.14 cm, height: 3.18 cm
+2025-05-06 10:22:22,054 - INFO - Table Name: TotEarningsTable
+2025-05-06 10:22:23,056 - INFO - 'TotEarningsTable' successfully pasted in the TotEarningsComparison Sheet.
+2025-05-06 10:22:23,081 - INFO - Resized TotEarningsContainer to width: 11.21 cm, height: 5.15 cm
+2025-05-06 10:22:24,103 - INFO - Copied picture from TotDutyViolationComparison, width: 10.40 cm, height: 3.18 cm
+2025-05-06 10:22:25,188 - INFO - Table Name: TotalViolationsTable
+2025-05-06 10:22:26,190 - INFO - 'TotalViolationsTable' successfully pasted in the TotDutyViolationComparison Sheet.
+2025-05-06 10:22:26,210 - INFO - Resized TotalViolationsContainer to width: 10.47 cm, height: 5.15 cm
+2025-05-06 10:22:27,233 - INFO - Copied picture from DriversComparison, width: 11.22 cm, height: 33.87 cm
+2025-05-06 10:22:28,306 - INFO - Table Name: DriversTable
+2025-05-06 10:22:29,307 - INFO - 'DriversTable' successfully pasted in the DriversComparison Sheet.
+2025-05-06 10:22:29,328 - INFO - Resized DriversContainer to width: 11.29 cm, height: 35.84 cm
+2025-05-06 10:22:30,527 - INFO - Copied picture from StdByPayHrsComparison, width: 10.03 cm, height: 3.18 cm
+2025-05-06 10:22:31,671 - INFO - Table Name: stdPayHrsTable
+2025-05-06 10:22:32,673 - INFO - 'stdPayHrsTable' successfully pasted in the StdByPayHrsComparison Sheet.
+2025-05-06 10:22:32,692 - INFO - Resized stdPayHrsContainer to width: 10.10 cm, height: 5.15 cm
+2025-05-06 10:22:33,713 - INFO - Copied picture from StByExtraHrsComparison, width: 10.03 cm, height: 3.18 cm
+2025-05-06 10:22:34,793 - INFO - Table Name: stdExtraHrsTable
+2025-05-06 10:22:35,795 - INFO - 'stdExtraHrsTable' successfully pasted in the StByExtraHrsComparison Sheet.
+2025-05-06 10:22:35,816 - INFO - Resized stdExtraHrsContainer to width: 10.10 cm, height: 5.15 cm
+2025-05-06 10:22:36,836 - INFO - Copied picture from TotEarningsComparison, width: 10.40 cm, height: 3.18 cm
+2025-05-06 10:22:37,914 - INFO - Table Name: TotEarningsTable
+2025-05-06 10:22:38,916 - INFO - 'TotEarningsTable' successfully pasted in the TotEarningsComparison Sheet.
+2025-05-06 10:22:38,934 - INFO - Resized TotEarningsContainer to width: 10.47 cm, height: 5.15 cm
+2025-05-06 10:22:40,196 - INFO - Data pasted as pictures successfully.
+2025-05-06 10:31:29,386 - INFO - Starting main comparison process.
+2025-05-06 10:31:29,386 - INFO - Loading sheets from the provided Excel files.
+2025-05-06 10:31:32,412 - INFO - Sheets loaded successfully.
+2025-05-06 10:31:32,422 - INFO - Total valid partners: 30
+2025-05-06 10:31:32,422 - INFO - Partner names: ['ANGELS WAY TRANSIT', 'ASH ELITE TRANSPORTATION', 'BM3 TRANSPORTATION LLC', 'BOM TRANSPORTATION', 'BRANDON JACKSON', 'BREISHABREE TRANSPORTATION LLC', 'BROOKES TRANSPORTATION, LLC', 'BTS INVESTORS GROUP, LLC', 'CEASAR WS LLC', 'DAESHA SAFE TRANSPORT', 'HUB SOLUTIONS', 'HUNDREDFOLD SERVICES, LLC', 'INNER CITY LOGISTICS LLC', 'LA PATRONA SERVICES LLC', 'LADY K HEALTHCARE', 'LAQUESHA HENDERSON', "LIZZY'S TRANSPORTATION LLC", 'LOVEDAY IGWE', 'LYNN TRAVELING', 'MELINIO TRANSIT (TX)', 'ON THE MOVE LLC', 'ON-DIME LLC', 'ORION TRANSIT, LLC', 'PICKUP PARTNERS LLC', 'QUNIFIA JACKSON', 'RESILIENT LOGISTICS MGMT LLC', 'ROYAL T KARE LLC', 'SERENITY CARE TRANSPORTATION', 'TRAVEL GALS AND GENTS LLC', 'UAD TRANSPORTATION']
+2025-05-06 10:31:32,424 - INFO - Total amount: 0.0
+2025-05-06 10:31:32,424 - INFO - Total calculated amount: 0.0
+2025-05-06 10:31:32,425 - INFO - Total valid partners: 27
+2025-05-06 10:31:32,425 - INFO - Partner names: ['ANGELS WAY TRANSIT', 'ASH ELITE TRANSPORTATION', 'BM3 TRANSPORTATION LLC', 'BOM TRANSPORTATION', 'BREISHABREE TRANSPORTATION LLC', 'BROOKES TRANSPORTATION, LLC', 'BTS INVESTORS GROUP, LLC', 'CEASAR WS LLC', 'DEECAL ENTERPRISE', 'GRAND TOUR TRANSPORTATION', 'HEALTH DIRECT TRANSPORTATION SERVICES INC.', 'HOUND OF JUSTICE', 'HUB SOLUTIONS', 'HUNDREDFOLD SERVICES, LLC', 'IGWE SIX TRANSIT LLC', 'INNER CITY LOGISTICS LLC', 'LA PATRONA SERVICES LLC', "LIZZY'S TRANSPORTATION LLC", 'LYNN TRAVELING', 'MELINIO TRANSIT (TX)', 'ON-DIME LLC', 'ORION TRANSIT, LLC', 'PICKUP PARTNERS LLC', 'ROYAL T KARE LLC', 'SERENITY CARE TRANSPORTATION LCC', 'TIFFANY MURDOCK', 'UAD TRANSPORTATION']
+2025-05-06 10:31:32,425 - INFO - Total amount: 136476.94150000002
+2025-05-06 10:31:32,425 - INFO - Total calculated amount: 136476.94150000002
+2025-05-06 10:31:32,425 - INFO - Comparing Totals between previous and latest values.
+2025-05-06 10:31:32,433 - INFO - Totals comparison completed.
+2025-05-06 10:31:32,437 - INFO - 
+Totals DF:       LATEST  PREVIOUS  DIFFERENCE     CHANGE
+0  136476.94       0.0   136476.94  Increased
+2025-05-06 10:31:32,451 - INFO - Hourly TTL Rev Comparison DF:                                        PARTNER      LATEST    PREVIOUS     CHANGE
+1                           ANGELS WAY TRANSIT   2504.7680   2774.0800  -269.3120
+2                     ASH ELITE TRANSPORTATION   2473.2800   1764.1600   709.1200
+3                       BM3 TRANSPORTATION LLC   1938.8160   2073.4080  -134.5920
+4                           BOM TRANSPORTATION   2751.3600   3262.2062  -510.8462
+5                              BRANDON JACKSON      0.0000   1639.9360 -1639.9360
+6               BREISHABREE TRANSPORTATION LLC   1996.2880   1833.2160   163.0720
+7                  BROOKES TRANSPORTATION, LLC  34320.6011  34210.4566   110.1445
+8                     BTS INVESTORS GROUP, LLC   1873.6640   2335.0720  -461.4080
+9                                CEASAR WS LLC   4876.9600   4902.1200   -25.1600
+10                       DAESHA SAFE TRANSPORT      0.0000      0.0000     0.0000
+11                           DEECAL ENTERPRISE   1551.3600      0.0000  1551.3600
+12                   GRAND TOUR TRANSPORTATION    698.6240      0.0000   698.6240
+13  HEALTH DIRECT TRANSPORTATION SERVICES INC.   1422.9120      0.0000  1422.9120
+14                            HOUND OF JUSTICE    891.1360      0.0000   891.1360
+15                               HUB SOLUTIONS   3246.4000   2665.8560   580.5440
+16                   HUNDREDFOLD SERVICES, LLC   7691.8577  10947.1274 -3255.2697
+17                        IGWE SIX TRANSIT LLC    407.2960      0.0000   407.2960
+18                    INNER CITY LOGISTICS LLC   3096.9920   4847.7200 -1750.7280
+19                     LA PATRONA SERVICES LLC   1948.4800   2514.2400  -565.7600
+20                           LADY K HEALTHCARE      0.0000   1948.5440 -1948.5440
+21                          LAQUESHA HENDERSON      0.0000   1372.6720 -1372.6720
+22                  LIZZY'S TRANSPORTATION LLC   1937.5360   2195.1360  -257.6000
+23                                LOVEDAY IGWE      0.0000   1889.3440 -1889.3440
+24                              LYNN TRAVELING   2268.1600   2394.8800  -126.7200
+25                        MELINIO TRANSIT (TX)  54510.8107  48378.1306  6132.6801
+26                             ON THE MOVE LLC      0.0000      0.0000     0.0000
+27                                 ON-DIME LLC   2059.5840   1902.5920   156.9920
+28                          ORION TRANSIT, LLC  37909.3049  37769.0378   140.2671
+29                                    Operator      0.0000      0.0000     0.0000
+30                         PICKUP PARTNERS LLC   3036.6773   2771.4133   265.2640
+31                             QUNIFIA JACKSON      0.0000      0.0000     0.0000
+32                RESILIENT LOGISTICS MGMT LLC      0.0000   1289.0080 -1289.0080
+33                            ROYAL T KARE LLC   9603.2698  11229.5200 -1626.2502
+34                SERENITY CARE TRANSPORTATION      0.0000    633.6000  -633.6000
+35            SERENITY CARE TRANSPORTATION LCC    346.6240      0.0000   346.6240
+36                             TIFFANY MURDOCK    815.3600      0.0000   815.3600
+37                   TRAVEL GALS AND GENTS LLC      0.0000      0.0000     0.0000
+38                          UAD TRANSPORTATION   2304.0000   2304.0000     0.0000
+2025-05-06 10:31:32,461 - INFO - Lift Lease DF:                                        PARTNER  LATEST  PREVIOUS  CHANGE
+1                     ASH ELITE TRANSPORTATION   685.0     685.0     0.0
+2                       BM3 TRANSPORTATION LLC   685.0     685.0     0.0
+3                           BOM TRANSPORTATION   685.0     685.0     0.0
+4                              BRANDON JACKSON     0.0     685.0  -685.0
+5               BREISHABREE TRANSPORTATION LLC   685.0     685.0     0.0
+6                  BROOKES TRANSPORTATION, LLC  6850.0    6850.0     0.0
+7                     BTS INVESTORS GROUP, LLC   685.0     685.0     0.0
+8                                CEASAR WS LLC   685.0     685.0     0.0
+9                        DAESHA SAFE TRANSPORT     0.0       0.0     0.0
+10                           DEECAL ENTERPRISE   548.0       0.0   548.0
+11                   GRAND TOUR TRANSPORTATION   274.0       0.0   274.0
+12  HEALTH DIRECT TRANSPORTATION SERVICES INC.   548.0       0.0   548.0
+13                            HOUND OF JUSTICE   685.0       0.0   685.0
+14                               HUB SOLUTIONS   685.0     685.0     0.0
+15                   HUNDREDFOLD SERVICES, LLC  2055.0    2055.0     0.0
+16                        IGWE SIX TRANSIT LLC   342.5       0.0   342.5
+17                    INNER CITY LOGISTICS LLC   685.0     685.0     0.0
+18                     LA PATRONA SERVICES LLC   685.0     685.0     0.0
+19                           LADY K HEALTHCARE     0.0     685.0  -685.0
+20                          LAQUESHA HENDERSON     0.0     685.0  -685.0
+21                  LIZZY'S TRANSPORTATION LLC   685.0     685.0     0.0
+22                                LOVEDAY IGWE     0.0     685.0  -685.0
+23                              LYNN TRAVELING   685.0     685.0     0.0
+24                        MELINIO TRANSIT (TX)  8220.0    8220.0     0.0
+25                             ON THE MOVE LLC     0.0       0.0     0.0
+26                                 ON-DIME LLC   685.0     685.0     0.0
+27                          ORION TRANSIT, LLC  4795.0    4795.0     0.0
+28                                    Operator     0.0       0.0     0.0
+29                         PICKUP PARTNERS LLC   685.0     685.0     0.0
+30                             QUNIFIA JACKSON     0.0       0.0     0.0
+31                RESILIENT LOGISTICS MGMT LLC     0.0     342.5  -342.5
+32                            ROYAL T KARE LLC  2740.0    2740.0     0.0
+33                SERENITY CARE TRANSPORTATION     0.0     205.5  -205.5
+34            SERENITY CARE TRANSPORTATION LCC   342.5       0.0   342.5
+35                             TIFFANY MURDOCK   205.5       0.0   205.5
+36                   TRAVEL GALS AND GENTS LLC     0.0       0.0     0.0
+37                          UAD TRANSPORTATION   685.0     685.0     0.0
+2025-05-06 10:31:32,470 - INFO - Violations DF:                                        PARTNER   LATEST  PREVIOUS  CHANGE
+1                     ASH ELITE TRANSPORTATION     0.00     76.47  -76.47
+2                       BM3 TRANSPORTATION LLC     0.00     57.80  -57.80
+3                           BOM TRANSPORTATION    50.00    177.24 -127.24
+4                              BRANDON JACKSON     0.00     14.54  -14.54
+5               BREISHABREE TRANSPORTATION LLC   106.36     89.48   16.88
+6                  BROOKES TRANSPORTATION, LLC  1948.52   2828.90 -880.38
+7                     BTS INVESTORS GROUP, LLC    16.32     24.44   -8.12
+8                                CEASAR WS LLC     0.00    301.82 -301.82
+9                        DAESHA SAFE TRANSPORT     0.00      0.00    0.00
+10                           DEECAL ENTERPRISE     0.00      0.00    0.00
+11                   GRAND TOUR TRANSPORTATION     0.00      0.00    0.00
+12  HEALTH DIRECT TRANSPORTATION SERVICES INC.     0.00      0.00    0.00
+13                            HOUND OF JUSTICE   100.00      0.00  100.00
+14                               HUB SOLUTIONS     0.00     55.23  -55.23
+15                   HUNDREDFOLD SERVICES, LLC   232.60    257.33  -24.73
+16                        IGWE SIX TRANSIT LLC     0.00      0.00    0.00
+17                    INNER CITY LOGISTICS LLC   263.98    149.93  114.05
+18                     LA PATRONA SERVICES LLC     0.00     27.00  -27.00
+19                           LADY K HEALTHCARE     0.00     48.97  -48.97
+20                          LAQUESHA HENDERSON     0.00     26.60  -26.60
+21                  LIZZY'S TRANSPORTATION LLC     0.00     33.64  -33.64
+22                                LOVEDAY IGWE     0.00     16.90  -16.90
+23                              LYNN TRAVELING     0.00     57.28  -57.28
+24                        MELINIO TRANSIT (TX)  3870.31   3276.19  594.12
+25                             ON THE MOVE LLC     0.00      0.00    0.00
+26                                 ON-DIME LLC     0.00    108.30 -108.30
+27                          ORION TRANSIT, LLC   400.00    829.67 -429.67
+28                                    Operator     0.00      0.00    0.00
+29                         PICKUP PARTNERS LLC   400.00    107.47  292.53
+30                             QUNIFIA JACKSON     0.00      0.00    0.00
+31                RESILIENT LOGISTICS MGMT LLC     0.00     36.34  -36.34
+32                            ROYAL T KARE LLC  1096.24   1058.33   37.91
+33                SERENITY CARE TRANSPORTATION     0.00     25.16  -25.16
+34            SERENITY CARE TRANSPORTATION LCC     0.00      0.00    0.00
+35                             TIFFANY MURDOCK     0.00      0.00    0.00
+36                   TRAVEL GALS AND GENTS LLC     0.00      0.00    0.00
+37                          UAD TRANSPORTATION   265.40     12.78  252.62
+2025-05-06 10:31:32,481 - INFO - Cash Collected DF:                                        PARTNER  LATEST  PREVIOUS  CHANGE
+1                     ASH ELITE TRANSPORTATION   197.5     255.5   -58.0
+2                       BM3 TRANSPORTATION LLC    76.0     210.0  -134.0
+3                           BOM TRANSPORTATION   137.5     388.5  -251.0
+4                              BRANDON JACKSON     0.0     227.5  -227.5
+5               BREISHABREE TRANSPORTATION LLC   252.0     227.5    24.5
+6                  BROOKES TRANSPORTATION, LLC  1232.0    1407.0  -175.0
+7                     BTS INVESTORS GROUP, LLC    77.0     332.5  -255.5
+8                                CEASAR WS LLC   396.0     355.5    40.5
+9                        DAESHA SAFE TRANSPORT     0.0       0.0     0.0
+10                           DEECAL ENTERPRISE   105.5       0.0   105.5
+11                   GRAND TOUR TRANSPORTATION    70.0       0.0    70.0
+12  HEALTH DIRECT TRANSPORTATION SERVICES INC.   196.0       0.0   196.0
+13                            HOUND OF JUSTICE    35.5       0.0    35.5
+14                               HUB SOLUTIONS   -14.0     315.0  -329.0
+15                   HUNDREDFOLD SERVICES, LLC     0.0      24.5   -24.5
+16                        IGWE SIX TRANSIT LLC     2.5       0.0     2.5
+17                    INNER CITY LOGISTICS LLC    88.5     521.5  -433.0
+18                     LA PATRONA SERVICES LLC   166.0     270.0  -104.0
+19                           LADY K HEALTHCARE     0.0     217.0  -217.0
+20                          LAQUESHA HENDERSON     0.0     182.0  -182.0
+21                  LIZZY'S TRANSPORTATION LLC   143.5     290.5  -147.0
+22                                LOVEDAY IGWE     0.0     269.5  -269.5
+23                              LYNN TRAVELING   171.0     266.0   -95.0
+24                        MELINIO TRANSIT (TX)   311.5     434.0  -122.5
+25                             ON THE MOVE LLC     0.0       0.0     0.0
+26                                 ON-DIME LLC   245.0     170.0    75.0
+27                          ORION TRANSIT, LLC  -282.5     441.0  -723.5
+28                                    Operator     0.0       0.0     0.0
+29                         PICKUP PARTNERS LLC     6.0     374.5  -368.5
+30                             QUNIFIA JACKSON     0.0       0.0     0.0
+31                RESILIENT LOGISTICS MGMT LLC     0.0     171.5  -171.5
+32                            ROYAL T KARE LLC   -66.5    1547.0 -1613.5
+33                SERENITY CARE TRANSPORTATION     0.0      98.0   -98.0
+34            SERENITY CARE TRANSPORTATION LCC    42.0       0.0    42.0
+35                             TIFFANY MURDOCK    65.0       0.0    65.0
+36                   TRAVEL GALS AND GENTS LLC     0.0       0.0     0.0
+37                          UAD TRANSPORTATION   168.0     245.0   -77.0
+2025-05-06 10:31:32,527 - INFO - Applying formatting to sheet: TotalInvoicePayment.
+2025-05-06 10:31:32,528 - INFO - Formatting applied successfully to sheet: TotalInvoicePayment.
+2025-05-06 10:31:32,528 - INFO - Applying formatting to sheet: HourlyTTLRevComparison.
+2025-05-06 10:31:32,534 - INFO - Formatting applied successfully to sheet: HourlyTTLRevComparison.
+2025-05-06 10:31:32,534 - INFO - Applying formatting to sheet: LiftLeaseComparison.
+2025-05-06 10:31:32,540 - INFO - Formatting applied successfully to sheet: LiftLeaseComparison.
+2025-05-06 10:31:32,540 - INFO - Applying formatting to sheet: ViolationsComparison.
+2025-05-06 10:31:32,547 - INFO - Formatting applied successfully to sheet: ViolationsComparison.
+2025-05-06 10:31:32,547 - INFO - Applying formatting to sheet: CashCollectedComparison.
+2025-05-06 10:31:32,553 - INFO - Formatting applied successfully to sheet: CashCollectedComparison.
+2025-05-06 10:31:32,597 - INFO - Main comparison process completed successfully. File saved to ComparedResults\DIV3_Main_Tables.xlsx.
+2025-05-06 10:31:32,597 - INFO - Comparing Total Revenue Hours
+2025-05-06 10:31:32,603 - INFO - Comparison of Total Revenue Hours and other metrics completed.
+2025-05-06 10:31:32,608 - INFO - ADA Total Revenue Hours DF:                                        PARTNER  LATEST  PREVIOUS  CHANGE
+0                           ANGELS WAY TRANSIT   84.13     86.69   -2.56
+1                     ASH ELITE TRANSPORTATION   77.29     66.81   10.48
+2                       BM3 TRANSPORTATION LLC   66.67     71.44   -4.77
+3                              BRANDON JACKSON    0.00     55.06  -55.06
+4               BREISHABREE TRANSPORTATION LLC   68.55     62.83    5.72
+5                  BROOKES TRANSPORTATION, LLC  351.51    388.70  -37.19
+6                     BTS INVESTORS GROUP, LLC   62.18     78.32  -16.14
+7                                CEASAR WS LLC  143.44    144.18   -0.74
+8                            DEECAL ENTERPRISE   60.60      0.00   60.60
+9   HEALTH DIRECT TRANSPORTATION SERVICES INC.   46.41      0.00   46.41
+10                            HOUND OF JUSTICE   34.81      0.00   34.81
+11                               HUB SOLUTIONS  101.45     89.86   11.59
+12                   HUNDREDFOLD SERVICES, LLC    0.00      7.36   -7.36
+13                        IGWE SIX TRANSIT LLC   15.91      0.00   15.91
+14                    INNER CITY LOGISTICS LLC  113.86    142.58  -28.72
+15                     LA PATRONA SERVICES LLC   67.15     78.57  -11.42
+16                           LADY K HEALTHCARE    0.00     67.26  -67.26
+17                          LAQUESHA HENDERSON    0.00     44.10  -44.10
+18                  LIZZY'S TRANSPORTATION LLC   66.61     74.25   -7.64
+19                                LOVEDAY IGWE    0.00     64.08  -64.08
+20                              LYNN TRAVELING   70.88     74.84   -3.96
+21                        MELINIO TRANSIT (TX)   76.66    113.64  -36.98
+22                                 ON-DIME LLC   70.31     74.32   -4.01
+23                          ORION TRANSIT, LLC  126.50    120.71    5.79
+24                RESILIENT LOGISTICS MGMT LLC    0.00     47.39  -47.39
+25                            ROYAL T KARE LLC  344.33    412.85  -68.52
+26                SERENITY CARE TRANSPORTATION    0.00     24.75  -24.75
+27            SERENITY CARE TRANSPORTATION LCC   13.54      0.00   13.54
+2025-05-06 10:31:32,608 - INFO - Comparing % of Revenue Hours to Forecast
+2025-05-06 10:31:32,612 - INFO - Comparison of % of Revenue Hours to Forecast and other metrics completed.
+2025-05-06 10:31:32,616 - INFO - ADA % of Revenue Hours to Forecast DF:                                        PARTNER  LATEST  PREVIOUS  CHANGE
+0                           ANGELS WAY TRANSIT    0.97      1.00   -0.03
+1                     ASH ELITE TRANSPORTATION    1.00      0.90    0.10
+2                       BM3 TRANSPORTATION LLC    0.89      0.96   -0.06
+3                              BRANDON JACKSON    0.00      0.75   -0.75
+4               BREISHABREE TRANSPORTATION LLC    0.92      0.92    0.01
+5                  BROOKES TRANSPORTATION, LLC    0.75      0.80   -0.05
+6                     BTS INVESTORS GROUP, LLC    0.75      0.98   -0.23
+7                                CEASAR WS LLC    0.99      0.99    0.00
+8                            DEECAL ENTERPRISE    0.82      0.00    0.82
+9   HEALTH DIRECT TRANSPORTATION SERVICES INC.    0.62      0.00    0.62
+10                            HOUND OF JUSTICE    0.51      0.00    0.51
+11                               HUB SOLUTIONS    1.00      0.97    0.03
+12                   HUNDREDFOLD SERVICES, LLC    0.00      0.20   -0.20
+13                        IGWE SIX TRANSIT LLC    0.48      0.00    0.48
+14                    INNER CITY LOGISTICS LLC    0.85      1.00   -0.15
+15                     LA PATRONA SERVICES LLC    0.93      1.00   -0.07
+16                           LADY K HEALTHCARE    0.00      0.89   -0.89
+17                          LAQUESHA HENDERSON    0.00      0.60   -0.60
+18                  LIZZY'S TRANSPORTATION LLC    0.91      0.97   -0.06
+19                                LOVEDAY IGWE    0.00      0.89   -0.89
+20                              LYNN TRAVELING    1.00      1.00    0.00
+21                        MELINIO TRANSIT (TX)    0.17      0.24   -0.07
+22                                 ON-DIME LLC    0.87      0.81    0.06
+23                          ORION TRANSIT, LLC    0.64      0.60    0.04
+24                RESILIENT LOGISTICS MGMT LLC    0.00      0.60   -0.60
+25                            ROYAL T KARE LLC    0.89      0.68    0.22
+26                SERENITY CARE TRANSPORTATION    0.00      0.61   -0.61
+27            SERENITY CARE TRANSPORTATION LCC    0.37      0.00    0.37
+2025-05-06 10:31:32,616 - INFO - Comparing Bonus Hours
+2025-05-06 10:31:32,620 - INFO - Comparison of Bonus Hours and other metrics completed.
+2025-05-06 10:31:32,625 - INFO - ADA Bonus Hours DF:                                        PARTNER  LATEST  PREVIOUS  CHANGE
+0                           ANGELS WAY TRANSIT     0.0       0.0     0.0
+1                     ASH ELITE TRANSPORTATION     0.0       0.0     0.0
+2                       BM3 TRANSPORTATION LLC     0.0       0.0     0.0
+3                              BRANDON JACKSON     0.0       0.0     0.0
+4               BREISHABREE TRANSPORTATION LLC     0.0       0.0     0.0
+5                  BROOKES TRANSPORTATION, LLC     0.0       0.0     0.0
+6                     BTS INVESTORS GROUP, LLC     0.0       0.0     0.0
+7                                CEASAR WS LLC     0.0       0.0     0.0
+8                            DEECAL ENTERPRISE     0.0       0.0     0.0
+9   HEALTH DIRECT TRANSPORTATION SERVICES INC.     0.0       0.0     0.0
+10                            HOUND OF JUSTICE     0.0       0.0     0.0
+11                               HUB SOLUTIONS     0.0       0.0     0.0
+12                   HUNDREDFOLD SERVICES, LLC     0.0       0.0     0.0
+13                        IGWE SIX TRANSIT LLC     0.0       0.0     0.0
+14                    INNER CITY LOGISTICS LLC     0.0       0.0     0.0
+15                     LA PATRONA SERVICES LLC     0.0       0.0     0.0
+16                           LADY K HEALTHCARE     0.0       0.0     0.0
+17                          LAQUESHA HENDERSON     0.0       0.0     0.0
+18                  LIZZY'S TRANSPORTATION LLC     0.0       0.0     0.0
+19                                LOVEDAY IGWE     0.0       0.0     0.0
+20                              LYNN TRAVELING     0.0       0.0     0.0
+21                        MELINIO TRANSIT (TX)     0.0       0.0     0.0
+22                                 ON-DIME LLC     0.0       0.0     0.0
+23                          ORION TRANSIT, LLC     0.0       0.0     0.0
+24                RESILIENT LOGISTICS MGMT LLC     0.0       0.0     0.0
+25                            ROYAL T KARE LLC     0.0       0.0     0.0
+26                SERENITY CARE TRANSPORTATION     0.0       0.0     0.0
+27            SERENITY CARE TRANSPORTATION LCC     0.0       0.0     0.0
+2025-05-06 10:31:32,626 - INFO - Comparing Core Revenue
+2025-05-06 10:31:32,629 - INFO - Comparison of Core Revenue and other metrics completed.
+2025-05-06 10:31:32,634 - INFO - ADA Core Revenue DF:                                        PARTNER   LATEST  PREVIOUS   CHANGE
+0                           ANGELS WAY TRANSIT  2153.73   2219.26   -65.54
+1                     ASH ELITE TRANSPORTATION  1978.62   1710.34   268.29
+2                       BM3 TRANSPORTATION LLC  1706.75   1828.86  -122.11
+3                              BRANDON JACKSON     0.00   1409.54 -1409.54
+4               BREISHABREE TRANSPORTATION LLC  1754.88   1608.45   146.43
+5                  BROOKES TRANSPORTATION, LLC  9561.07  10572.64 -1011.57
+6                     BTS INVESTORS GROUP, LLC  1591.81   2004.99  -413.18
+7                                CEASAR WS LLC  3901.57   3921.70   -20.13
+8                            DEECAL ENTERPRISE  1551.36      0.00  1551.36
+9   HEALTH DIRECT TRANSPORTATION SERVICES INC.  1188.10      0.00  1188.10
+10                            HOUND OF JUSTICE   891.14      0.00   891.14
+11                               HUB SOLUTIONS  2597.12   2300.42   296.70
+12                   HUNDREDFOLD SERVICES, LLC     0.00    200.19  -200.19
+13                        IGWE SIX TRANSIT LLC   407.30      0.00   407.30
+14                    INNER CITY LOGISTICS LLC  3096.99   3878.18  -781.18
+15                     LA PATRONA SERVICES LLC  1719.04   2011.39  -292.35
+16                           LADY K HEALTHCARE     0.00   1721.86 -1721.86
+17                          LAQUESHA HENDERSON     0.00   1128.96 -1128.96
+18                  LIZZY'S TRANSPORTATION LLC  1705.22   1900.80  -195.58
+19                                LOVEDAY IGWE     0.00   1640.45 -1640.45
+20                              LYNN TRAVELING  1814.53   1915.90  -101.38
+21                        MELINIO TRANSIT (TX)  2085.15   3091.01 -1005.86
+22                                 ON-DIME LLC  1799.94   1902.59  -102.66
+23                          ORION TRANSIT, LLC  3440.80   3283.31   157.49
+24                RESILIENT LOGISTICS MGMT LLC     0.00   1289.01 -1289.01
+25                            ROYAL T KARE LLC  9365.78  11229.52 -1863.74
+26                SERENITY CARE TRANSPORTATION     0.00    633.60  -633.60
+27            SERENITY CARE TRANSPORTATION LCC   346.62      0.00   346.62
+2025-05-06 10:31:32,635 - INFO - Comparing Total Earnings
+2025-05-06 10:31:32,637 - INFO - Comparison of Total Earnings and other metrics completed.
+2025-05-06 10:31:32,641 - INFO - ADA Total Earnings DF:                                        PARTNER   LATEST  PREVIOUS   CHANGE
+0                           ANGELS WAY TRANSIT  2504.77   2774.08  -269.31
+1                     ASH ELITE TRANSPORTATION  2473.28   1764.16   709.12
+2                       BM3 TRANSPORTATION LLC  1938.82   2073.41  -134.59
+3                              BRANDON JACKSON     0.00   1639.94 -1639.94
+4               BREISHABREE TRANSPORTATION LLC  1996.29   1833.22   163.07
+5                  BROOKES TRANSPORTATION, LLC  9561.07  10572.64 -1011.57
+6                     BTS INVESTORS GROUP, LLC  1873.66   2335.07  -461.41
+7                                CEASAR WS LLC  4876.96   4902.12   -25.16
+8                            DEECAL ENTERPRISE  1551.36      0.00  1551.36
+9   HEALTH DIRECT TRANSPORTATION SERVICES INC.  1422.91      0.00  1422.91
+10                            HOUND OF JUSTICE   891.14      0.00   891.14
+11                               HUB SOLUTIONS  3246.40   2665.86   580.54
+12                   HUNDREDFOLD SERVICES, LLC     0.00    200.19  -200.19
+13                        IGWE SIX TRANSIT LLC   407.30      0.00   407.30
+14                    INNER CITY LOGISTICS LLC  3096.99   4847.72 -1750.73
+15                     LA PATRONA SERVICES LLC  1948.48   2514.24  -565.76
+16                           LADY K HEALTHCARE     0.00   1948.54 -1948.54
+17                          LAQUESHA HENDERSON     0.00   1372.67 -1372.67
+18                  LIZZY'S TRANSPORTATION LLC  1937.54   2195.14  -257.60
+19                                LOVEDAY IGWE     0.00   1889.34 -1889.34
+20                              LYNN TRAVELING  2268.16   2394.88  -126.72
+21                        MELINIO TRANSIT (TX)  2085.15   3091.01 -1005.86
+22                                 ON-DIME LLC  2059.58   1902.59   156.99
+23                          ORION TRANSIT, LLC  3440.80   3283.31   157.49
+24                RESILIENT LOGISTICS MGMT LLC     0.00   1289.01 -1289.01
+25                            ROYAL T KARE LLC  9365.78  11229.52 -1863.74
+26                SERENITY CARE TRANSPORTATION     0.00    633.60  -633.60
+27            SERENITY CARE TRANSPORTATION LCC   346.62      0.00   346.62
+2025-05-06 10:31:32,641 - INFO - Comparing OS Operators between previous and latest sheets.
+2025-05-06 10:31:32,645 - INFO - Drivers comparison completed.
+2025-05-06 10:31:32,647 - INFO - ADA Drivers DF:                  PREVIOUS                 LATEST
+0            ASHLEY BROWN            ALEX THOMAS
+1          ASHLEY CHATMAN           ASHLEY BROWN
+2            AYANAH TERRY         ASHLEY CHATMAN
+3             BENNY YOUNG           AYANAH TERRY
+4         BRANDON JACKSON            BENNY YOUNG
+5          BRITTANY GREEN        BRANDON JACKSON
+6         BRYANT MATTHEWS         BRITTANY GREEN
+7       CATREANA ROBINSON        BRYANT MATTHEWS
+8         CHADWICK MILLER      CATREANA ROBINSON
+9      CHRISTOPHER BUTLER        CHADWICK MILLER
+10  COLYNN TENNYSON-NIXON     CHRISTOPHER BUTLER
+11            DAVID OAKES  COLYNN TENNYSON-NIXON
+12         DEDRICC WILSON            DAVID OAKES
+13        DIAMOND LEGGETT         DEDRICC WILSON
+14       ELIZABETH GARCIA        DIAMOND LEGGETT
+15            ELVA GARCIA      DIANA VILLALPANDO
+16      JACQUELINE HARRIS       ELIZABETH GARCIA
+17       JALICEA MAYBERRY            ELVA GARCIA
+18         JAMES PHILLIPS      JACQUELINE HARRIS
+19           JANET SUTTON       JALICEA MAYBERRY
+20     JOHNATHAN DELAROSA           JANET SUTTON
+21             JOSHUA GEE     JOHNATHAN DELAROSA
+22       KARINA HERNANDEZ            JOY JENKINS
+23      KENDRICK GASSAWAY         KENNETH CALVIN
+24          KENNETH SMITH              LEON KING
+25       KIMBERLY ROBBINS          LINDA HOLLAND
+26     LAQUESHA HENDERSON           LOVEDAY IGWE
+27          LINDA HOLLAND            MANNY GOMEZ
+28           LOVEDAY IGWE             MARK KABAH
+29            MANNY GOMEZ            MIA VORTICE
+30             MARK BROWN          MIRO PASKALEV
+31             MARK KABAH         NATASHA TITTLE
+32            MIA VORTICE        QAYSSAR ALGBURI
+33          MICHAEL SMITH          RAE MESHA LEE
+34          MIRO PASKALEV        RAPHELS UBAWIKE
+35         NATASHA TITTLE      RIC SHANA SANDERS
+36        QAYSSAR ALGBURI            SARAH JONES
+37      RIC SHANA SANDERS         SHAMARA SCALES
+38        ROCHELLE DAWSON    SHAMBREISHA SPENCER
+39            SARAH JONES           SHEILA JONES
+40         SHAMARA SCALES          TAIESHA MAJOR
+41    SHAMBREISHA SPENCER        TIFFANY MURDOCK
+42           SHEILA JONES          TMYRA FRANCIS
+43         SHIQWEDA BROWN              TROY SIMS
+44        SHURONDA MOSLEY            URECHA DUNN
+45          TAIESHA MAJOR      YOHANNES MEKONNEN
+46          TMYRA FRANCIS                    NaN
+47              TROY SIMS                       
+48        ULYSSES GRIFFIN                       
+49            URECHA DUNN                       
+50                    NaN                       
+2025-05-06 10:31:32,693 - INFO - Applying formatting to sheet: TotalRevHrsComparison.
+2025-05-06 10:31:32,698 - INFO - Formatting applied successfully to sheet: TotalRevHrsComparison.
+2025-05-06 10:31:32,699 - INFO - Applying formatting to sheet: %RevHrsComparison.
+2025-05-06 10:31:32,703 - INFO - Formatting applied successfully to sheet: %RevHrsComparison.
+2025-05-06 10:31:32,704 - INFO - Applying formatting to sheet: BonusHrsComparison.
+2025-05-06 10:31:32,707 - INFO - Formatting applied successfully to sheet: BonusHrsComparison.
+2025-05-06 10:31:32,707 - INFO - Applying formatting to sheet: CoreRevComparison.
+2025-05-06 10:31:32,713 - INFO - Formatting applied successfully to sheet: CoreRevComparison.
+2025-05-06 10:31:32,713 - INFO - Applying formatting to sheet: TotEarningsComparison.
+2025-05-06 10:31:32,717 - INFO - Formatting applied successfully to sheet: TotEarningsComparison.
+2025-05-06 10:31:32,718 - INFO - Applying formatting to sheet: DriversComparison.
+2025-05-06 10:31:32,721 - INFO - Formatting applied successfully to sheet: DriversComparison.
+2025-05-06 10:31:32,753 - INFO - ADA comparison process completed successfully. File saved to ComparedResults\DIV3_ADA_Tables.xlsx.
+2025-05-06 10:31:32,753 - INFO - Comparing Core Hours Worked
+2025-05-06 10:31:32,755 - INFO - Comparison of Core Hours Worked and other metrics completed.
+2025-05-06 10:31:32,758 - INFO - GOLINK Core Hours Worked DF:                        PARTNER   LATEST  PREVIOUS  CHANGE
+0  BROOKES TRANSPORTATION, LLC   728.22    728.17    0.06
+1    HUNDREDFOLD SERVICES, LLC   282.79    316.09  -33.30
+2         MELINIO TRANSIT (TX)  1622.13   1564.79   57.34
+3           ORION TRANSIT, LLC  1013.78   1014.29   -0.51
+4             ROYAL T KARE LLC     8.73      0.00    8.73
+2025-05-06 10:31:32,758 - INFO - Comparing % of Revenue Hours to Forecast
+2025-05-06 10:31:32,761 - INFO - Comparison of % of Revenue Hours to Forecast and other metrics completed.
+2025-05-06 10:31:32,767 - INFO - GOLINK % Revenue Hours DF:                        PARTNER  LATEST  PREVIOUS  CHANGE
+0  BROOKES TRANSPORTATION, LLC    1.00      0.98    0.02
+1    HUNDREDFOLD SERVICES, LLC    0.88      0.99   -0.10
+2         MELINIO TRANSIT (TX)    0.99      0.95    0.03
+3           ORION TRANSIT, LLC    1.00      1.00    0.00
+4             ROYAL T KARE LLC    0.04      0.00    0.04
+2025-05-06 10:31:32,768 - INFO - Comparing Total Earnings
+2025-05-06 10:31:32,771 - INFO - Comparison of Total Earnings and other metrics completed.
+2025-05-06 10:31:32,774 - INFO - GOLINK Total Earnings DF:                        PARTNER    LATEST  PREVIOUS   CHANGE
+0  BROOKES TRANSPORTATION, LLC  24759.53  23637.82  1121.71
+1    HUNDREDFOLD SERVICES, LLC   7691.86  10746.94 -3055.08
+2         MELINIO TRANSIT (TX)  52425.66  45287.12  7138.54
+3           ORION TRANSIT, LLC  34468.50  34485.73   -17.22
+4             ROYAL T KARE LLC    237.49      0.00   237.49
+2025-05-06 10:31:32,775 - INFO - Comparing Total Duty Violation
+2025-05-06 10:31:32,779 - INFO - Comparison of Total Duty Violation and other metrics completed.
+2025-05-06 10:31:32,784 - INFO - GOLINK Total Duty Violation DF:                        PARTNER  LATEST  PREVIOUS  CHANGE
+0  BROOKES TRANSPORTATION, LLC    1000    1450.0  -450.0
+1    HUNDREDFOLD SERVICES, LLC     100     200.0  -100.0
+2         MELINIO TRANSIT (TX)    1700    1500.0   200.0
+3           ORION TRANSIT, LLC     350     500.0  -150.0
+4             ROYAL T KARE LLC      50       0.0    50.0
+2025-05-06 10:31:32,784 - INFO - Comparing OS Operators between previous and latest sheets.
+2025-05-06 10:31:32,786 - INFO - Drivers comparison completed.
+2025-05-06 10:31:32,789 - INFO - GOLINK Drivers DF:            PREVIOUS          LATEST
+0       ALEX MOUTON     ALEX MOUTON
+1         AMIR KHAN     ALEX THOMAS
+2    ASHLEY CHATMAN     ALI MOHAMED
+3       BENNY YOUNG       AMIR KHAN
+4   BRYANT MATTHEWS     BENNY YOUNG
+..              ...             ...
+58        WAYNE LEE     URECHA DUNN
+59  WILLIE WILLIAMS  VALECIA BROOKS
+60    YURANA HARRIS       WAYNE LEE
+61    ZAINAB MPIANA   YURANA HARRIS
+62                    ZAINAB MPIANA
+
+[63 rows x 2 columns]
+2025-05-06 10:31:32,826 - INFO - Applying formatting to sheet: CoreHoursComparison.
+2025-05-06 10:31:32,827 - INFO - Formatting applied successfully to sheet: CoreHoursComparison.
+2025-05-06 10:31:32,827 - INFO - Applying formatting to sheet: %RevHrsComparison.
+2025-05-06 10:31:32,829 - INFO - Formatting applied successfully to sheet: %RevHrsComparison.
+2025-05-06 10:31:32,829 - INFO - Applying formatting to sheet: TotEarningsComparison.
+2025-05-06 10:31:32,830 - INFO - Formatting applied successfully to sheet: TotEarningsComparison.
+2025-05-06 10:31:32,830 - INFO - Applying formatting to sheet: TotDutyViolationComparison.
+2025-05-06 10:31:32,831 - INFO - Formatting applied successfully to sheet: TotDutyViolationComparison.
+2025-05-06 10:31:32,831 - INFO - Applying formatting to sheet: DriversComparison.
+2025-05-06 10:31:32,835 - INFO - Formatting applied successfully to sheet: DriversComparison.
+2025-05-06 10:31:32,855 - INFO - GOLINK comparison process completed successfully. File saved to ComparedResults\DIV3_GOLINK_Tables.xlsx.
+2025-05-06 10:31:32,855 - INFO - Comparing StandBy Pay Hours
+2025-05-06 10:31:32,858 - INFO - Comparison of StandBy Pay Hours and other metrics completed.
+2025-05-06 10:31:32,861 - INFO - ADAGOLINK StandBy Pay Hours DF:                      PARTNER  LATEST  PREVIOUS  CHANGE
+0         BOM TRANSPORTATION   78.73     81.10   -2.37
+1  GRAND TOUR TRANSPORTATION   27.29      0.00   27.29
+2        PICKUP PARTNERS LLC   83.15     81.31    1.84
+3            TIFFANY MURDOCK   31.85      0.00   31.85
+4         UAD TRANSPORTATION   78.88     80.63   -1.75
+2025-05-06 10:31:32,861 - INFO - Comparing StandbyExtraHours
+2025-05-06 10:31:32,864 - INFO - Comparison of StandbyExtraHours and other metrics completed.
+2025-05-06 10:31:32,867 - INFO - ADAGOLINK StandBy Extra Hours DF:                      PARTNER  LATEST  PREVIOUS  CHANGE
+0         BOM TRANSPORTATION   13.98     29.94  -15.96
+1  GRAND TOUR TRANSPORTATION    0.00      0.00    0.00
+2        PICKUP PARTNERS LLC   22.90     14.61    8.29
+3            TIFFANY MURDOCK    0.00      0.00    0.00
+4         UAD TRANSPORTATION    0.00      0.00    0.00
+2025-05-06 10:31:32,867 - INFO - Comparing Total Earnings
+2025-05-06 10:31:32,869 - INFO - Comparison of Total Earnings and other metrics completed.
+2025-05-06 10:31:32,872 - INFO - ADAGOLINK Total Earnings DF:                      PARTNER   LATEST  PREVIOUS  CHANGE
+0         BOM TRANSPORTATION  2751.36   3262.21 -510.85
+1  GRAND TOUR TRANSPORTATION   698.62      0.00  698.62
+2        PICKUP PARTNERS LLC  3036.68   2771.41  265.26
+3            TIFFANY MURDOCK   815.36      0.00  815.36
+4         UAD TRANSPORTATION  2304.00   2304.00    0.00
+2025-05-06 10:31:32,892 - INFO - Applying formatting to sheet: StdByPayHrsComparison.
+2025-05-06 10:31:32,894 - INFO - Formatting applied successfully to sheet: StdByPayHrsComparison.
+2025-05-06 10:31:32,894 - INFO - Applying formatting to sheet: StByExtraHrsComparison.
+2025-05-06 10:31:32,895 - INFO - Formatting applied successfully to sheet: StByExtraHrsComparison.
+2025-05-06 10:31:32,896 - INFO - Applying formatting to sheet: TotEarningsComparison.
+2025-05-06 10:31:32,897 - INFO - Formatting applied successfully to sheet: TotEarningsComparison.
+2025-05-06 10:31:32,912 - INFO - ADAGOLINK comparison process completed successfully. File saved to ComparedResults\DIV3_ADAGOLINK_Tables.xlsx.
+2025-05-06 10:31:32,912 - INFO - VDP_DIV3_0310_0323 FINAL.xlsm + VDP_DIV3 UPDATED TEMPLATE.xlsm
+2025-05-06 10:31:34,325 - INFO - Successfully updated color for TextBox 90 with status 'Increased'.
+2025-05-06 10:31:34,327 - INFO - Successfully updated color for txtHTTLRevtDiff with value '-3,365.35'.
+2025-05-06 10:31:34,328 - INFO - Successfully updated color for txtLLeaseDiff with value '-342.50'.
+2025-05-06 10:31:34,329 - INFO - Successfully updated color for txtViolationsDiff with value '-948.08'.
+2025-05-06 10:31:34,331 - INFO - Successfully updated color for txtCashCollectedDiff with value '-5,420.00'.
+2025-05-06 10:31:34,502 - INFO - Successfully updated color for txtTotalRevHrsDiff with value '-327.80'.
+2025-05-06 10:31:34,506 - INFO - Successfully updated color for txtPRevHrsDiff with value '-7.14'.
+2025-05-06 10:31:34,511 - INFO - Successfully updated color for txtBonusHrsDiff with value '0'.
+2025-05-06 10:31:34,526 - INFO - Successfully updated color for txtCoreRevDiff with value '-8,745.46'.
+2025-05-06 10:31:34,540 - INFO - Successfully updated color for txtTotEarningsDiff with value '-10,059.20'.
+2025-05-06 10:31:34,552 - INFO - Successfully updated color for txtDriversDiff with value '-3'.
+2025-05-06 10:31:34,603 - INFO - Successfully updated color for txtCoreHrsDiff with value '32.32'.
+2025-05-06 10:31:34,605 - INFO - Successfully updated color for txtPRevHrsDiff with value '-0.20'.
+2025-05-06 10:31:34,606 - INFO - Successfully updated color for txtTotEarningsDiff with value '5,425.44'.
+2025-05-06 10:31:34,607 - INFO - Successfully updated color for txtTotalViolationsDiff with value '-450.00'.
+2025-05-06 10:31:34,608 - INFO - Successfully updated color for txtDriversDiff with value '0'.
+2025-05-06 10:31:34,641 - INFO - Successfully updated color for txtstdPayHrsDiff with value '56.86'.
+2025-05-06 10:31:34,642 - INFO - Successfully updated color for txtstdExtraHrsDiff with value '-7.67'.
+2025-05-06 10:31:34,644 - INFO - Successfully updated color for txtTotEarningsDiff with value '1,268.39'.
+2025-05-06 10:31:35,912 - INFO - ComparedResults/Dashboard.xlsm has been successfully updated and saved.
+2025-05-06 10:31:38,917 - INFO - Picture name: HTTLRevTable found in Dashboard
+2025-05-06 10:31:38,963 - INFO - Deleted existing picture: HTTLRevTable in Dashboard
+2025-05-06 10:31:38,963 - INFO - Picture name: LeaseTable found in Dashboard
+2025-05-06 10:31:38,966 - INFO - Deleted existing picture: LeaseTable in Dashboard
+2025-05-06 10:31:38,967 - INFO - Picture name: ViolationsTable found in Dashboard
+2025-05-06 10:31:38,969 - INFO - Deleted existing picture: ViolationsTable in Dashboard
+2025-05-06 10:31:38,969 - INFO - Picture name: CashTable found in Dashboard
+2025-05-06 10:31:39,038 - INFO - Deleted existing picture: CashTable in Dashboard
+2025-05-06 10:31:39,063 - INFO - Picture name: TotalRevHrsTable found in ADA
+2025-05-06 10:31:39,092 - INFO - Deleted existing picture: TotalRevHrsTable in ADA
+2025-05-06 10:31:39,093 - INFO - Picture name: PRevHrsTable found in ADA
+2025-05-06 10:31:39,124 - INFO - Deleted existing picture: PRevHrsTable in ADA
+2025-05-06 10:31:39,125 - INFO - Picture name: BonusHrsTable found in ADA
+2025-05-06 10:31:39,138 - INFO - Deleted existing picture: BonusHrsTable in ADA
+2025-05-06 10:31:39,139 - INFO - Picture name: CoreRevTable found in ADA
+2025-05-06 10:31:39,145 - INFO - Deleted existing picture: CoreRevTable in ADA
+2025-05-06 10:31:39,145 - INFO - Picture name: TotEarningsTable found in ADA
+2025-05-06 10:31:39,157 - INFO - Deleted existing picture: TotEarningsTable in ADA
+2025-05-06 10:31:39,157 - INFO - Picture name: DriversTable found in ADA
+2025-05-06 10:31:39,171 - INFO - Deleted existing picture: DriversTable in ADA
+2025-05-06 10:31:42,353 - INFO - Copied picture from HourlyTTLRevComparison, width: 17.81 cm, height: 20.64 cm
+2025-05-06 10:31:43,439 - INFO - Table Name: HTTLRevTable
+2025-05-06 10:31:44,440 - INFO - 'HTTLRevTable' successfully pasted in the HourlyTTLRevComparison Sheet.
+2025-05-06 10:31:44,460 - INFO - Resized HTTLRevContainer to width: 17.88 cm, height: 22.61 cm
+2025-05-06 10:31:45,485 - INFO - Copied picture from LiftLeaseComparison, width: 13.18 cm, height: 20.11 cm
+2025-05-06 10:31:46,566 - INFO - Table Name: LeaseTable
+2025-05-06 10:31:47,568 - INFO - 'LeaseTable' successfully pasted in the LiftLeaseComparison Sheet.
+2025-05-06 10:31:47,587 - INFO - Resized LeaseContainer to width: 13.25 cm, height: 22.08 cm
+2025-05-06 10:31:48,609 - INFO - Copied picture from ViolationsComparison, width: 17.25 cm, height: 20.11 cm
+2025-05-06 10:31:49,667 - INFO - Table Name: ViolationsTable
+2025-05-06 10:31:50,669 - INFO - 'ViolationsTable' successfully pasted in the ViolationsComparison Sheet.
+2025-05-06 10:31:50,690 - INFO - Resized ViolationsContainer to width: 17.32 cm, height: 22.08 cm
+2025-05-06 10:31:51,712 - INFO - Copied picture from CashCollectedComparison, width: 13.36 cm, height: 20.11 cm
+2025-05-06 10:31:52,783 - INFO - Table Name: CashTable
+2025-05-06 10:31:53,785 - INFO - 'CashTable' successfully pasted in the CashCollectedComparison Sheet.
+2025-05-06 10:31:53,807 - INFO - Resized CashContainer to width: 13.43 cm, height: 22.08 cm
+2025-05-06 10:31:55,008 - INFO - Copied picture from TotalRevHrsComparison, width: 13.18 cm, height: 15.35 cm
+2025-05-06 10:31:58,597 - INFO - Table Name: TotalRevHrsTable
+2025-05-06 10:31:59,598 - INFO - 'TotalRevHrsTable' successfully pasted in the TotalRevHrsComparison Sheet.
+2025-05-06 10:31:59,629 - INFO - Resized TotalRevHrsContainer to width: 13.25 cm, height: 17.32 cm
+2025-05-06 10:32:00,650 - INFO - Copied picture from %RevHrsComparison, width: 13.18 cm, height: 15.35 cm
+2025-05-06 10:32:01,728 - INFO - Table Name: PRevHrsTable
+2025-05-06 10:32:02,729 - INFO - 'PRevHrsTable' successfully pasted in the %RevHrsComparison Sheet.
+2025-05-06 10:32:02,752 - INFO - Resized PRevHrsContainer to width: 13.25 cm, height: 17.32 cm
+2025-05-06 10:32:03,775 - INFO - Copied picture from BonusHrsComparison, width: 13.18 cm, height: 15.35 cm
+2025-05-06 10:32:04,849 - INFO - Table Name: BonusHrsTable
+2025-05-06 10:32:05,850 - INFO - 'BonusHrsTable' successfully pasted in the BonusHrsComparison Sheet.
+2025-05-06 10:32:05,875 - INFO - Resized BonusHrsContainer to width: 13.25 cm, height: 17.32 cm
+2025-05-06 10:32:06,900 - INFO - Copied picture from CoreRevComparison, width: 13.73 cm, height: 15.35 cm
+2025-05-06 10:32:07,972 - INFO - Table Name: CoreRevTable
+2025-05-06 10:32:08,973 - INFO - 'CoreRevTable' successfully pasted in the CoreRevComparison Sheet.
+2025-05-06 10:32:08,992 - INFO - Resized CoreRevContainer to width: 13.80 cm, height: 17.32 cm
+2025-05-06 10:32:10,015 - INFO - Copied picture from TotEarningsComparison, width: 13.73 cm, height: 15.35 cm
+2025-05-06 10:32:11,093 - INFO - Table Name: TotEarningsTable
+2025-05-06 10:32:12,094 - INFO - 'TotEarningsTable' successfully pasted in the TotEarningsComparison Sheet.
+2025-05-06 10:32:12,116 - INFO - Resized TotEarningsContainer to width: 13.80 cm, height: 17.32 cm
+2025-05-06 10:32:13,136 - INFO - Copied picture from DriversComparison, width: 8.63 cm, height: 27.52 cm
+2025-05-06 10:32:14,213 - INFO - Table Name: DriversTable
+2025-05-06 10:32:15,214 - INFO - 'DriversTable' successfully pasted in the DriversComparison Sheet.
+2025-05-06 10:32:15,233 - INFO - Resized DriversContainer to width: 8.70 cm, height: 29.49 cm
+2025-05-06 10:32:16,422 - INFO - Copied picture from CoreHoursComparison, width: 10.58 cm, height: 3.18 cm
+2025-05-06 10:32:17,576 - INFO - Table Name: TotalCoreHrsTable
+2025-05-06 10:32:18,577 - INFO - 'TotalCoreHrsTable' successfully pasted in the CoreHoursComparison Sheet.
+2025-05-06 10:32:18,590 - INFO - Resized TotalCoreHrsContainer to width: 10.65 cm, height: 5.15 cm
+2025-05-06 10:32:19,610 - INFO - Copied picture from %RevHrsComparison, width: 10.40 cm, height: 3.18 cm
+2025-05-06 10:32:20,679 - INFO - Table Name: PRevHrsTable
+2025-05-06 10:32:21,680 - INFO - 'PRevHrsTable' successfully pasted in the %RevHrsComparison Sheet.
+2025-05-06 10:32:21,703 - INFO - Resized PRevHrsContainer to width: 10.47 cm, height: 5.15 cm
+2025-05-06 10:32:22,724 - INFO - Copied picture from TotEarningsComparison, width: 11.14 cm, height: 3.18 cm
+2025-05-06 10:32:23,797 - INFO - Table Name: TotEarningsTable
+2025-05-06 10:32:24,798 - INFO - 'TotEarningsTable' successfully pasted in the TotEarningsComparison Sheet.
+2025-05-06 10:32:24,817 - INFO - Resized TotEarningsContainer to width: 11.21 cm, height: 5.15 cm
+2025-05-06 10:32:25,840 - INFO - Copied picture from TotDutyViolationComparison, width: 10.40 cm, height: 3.18 cm
+2025-05-06 10:32:26,910 - INFO - Table Name: TotalViolationsTable
+2025-05-06 10:32:27,912 - INFO - 'TotalViolationsTable' successfully pasted in the TotDutyViolationComparison Sheet.
+2025-05-06 10:32:27,929 - INFO - Resized TotalViolationsContainer to width: 10.47 cm, height: 5.15 cm
+2025-05-06 10:32:28,952 - INFO - Copied picture from DriversComparison, width: 11.22 cm, height: 33.87 cm
+2025-05-06 10:32:30,033 - INFO - Table Name: DriversTable
+2025-05-06 10:32:31,034 - INFO - 'DriversTable' successfully pasted in the DriversComparison Sheet.
+2025-05-06 10:32:31,058 - INFO - Resized DriversContainer to width: 11.29 cm, height: 35.84 cm
+2025-05-06 10:32:32,267 - INFO - Copied picture from StdByPayHrsComparison, width: 10.03 cm, height: 3.18 cm
+2025-05-06 10:32:33,386 - INFO - Table Name: stdPayHrsTable
+2025-05-06 10:32:34,388 - INFO - 'stdPayHrsTable' successfully pasted in the StdByPayHrsComparison Sheet.
+2025-05-06 10:32:34,411 - INFO - Resized stdPayHrsContainer to width: 10.10 cm, height: 5.15 cm
+2025-05-06 10:32:35,436 - INFO - Copied picture from StByExtraHrsComparison, width: 10.03 cm, height: 3.18 cm
+2025-05-06 10:32:36,506 - INFO - Table Name: stdExtraHrsTable
+2025-05-06 10:32:37,508 - INFO - 'stdExtraHrsTable' successfully pasted in the StByExtraHrsComparison Sheet.
+2025-05-06 10:32:37,527 - INFO - Resized stdExtraHrsContainer to width: 10.10 cm, height: 5.15 cm
+2025-05-06 10:32:38,549 - INFO - Copied picture from TotEarningsComparison, width: 10.40 cm, height: 3.18 cm
+2025-05-06 10:32:39,616 - INFO - Table Name: TotEarningsTable
+2025-05-06 10:32:40,617 - INFO - 'TotEarningsTable' successfully pasted in the TotEarningsComparison Sheet.
+2025-05-06 10:32:40,632 - INFO - Resized TotEarningsContainer to width: 10.47 cm, height: 5.15 cm
+2025-05-06 10:32:41,915 - INFO - Data pasted as pictures successfully.
+2025-05-06 10:41:14,098 - INFO - Starting main comparison process.
+2025-05-06 10:41:14,098 - INFO - Loading sheets from the provided Excel files.
+2025-05-06 10:41:17,080 - INFO - Sheets loaded successfully.
+2025-05-06 10:41:17,082 - INFO - Total valid partners: 30
+2025-05-06 10:41:17,082 - INFO - Partner names: ['ANGELS WAY TRANSIT', 'ASH ELITE TRANSPORTATION', 'BM3 TRANSPORTATION LLC', 'BOM TRANSPORTATION', 'BREISHABREE TRANSPORTATION LLC', 'BROOKES TRANSPORTATION, LLC', 'BTS INVESTORS GROUP, LLC', 'CEASAR WS LLC', 'DAESHA SAFE TRANSPORT', 'HOUND OF JUSTICE', 'HUB SOLUTIONS', 'HUNDREDFOLD SERVICES, LLC', 'INNER CITY LOGISTICS LLC', 'LA PATRONA SERVICES LLC', 'LADY K HEALTHCARE', 'LAQUESHA HENDERSON', "LIZZY'S TRANSPORTATION LLC", 'LOVEDAY IGWE', 'LYNN TRAVELING', 'MELINIO TRANSIT (TX)', 'ON THE MOVE LLC', 'ON-DIME LLC', 'ORION TRANSIT, LLC', 'PICKUP PARTNERS LLC', 'QUNIFIA JACKSON', 'RESILIENT LOGISTICS MGMT LLC', 'ROYAL T KARE LLC', 'SERENITY CARE TRANSPORTATION', 'TRAVEL GALS AND GENTS LLC', 'UAD TRANSPORTATION']
+2025-05-06 10:41:17,082 - INFO - Total amount: 139183.51540000003
+2025-05-06 10:41:17,082 - INFO - Total calculated amount: 139183.51540000003
+2025-05-06 10:41:17,083 - INFO - Total valid partners: 27
+2025-05-06 10:41:17,083 - INFO - Partner names: ['ANGELS WAY TRANSIT', 'ASH ELITE TRANSPORTATION', 'BM3 TRANSPORTATION LLC', 'BOM TRANSPORTATION', 'BREISHABREE TRANSPORTATION LLC', 'BROOKES TRANSPORTATION, LLC', 'BTS INVESTORS GROUP, LLC', 'CEASAR WS LLC', 'DEECAL ENTERPRISE', 'GRAND TOUR TRANSPORTATION', 'HEALTH DIRECT TRANSPORTATION SERVICES INC.', 'HOUND OF JUSTICE', 'HUB SOLUTIONS', 'HUNDREDFOLD SERVICES, LLC', 'IGWE SIX TRANSIT LLC', 'INNER CITY LOGISTICS LLC', 'LA PATRONA SERVICES LLC', "LIZZY'S TRANSPORTATION LLC", 'LYNN TRAVELING', 'MELINIO TRANSIT (TX)', 'ON-DIME LLC', 'ORION TRANSIT, LLC', 'PICKUP PARTNERS LLC', 'ROYAL T KARE LLC', 'SERENITY CARE TRANSPORTATION LCC', 'TIFFANY MURDOCK', 'UAD TRANSPORTATION']
+2025-05-06 10:41:17,084 - INFO - Total amount: 136476.94150000002
+2025-05-06 10:41:17,084 - INFO - Total calculated amount: 136476.94150000002
+2025-05-06 10:41:17,084 - INFO - Comparing Totals between previous and latest values.
+2025-05-06 10:41:17,085 - INFO - Totals comparison completed.
+2025-05-06 10:41:17,089 - INFO - 
+Totals DF:       LATEST   PREVIOUS  DIFFERENCE     CHANGE
+0  136476.94  139183.52    -2706.57  Decreased
+2025-05-06 10:41:17,098 - INFO - Hourly TTL Rev Comparison DF:                                        PARTNER      LATEST    PREVIOUS     CHANGE
+1                           ANGELS WAY TRANSIT   2504.7680   2985.9200  -481.1520
+2                     ASH ELITE TRANSPORTATION   2473.2800   1870.1440   603.1360
+3                       BM3 TRANSPORTATION LLC   1938.8160   2554.8800  -616.0640
+4                           BOM TRANSPORTATION   2751.3600   3074.1067  -322.7467
+5               BREISHABREE TRANSPORTATION LLC   1996.2880   2373.4400  -377.1520
+6                  BROOKES TRANSPORTATION, LLC  34320.6011  36299.0782 -1978.4771
+7                     BTS INVESTORS GROUP, LLC   1873.6640   2093.8880  -220.2240
+8                                CEASAR WS LLC   4876.9600   4998.0000  -121.0400
+9                        DAESHA SAFE TRANSPORT      0.0000      0.0000     0.0000
+10                           DEECAL ENTERPRISE   1551.3600      0.0000  1551.3600
+11                   GRAND TOUR TRANSPORTATION    698.6240      0.0000   698.6240
+12  HEALTH DIRECT TRANSPORTATION SERVICES INC.   1422.9120      0.0000  1422.9120
+13                            HOUND OF JUSTICE    891.1360    235.2640   655.8720
+14                               HUB SOLUTIONS   3246.4000   3303.6800   -57.2800
+15                   HUNDREDFOLD SERVICES, LLC   7691.8577   9663.7691 -1971.9114
+16                        IGWE SIX TRANSIT LLC    407.2960      0.0000   407.2960
+17                    INNER CITY LOGISTICS LLC   3096.9920   4304.1960 -1207.2040
+18                     LA PATRONA SERVICES LLC   1948.4800   2627.8400  -679.3600
+19                           LADY K HEALTHCARE      0.0000    117.5040  -117.5040
+20                          LAQUESHA HENDERSON      0.0000      0.0000     0.0000
+21                  LIZZY'S TRANSPORTATION LLC   1937.5360   2456.6400  -519.1040
+22                                LOVEDAY IGWE      0.0000    224.0000  -224.0000
+23                              LYNN TRAVELING   2268.1600   2308.8000   -40.6400
+24                        MELINIO TRANSIT (TX)  54510.8107  45173.4017  9337.4090
+25                             ON THE MOVE LLC      0.0000      0.0000     0.0000
+26                                 ON-DIME LLC   2059.5840   2515.8400  -456.2560
+27                          ORION TRANSIT, LLC  37909.3049  38893.4690  -984.1641
+28                                    Operator      0.0000      0.0000     0.0000
+29                         PICKUP PARTNERS LLC   3036.6773   2836.3911   200.2862
+30                             QUNIFIA JACKSON      0.0000      0.0000     0.0000
+31                RESILIENT LOGISTICS MGMT LLC      0.0000      0.0000     0.0000
+32                            ROYAL T KARE LLC   9603.2698  10102.7736  -499.5038
+33                SERENITY CARE TRANSPORTATION      0.0000      0.0000     0.0000
+34            SERENITY CARE TRANSPORTATION LCC    346.6240      0.0000   346.6240
+35                             TIFFANY MURDOCK    815.3600      0.0000   815.3600
+36                   TRAVEL GALS AND GENTS LLC      0.0000      0.0000     0.0000
+37                          UAD TRANSPORTATION   2304.0000   2304.0000     0.0000
+2025-05-06 10:41:17,106 - INFO - Lift Lease DF:                                        PARTNER  LATEST  PREVIOUS  CHANGE
+1                     ASH ELITE TRANSPORTATION   685.0     685.0     0.0
+2                       BM3 TRANSPORTATION LLC   685.0     685.0     0.0
+3                           BOM TRANSPORTATION   685.0     685.0     0.0
+4               BREISHABREE TRANSPORTATION LLC   685.0     685.0     0.0
+5                  BROOKES TRANSPORTATION, LLC  6850.0    6850.0     0.0
+6                     BTS INVESTORS GROUP, LLC   685.0     685.0     0.0
+7                                CEASAR WS LLC   685.0     685.0     0.0
+8                        DAESHA SAFE TRANSPORT     0.0       0.0     0.0
+9                            DEECAL ENTERPRISE   548.0       0.0   548.0
+10                   GRAND TOUR TRANSPORTATION   274.0       0.0   274.0
+11  HEALTH DIRECT TRANSPORTATION SERVICES INC.   548.0       0.0   548.0
+12                            HOUND OF JUSTICE   685.0      68.5   616.5
+13                               HUB SOLUTIONS   685.0     685.0     0.0
+14                   HUNDREDFOLD SERVICES, LLC  2055.0    2055.0     0.0
+15                        IGWE SIX TRANSIT LLC   342.5       0.0   342.5
+16                    INNER CITY LOGISTICS LLC   685.0     685.0     0.0
+17                     LA PATRONA SERVICES LLC   685.0     685.0     0.0
+18                           LADY K HEALTHCARE     0.0     342.5  -342.5
+19                          LAQUESHA HENDERSON     0.0       0.0     0.0
+20                  LIZZY'S TRANSPORTATION LLC   685.0     685.0     0.0
+21                                LOVEDAY IGWE     0.0      68.5   -68.5
+22                              LYNN TRAVELING   685.0     685.0     0.0
+23                        MELINIO TRANSIT (TX)  8220.0    8220.0     0.0
+24                             ON THE MOVE LLC     0.0       0.0     0.0
+25                                 ON-DIME LLC   685.0     685.0     0.0
+26                          ORION TRANSIT, LLC  4795.0    4795.0     0.0
+27                                    Operator     0.0       0.0     0.0
+28                         PICKUP PARTNERS LLC   685.0     685.0     0.0
+29                             QUNIFIA JACKSON     0.0       0.0     0.0
+30                RESILIENT LOGISTICS MGMT LLC     0.0       0.0     0.0
+31                            ROYAL T KARE LLC  2740.0    2740.0     0.0
+32                SERENITY CARE TRANSPORTATION     0.0       0.0     0.0
+33            SERENITY CARE TRANSPORTATION LCC   342.5       0.0   342.5
+34                             TIFFANY MURDOCK   205.5       0.0   205.5
+35                   TRAVEL GALS AND GENTS LLC     0.0       0.0     0.0
+36                          UAD TRANSPORTATION   685.0     685.0     0.0
+2025-05-06 10:41:17,117 - INFO - Violations DF:                                        PARTNER   LATEST  PREVIOUS   CHANGE
+1                     ASH ELITE TRANSPORTATION     0.00     18.74   -18.74
+2                       BM3 TRANSPORTATION LLC     0.00     15.12   -15.12
+3                           BOM TRANSPORTATION    50.00     47.84     2.16
+4               BREISHABREE TRANSPORTATION LLC   106.36    542.51  -436.15
+5                  BROOKES TRANSPORTATION, LLC  1948.52    955.16   993.36
+6                     BTS INVESTORS GROUP, LLC    16.32      4.65    11.67
+7                                CEASAR WS LLC     0.00     97.17   -97.17
+8                        DAESHA SAFE TRANSPORT     0.00      0.00     0.00
+9                            DEECAL ENTERPRISE     0.00      0.00     0.00
+10                   GRAND TOUR TRANSPORTATION     0.00      0.00     0.00
+11  HEALTH DIRECT TRANSPORTATION SERVICES INC.     0.00      0.00     0.00
+12                            HOUND OF JUSTICE   100.00      0.00   100.00
+13                               HUB SOLUTIONS     0.00      0.00     0.00
+14                   HUNDREDFOLD SERVICES, LLC   232.60    501.46  -268.86
+15                        IGWE SIX TRANSIT LLC     0.00      0.00     0.00
+16                    INNER CITY LOGISTICS LLC   263.98     53.29   210.69
+17                     LA PATRONA SERVICES LLC     0.00      0.00     0.00
+18                           LADY K HEALTHCARE     0.00   -114.50   114.50
+19                          LAQUESHA HENDERSON     0.00      0.00     0.00
+20                  LIZZY'S TRANSPORTATION LLC     0.00      0.00     0.00
+21                                LOVEDAY IGWE     0.00      0.00     0.00
+22                              LYNN TRAVELING     0.00     25.64   -25.64
+23                        MELINIO TRANSIT (TX)  3870.31   2575.89  1294.42
+24                             ON THE MOVE LLC     0.00      0.00     0.00
+25                                 ON-DIME LLC     0.00    304.89  -304.89
+26                          ORION TRANSIT, LLC   400.00   1113.09  -713.09
+27                                    Operator     0.00      0.00     0.00
+28                         PICKUP PARTNERS LLC   400.00     15.00   385.00
+29                             QUNIFIA JACKSON     0.00      0.00     0.00
+30                RESILIENT LOGISTICS MGMT LLC     0.00      0.00     0.00
+31                            ROYAL T KARE LLC  1096.24   1209.90  -113.66
+32                SERENITY CARE TRANSPORTATION     0.00      0.00     0.00
+33            SERENITY CARE TRANSPORTATION LCC     0.00      0.00     0.00
+34                             TIFFANY MURDOCK     0.00      0.00     0.00
+35                   TRAVEL GALS AND GENTS LLC     0.00      0.00     0.00
+36                          UAD TRANSPORTATION   265.40      0.00   265.40
+2025-05-06 10:41:17,127 - INFO - Cash Collected DF:                                        PARTNER  LATEST  PREVIOUS  CHANGE
+1                     ASH ELITE TRANSPORTATION   197.5      81.0   116.5
+2                       BM3 TRANSPORTATION LLC    76.0     127.5   -51.5
+3                           BOM TRANSPORTATION   137.5    -209.0   346.5
+4               BREISHABREE TRANSPORTATION LLC   252.0       4.5   247.5
+5                  BROOKES TRANSPORTATION, LLC  1232.0    -634.0  1866.0
+6                     BTS INVESTORS GROUP, LLC    77.0      24.5    52.5
+7                                CEASAR WS LLC   396.0     373.5    22.5
+8                        DAESHA SAFE TRANSPORT     0.0       0.0     0.0
+9                            DEECAL ENTERPRISE   105.5       0.0   105.5
+10                   GRAND TOUR TRANSPORTATION    70.0       0.0    70.0
+11  HEALTH DIRECT TRANSPORTATION SERVICES INC.   196.0       0.0   196.0
+12                            HOUND OF JUSTICE    35.5     -35.0    70.5
+13                               HUB SOLUTIONS   -14.0     215.0  -229.0
+14                   HUNDREDFOLD SERVICES, LLC     0.0       0.0     0.0
+15                        IGWE SIX TRANSIT LLC     2.5       0.0     2.5
+16                    INNER CITY LOGISTICS LLC    88.5     292.0  -203.5
+17                     LA PATRONA SERVICES LLC   166.0     152.0    14.0
+18                           LADY K HEALTHCARE     0.0    -110.5   110.5
+19                          LAQUESHA HENDERSON     0.0     -81.0    81.0
+20                  LIZZY'S TRANSPORTATION LLC   143.5     165.0   -21.5
+21                                LOVEDAY IGWE     0.0      42.0   -42.0
+22                              LYNN TRAVELING   171.0     -87.0   258.0
+23                        MELINIO TRANSIT (TX)   311.5     301.0    10.5
+24                             ON THE MOVE LLC     0.0       0.0     0.0
+25                                 ON-DIME LLC   245.0       2.5   242.5
+26                          ORION TRANSIT, LLC  -282.5     500.5  -783.0
+27                                    Operator     0.0       0.0     0.0
+28                         PICKUP PARTNERS LLC     6.0      96.0   -90.0
+29                             QUNIFIA JACKSON     0.0       0.0     0.0
+30                RESILIENT LOGISTICS MGMT LLC     0.0       0.0     0.0
+31                            ROYAL T KARE LLC   -66.5     822.5  -889.0
+32                SERENITY CARE TRANSPORTATION     0.0     -33.0    33.0
+33            SERENITY CARE TRANSPORTATION LCC    42.0       0.0    42.0
+34                             TIFFANY MURDOCK    65.0       0.0    65.0
+35                   TRAVEL GALS AND GENTS LLC     0.0       0.0     0.0
+36                          UAD TRANSPORTATION   168.0       4.5   163.5
+2025-05-06 10:41:17,199 - INFO - Applying formatting to sheet: TotalInvoicePayment.
+2025-05-06 10:41:17,200 - INFO - Formatting applied successfully to sheet: TotalInvoicePayment.
+2025-05-06 10:41:17,200 - INFO - Applying formatting to sheet: HourlyTTLRevComparison.
+2025-05-06 10:41:17,206 - INFO - Formatting applied successfully to sheet: HourlyTTLRevComparison.
+2025-05-06 10:41:17,206 - INFO - Applying formatting to sheet: LiftLeaseComparison.
+2025-05-06 10:41:17,213 - INFO - Formatting applied successfully to sheet: LiftLeaseComparison.
+2025-05-06 10:41:17,213 - INFO - Applying formatting to sheet: ViolationsComparison.
+2025-05-06 10:41:17,219 - INFO - Formatting applied successfully to sheet: ViolationsComparison.
+2025-05-06 10:41:17,219 - INFO - Applying formatting to sheet: CashCollectedComparison.
+2025-05-06 10:41:17,225 - INFO - Formatting applied successfully to sheet: CashCollectedComparison.
+2025-05-06 10:41:17,268 - INFO - Main comparison process completed successfully. File saved to ComparedResults\DIV3_Main_Tables.xlsx.
+2025-05-06 10:41:17,268 - INFO - Comparing Total Revenue Hours
+2025-05-06 10:41:17,271 - INFO - Comparison of Total Revenue Hours and other metrics completed.
+2025-05-06 10:41:17,275 - INFO - ADA Total Revenue Hours DF:                                        PARTNER  LATEST  PREVIOUS  CHANGE
+0                           ANGELS WAY TRANSIT   84.13     93.31   -9.18
+1                     ASH ELITE TRANSPORTATION   77.29     68.38    8.91
+2                       BM3 TRANSPORTATION LLC   66.67     79.84  -13.17
+3               BREISHABREE TRANSPORTATION LLC   68.55     74.17   -5.62
+4                  BROOKES TRANSPORTATION, LLC  351.51    413.17  -61.66
+5                     BTS INVESTORS GROUP, LLC   62.18     71.20   -9.02
+6                                CEASAR WS LLC  143.44    147.00   -3.56
+7                            DEECAL ENTERPRISE   60.60      0.00   60.60
+8   HEALTH DIRECT TRANSPORTATION SERVICES INC.   46.41      0.00   46.41
+9                             HOUND OF JUSTICE   34.81      9.19   25.62
+10                               HUB SOLUTIONS  101.45    103.24   -1.79
+11                        IGWE SIX TRANSIT LLC   15.91      0.00   15.91
+12                    INNER CITY LOGISTICS LLC  113.86    140.66  -26.80
+13                     LA PATRONA SERVICES LLC   67.15     82.12  -14.97
+14                           LADY K HEALTHCARE    0.00      4.59   -4.59
+15                  LIZZY'S TRANSPORTATION LLC   66.61     76.77  -10.16
+16                                LOVEDAY IGWE    0.00      8.75   -8.75
+17                              LYNN TRAVELING   70.88     72.15   -1.27
+18                        MELINIO TRANSIT (TX)   76.66     76.64    0.02
+19                                 ON-DIME LLC   70.31     78.62   -8.31
+20                          ORION TRANSIT, LLC  126.50    142.19  -15.69
+21                            ROYAL T KARE LLC  344.33    366.29  -21.96
+22            SERENITY CARE TRANSPORTATION LCC   13.54      0.00   13.54
+2025-05-06 10:41:17,276 - INFO - Comparing % of Revenue Hours to Forecast
+2025-05-06 10:41:17,279 - INFO - Comparison of % of Revenue Hours to Forecast and other metrics completed.
+2025-05-06 10:41:17,282 - INFO - ADA % of Revenue Hours to Forecast DF:                                        PARTNER  LATEST  PREVIOUS  CHANGE
+0                           ANGELS WAY TRANSIT    0.97      1.00   -0.03
+1                     ASH ELITE TRANSPORTATION    1.00      0.89    0.11
+2                       BM3 TRANSPORTATION LLC    0.89      1.00   -0.11
+3               BREISHABREE TRANSPORTATION LLC    0.92      1.00   -0.08
+4                  BROOKES TRANSPORTATION, LLC    0.75      0.85   -0.10
+5                     BTS INVESTORS GROUP, LLC    0.75      0.87   -0.12
+6                                CEASAR WS LLC    0.99      1.00   -0.01
+7                            DEECAL ENTERPRISE    0.82      0.00    0.82
+8   HEALTH DIRECT TRANSPORTATION SERVICES INC.    0.62      0.00    0.62
+9                             HOUND OF JUSTICE    0.51      0.25    0.26
+10                               HUB SOLUTIONS    1.00      1.00    0.00
+11                        IGWE SIX TRANSIT LLC    0.48      0.00    0.48
+12                    INNER CITY LOGISTICS LLC    0.85      0.98   -0.13
+13                     LA PATRONA SERVICES LLC    0.93      0.99   -0.06
+14                           LADY K HEALTHCARE    0.00      0.13   -0.13
+15                  LIZZY'S TRANSPORTATION LLC    0.91      1.00   -0.09
+16                                LOVEDAY IGWE    0.00      0.26   -0.26
+17                              LYNN TRAVELING    1.00      1.00    0.00
+18                        MELINIO TRANSIT (TX)    0.17      0.16    0.00
+19                                 ON-DIME LLC    0.87      1.00   -0.12
+20                          ORION TRANSIT, LLC    0.64      0.71   -0.07
+21                            ROYAL T KARE LLC    0.89      0.80    0.10
+22            SERENITY CARE TRANSPORTATION LCC    0.37      0.00    0.37
+2025-05-06 10:41:17,283 - INFO - Comparing Bonus Hours
+2025-05-06 10:41:17,285 - INFO - Comparison of Bonus Hours and other metrics completed.
+2025-05-06 10:41:17,290 - INFO - ADA Bonus Hours DF:                                        PARTNER  LATEST  PREVIOUS  CHANGE
+0                           ANGELS WAY TRANSIT     0.0       0.0     0.0
+1                     ASH ELITE TRANSPORTATION     0.0       0.0     0.0
+2                       BM3 TRANSPORTATION LLC     0.0       0.0     0.0
+3               BREISHABREE TRANSPORTATION LLC     0.0       0.0     0.0
+4                  BROOKES TRANSPORTATION, LLC     0.0       0.0     0.0
+5                     BTS INVESTORS GROUP, LLC     0.0       0.0     0.0
+6                                CEASAR WS LLC     0.0       0.0     0.0
+7                            DEECAL ENTERPRISE     0.0       0.0     0.0
+8   HEALTH DIRECT TRANSPORTATION SERVICES INC.     0.0       0.0     0.0
+9                             HOUND OF JUSTICE     0.0       0.0     0.0
+10                               HUB SOLUTIONS     0.0       0.0     0.0
+11                        IGWE SIX TRANSIT LLC     0.0       0.0     0.0
+12                    INNER CITY LOGISTICS LLC     0.0       0.0     0.0
+13                     LA PATRONA SERVICES LLC     0.0       0.0     0.0
+14                           LADY K HEALTHCARE     0.0       0.0     0.0
+15                  LIZZY'S TRANSPORTATION LLC     0.0       0.0     0.0
+16                                LOVEDAY IGWE     0.0       0.0     0.0
+17                              LYNN TRAVELING     0.0       0.0     0.0
+18                        MELINIO TRANSIT (TX)     0.0       0.0     0.0
+19                                 ON-DIME LLC     0.0       0.0     0.0
+20                          ORION TRANSIT, LLC     0.0       0.0     0.0
+21                            ROYAL T KARE LLC     0.0       0.0     0.0
+22            SERENITY CARE TRANSPORTATION LCC     0.0       0.0     0.0
+2025-05-06 10:41:17,290 - INFO - Comparing Core Revenue
+2025-05-06 10:41:17,292 - INFO - Comparison of Core Revenue and other metrics completed.
+2025-05-06 10:41:17,296 - INFO - ADA Core Revenue DF:                                        PARTNER   LATEST  PREVIOUS   CHANGE
+0                           ANGELS WAY TRANSIT  2153.73   2388.74  -235.01
+1                     ASH ELITE TRANSPORTATION  1978.62   1750.53   228.10
+2                       BM3 TRANSPORTATION LLC  1706.75   2043.90  -337.15
+3               BREISHABREE TRANSPORTATION LLC  1754.88   1898.75  -143.87
+4                  BROOKES TRANSPORTATION, LLC  9561.07  11238.22 -1677.15
+5                     BTS INVESTORS GROUP, LLC  1591.81   1822.72  -230.91
+6                                CEASAR WS LLC  3901.57   3998.40   -96.83
+7                            DEECAL ENTERPRISE  1551.36      0.00  1551.36
+8   HEALTH DIRECT TRANSPORTATION SERVICES INC.  1188.10      0.00  1188.10
+9                             HOUND OF JUSTICE   891.14    235.26   655.87
+10                               HUB SOLUTIONS  2597.12   2642.94   -45.82
+11                        IGWE SIX TRANSIT LLC   407.30      0.00   407.30
+12                    INNER CITY LOGISTICS LLC  3096.99   3825.95  -728.96
+13                     LA PATRONA SERVICES LLC  1719.04   2102.27  -383.23
+14                           LADY K HEALTHCARE     0.00    117.50  -117.50
+15                  LIZZY'S TRANSPORTATION LLC  1705.22   1965.31  -260.10
+16                                LOVEDAY IGWE     0.00    224.00  -224.00
+17                              LYNN TRAVELING  1814.53   1847.04   -32.51
+18                        MELINIO TRANSIT (TX)  2085.15   2084.61     0.54
+19                                 ON-DIME LLC  1799.94   2012.67  -212.74
+20                          ORION TRANSIT, LLC  3440.80   3867.57  -426.77
+21                            ROYAL T KARE LLC  9365.78   9963.09  -597.31
+22            SERENITY CARE TRANSPORTATION LCC   346.62      0.00   346.62
+2025-05-06 10:41:17,296 - INFO - Comparing Total Earnings
+2025-05-06 10:41:17,299 - INFO - Comparison of Total Earnings and other metrics completed.
+2025-05-06 10:41:17,303 - INFO - ADA Total Earnings DF:                                        PARTNER   LATEST  PREVIOUS   CHANGE
+0                           ANGELS WAY TRANSIT  2504.77   2985.92  -481.15
+1                     ASH ELITE TRANSPORTATION  2473.28   1870.14   603.14
+2                       BM3 TRANSPORTATION LLC  1938.82   2554.88  -616.06
+3               BREISHABREE TRANSPORTATION LLC  1996.29   2373.44  -377.15
+4                  BROOKES TRANSPORTATION, LLC  9561.07  11238.22 -1677.15
+5                     BTS INVESTORS GROUP, LLC  1873.66   2093.89  -220.22
+6                                CEASAR WS LLC  4876.96   4998.00  -121.04
+7                            DEECAL ENTERPRISE  1551.36      0.00  1551.36
+8   HEALTH DIRECT TRANSPORTATION SERVICES INC.  1422.91      0.00  1422.91
+9                             HOUND OF JUSTICE   891.14    235.26   655.87
+10                               HUB SOLUTIONS  3246.40   3303.68   -57.28
+11                        IGWE SIX TRANSIT LLC   407.30      0.00   407.30
+12                    INNER CITY LOGISTICS LLC  3096.99   4304.20 -1207.20
+13                     LA PATRONA SERVICES LLC  1948.48   2627.84  -679.36
+14                           LADY K HEALTHCARE     0.00    117.50  -117.50
+15                  LIZZY'S TRANSPORTATION LLC  1937.54   2456.64  -519.10
+16                                LOVEDAY IGWE     0.00    224.00  -224.00
+17                              LYNN TRAVELING  2268.16   2308.80   -40.64
+18                        MELINIO TRANSIT (TX)  2085.15   2084.61     0.54
+19                                 ON-DIME LLC  2059.58   2515.84  -456.26
+20                          ORION TRANSIT, LLC  3440.80   3867.57  -426.77
+21                            ROYAL T KARE LLC  9365.78   9963.09  -597.31
+22            SERENITY CARE TRANSPORTATION LCC   346.62      0.00   346.62
+2025-05-06 10:41:17,303 - INFO - Comparing OS Operators between previous and latest sheets.
+2025-05-06 10:41:17,305 - INFO - Drivers comparison completed.
+2025-05-06 10:41:17,307 - INFO - ADA Drivers DF:                  PREVIOUS                 LATEST
+0            ASHLEY BROWN            ALEX THOMAS
+1          ASHLEY CHATMAN           ASHLEY BROWN
+2            AYANAH TERRY         ASHLEY CHATMAN
+3             BENNY YOUNG           AYANAH TERRY
+4         BRANDON JACKSON            BENNY YOUNG
+5          BRITTANY GREEN        BRANDON JACKSON
+6         BRYANT MATTHEWS         BRITTANY GREEN
+7       CATREANA ROBINSON        BRYANT MATTHEWS
+8         CHADWICK MILLER      CATREANA ROBINSON
+9      CHRISTOPHER BUTLER        CHADWICK MILLER
+10  COLYNN TENNYSON-NIXON     CHRISTOPHER BUTLER
+11         DEDRICC WILSON  COLYNN TENNYSON-NIXON
+12        DIAMOND LEGGETT            DAVID OAKES
+13       ELIZABETH GARCIA         DEDRICC WILSON
+14            ELVA GARCIA        DIAMOND LEGGETT
+15       FITZGERALD MOORE      DIANA VILLALPANDO
+16      JACQUELINE HARRIS       ELIZABETH GARCIA
+17       JALICEA MAYBERRY            ELVA GARCIA
+18         JAMES PHILLIPS      JACQUELINE HARRIS
+19           JANET SUTTON       JALICEA MAYBERRY
+20     JOHNATHAN DELAROSA           JANET SUTTON
+21      KENDRICK GASSAWAY     JOHNATHAN DELAROSA
+22       KIMBERLY ROBBINS            JOY JENKINS
+23              LEON KING         KENNETH CALVIN
+24          LINDA HOLLAND              LEON KING
+25           LOVEDAY IGWE          LINDA HOLLAND
+26            MANNY GOMEZ           LOVEDAY IGWE
+27             MARK KABAH            MANNY GOMEZ
+28            MIA VORTICE             MARK KABAH
+29          MICHAEL SMITH            MIA VORTICE
+30          MIRO PASKALEV          MIRO PASKALEV
+31         NATASHA TITTLE         NATASHA TITTLE
+32        QAYSSAR ALGBURI        QAYSSAR ALGBURI
+33      RIC SHANA SANDERS          RAE MESHA LEE
+34            SARAH JONES        RAPHELS UBAWIKE
+35         SHAMARA SCALES      RIC SHANA SANDERS
+36    SHAMBREISHA SPENCER            SARAH JONES
+37           SHEILA JONES         SHAMARA SCALES
+38        SHURONDA MOSLEY    SHAMBREISHA SPENCER
+39          TAIESHA MAJOR           SHEILA JONES
+40          TMYRA FRANCIS          TAIESHA MAJOR
+41              TROY SIMS        TIFFANY MURDOCK
+42        ULYSSES GRIFFIN          TMYRA FRANCIS
+43            URECHA DUNN              TROY SIMS
+44         VALECIA BROOKS            URECHA DUNN
+45                    NaN      YOHANNES MEKONNEN
+46                                           NaN
+2025-05-06 10:41:17,379 - INFO - Applying formatting to sheet: TotalRevHrsComparison.
+2025-05-06 10:41:17,384 - INFO - Formatting applied successfully to sheet: TotalRevHrsComparison.
+2025-05-06 10:41:17,384 - INFO - Applying formatting to sheet: %RevHrsComparison.
+2025-05-06 10:41:17,389 - INFO - Formatting applied successfully to sheet: %RevHrsComparison.
+2025-05-06 10:41:17,389 - INFO - Applying formatting to sheet: BonusHrsComparison.
+2025-05-06 10:41:17,393 - INFO - Formatting applied successfully to sheet: BonusHrsComparison.
+2025-05-06 10:41:17,394 - INFO - Applying formatting to sheet: CoreRevComparison.
+2025-05-06 10:41:17,398 - INFO - Formatting applied successfully to sheet: CoreRevComparison.
+2025-05-06 10:41:17,398 - INFO - Applying formatting to sheet: TotEarningsComparison.
+2025-05-06 10:41:17,402 - INFO - Formatting applied successfully to sheet: TotEarningsComparison.
+2025-05-06 10:41:17,402 - INFO - Applying formatting to sheet: DriversComparison.
+2025-05-06 10:41:17,405 - INFO - Formatting applied successfully to sheet: DriversComparison.
+2025-05-06 10:41:17,460 - INFO - ADA comparison process completed successfully. File saved to ComparedResults\DIV3_ADA_Tables.xlsx.
+2025-05-06 10:41:17,461 - INFO - Comparing Core Hours Worked
+2025-05-06 10:41:17,463 - INFO - Comparison of Core Hours Worked and other metrics completed.
+2025-05-06 10:41:17,465 - INFO - GOLINK Core Hours Worked DF:                        PARTNER   LATEST  PREVIOUS  CHANGE
+0  BROOKES TRANSPORTATION, LLC   728.22    737.08   -8.86
+1    HUNDREDFOLD SERVICES, LLC   282.79    314.17  -31.38
+2         MELINIO TRANSIT (TX)  1622.13   1535.35   86.78
+3           ORION TRANSIT, LLC  1013.78   1030.17  -16.39
+4             ROYAL T KARE LLC     8.73      5.14    3.60
+2025-05-06 10:41:17,466 - INFO - Comparing % of Revenue Hours to Forecast
+2025-05-06 10:41:17,467 - INFO - Comparison of % of Revenue Hours to Forecast and other metrics completed.
+2025-05-06 10:41:17,470 - INFO - GOLINK % Revenue Hours DF:                        PARTNER  LATEST  PREVIOUS  CHANGE
+0  BROOKES TRANSPORTATION, LLC    1.00      1.00    0.00
+1    HUNDREDFOLD SERVICES, LLC    0.88      0.97   -0.08
+2         MELINIO TRANSIT (TX)    0.99      0.93    0.05
+3           ORION TRANSIT, LLC    1.00      1.00    0.00
+4             ROYAL T KARE LLC    0.04      0.02    0.02
+2025-05-06 10:41:17,470 - INFO - Comparing Total Earnings
+2025-05-06 10:41:17,472 - INFO - Comparison of Total Earnings and other metrics completed.
+2025-05-06 10:41:17,475 - INFO - GOLINK Total Earnings DF:                        PARTNER    LATEST  PREVIOUS   CHANGE
+0  BROOKES TRANSPORTATION, LLC  24759.53  25060.85  -301.33
+1    HUNDREDFOLD SERVICES, LLC   7691.86   9663.77 -1971.91
+2         MELINIO TRANSIT (TX)  52425.66  43088.79  9336.86
+3           ORION TRANSIT, LLC  34468.50  35025.90  -557.40
+4             ROYAL T KARE LLC    237.49    139.69    97.81
+2025-05-06 10:41:17,475 - INFO - Comparing Total Duty Violation
+2025-05-06 10:41:17,477 - INFO - Comparison of Total Duty Violation and other metrics completed.
+2025-05-06 10:41:17,479 - INFO - GOLINK Total Duty Violation DF:                        PARTNER  LATEST  PREVIOUS  CHANGE
+0  BROOKES TRANSPORTATION, LLC    1000       950      50
+1    HUNDREDFOLD SERVICES, LLC     100       250    -150
+2         MELINIO TRANSIT (TX)    1700      1500     200
+3           ORION TRANSIT, LLC     350       350       0
+4             ROYAL T KARE LLC      50         0      50
+2025-05-06 10:41:17,480 - INFO - Comparing OS Operators between previous and latest sheets.
+2025-05-06 10:41:17,481 - INFO - Drivers comparison completed.
+2025-05-06 10:41:17,483 - INFO - GOLINK Drivers DF:            PREVIOUS          LATEST
+0       ALEX MOUTON     ALEX MOUTON
+1       ALI MOHAMED     ALEX THOMAS
+2         AMIR KHAN     ALI MOHAMED
+3       BENNY YOUNG       AMIR KHAN
+4   BRYANT MATTHEWS     BENNY YOUNG
+..              ...             ...
+58        WAYNE LEE     URECHA DUNN
+59  WILLIE WILLIAMS  VALECIA BROOKS
+60    YURANA HARRIS       WAYNE LEE
+61    ZAINAB MPIANA   YURANA HARRIS
+62                    ZAINAB MPIANA
+
+[63 rows x 2 columns]
+2025-05-06 10:41:17,546 - INFO - Applying formatting to sheet: CoreHoursComparison.
+2025-05-06 10:41:17,547 - INFO - Formatting applied successfully to sheet: CoreHoursComparison.
+2025-05-06 10:41:17,548 - INFO - Applying formatting to sheet: %RevHrsComparison.
+2025-05-06 10:41:17,549 - INFO - Formatting applied successfully to sheet: %RevHrsComparison.
+2025-05-06 10:41:17,549 - INFO - Applying formatting to sheet: TotEarningsComparison.
+2025-05-06 10:41:17,550 - INFO - Formatting applied successfully to sheet: TotEarningsComparison.
+2025-05-06 10:41:17,550 - INFO - Applying formatting to sheet: TotDutyViolationComparison.
+2025-05-06 10:41:17,551 - INFO - Formatting applied successfully to sheet: TotDutyViolationComparison.
+2025-05-06 10:41:17,551 - INFO - Applying formatting to sheet: DriversComparison.
+2025-05-06 10:41:17,555 - INFO - Formatting applied successfully to sheet: DriversComparison.
+2025-05-06 10:41:17,595 - INFO - GOLINK comparison process completed successfully. File saved to ComparedResults\DIV3_GOLINK_Tables.xlsx.
+2025-05-06 10:41:17,596 - INFO - Comparing StandBy Pay Hours
+2025-05-06 10:41:17,598 - INFO - Comparison of StandBy Pay Hours and other metrics completed.
+2025-05-06 10:41:17,600 - INFO - ADAGOLINK StandBy Pay Hours DF:                      PARTNER  LATEST  PREVIOUS  CHANGE
+0         BOM TRANSPORTATION   78.73     82.58   -3.85
+1  GRAND TOUR TRANSPORTATION   27.29      0.00   27.29
+2        PICKUP PARTNERS LLC   83.15     88.16   -5.01
+3            TIFFANY MURDOCK   31.85      0.00   31.85
+4         UAD TRANSPORTATION   78.88     78.37    0.51
+2025-05-06 10:41:17,601 - INFO - Comparing StandbyExtraHours
+2025-05-06 10:41:17,603 - INFO - Comparison of StandbyExtraHours and other metrics completed.
+2025-05-06 10:41:17,605 - INFO - ADAGOLINK StandBy Extra Hours DF:                      PARTNER  LATEST  PREVIOUS  CHANGE
+0         BOM TRANSPORTATION   13.98     24.07  -10.09
+1  GRAND TOUR TRANSPORTATION    0.00      0.00    0.00
+2        PICKUP PARTNERS LLC   22.90     16.64    6.26
+3            TIFFANY MURDOCK    0.00      0.00    0.00
+4         UAD TRANSPORTATION    0.00      0.00    0.00
+2025-05-06 10:41:17,605 - INFO - Comparing Total Earnings
+2025-05-06 10:41:17,608 - INFO - Comparison of Total Earnings and other metrics completed.
+2025-05-06 10:41:17,611 - INFO - ADAGOLINK Total Earnings DF:                      PARTNER   LATEST  PREVIOUS  CHANGE
+0         BOM TRANSPORTATION  2751.36   3074.11 -322.75
+1  GRAND TOUR TRANSPORTATION   698.62      0.00  698.62
+2        PICKUP PARTNERS LLC  3036.68   2836.39  200.29
+3            TIFFANY MURDOCK   815.36      0.00  815.36
+4         UAD TRANSPORTATION  2304.00   2304.00    0.00
+2025-05-06 10:41:17,648 - INFO - Applying formatting to sheet: StdByPayHrsComparison.
+2025-05-06 10:41:17,649 - INFO - Formatting applied successfully to sheet: StdByPayHrsComparison.
+2025-05-06 10:41:17,649 - INFO - Applying formatting to sheet: StByExtraHrsComparison.
+2025-05-06 10:41:17,650 - INFO - Formatting applied successfully to sheet: StByExtraHrsComparison.
+2025-05-06 10:41:17,650 - INFO - Applying formatting to sheet: TotEarningsComparison.
+2025-05-06 10:41:17,651 - INFO - Formatting applied successfully to sheet: TotEarningsComparison.
+2025-05-06 10:41:17,676 - INFO - ADAGOLINK comparison process completed successfully. File saved to ComparedResults\DIV3_ADAGOLINK_Tables.xlsx.
+2025-05-06 10:41:17,676 - INFO - VDP_DIV3_0324_0406 FINAL.xlsm + VDP_DIV3 UPDATED TEMPLATE.xlsm
+2025-05-06 10:41:18,883 - INFO - Successfully updated color for TextBox 90 with status 'Decreased'.
+2025-05-06 10:41:18,885 - INFO - Successfully updated color for txtHTTLRevtDiff with value '5,165.10'.
+2025-05-06 10:41:18,886 - INFO - Successfully updated color for txtLLeaseDiff with value '2,466.00'.
+2025-05-06 10:41:18,887 - INFO - Successfully updated color for txtViolationsDiff with value '1,383.88'.
+2025-05-06 10:41:18,889 - INFO - Successfully updated color for txtCashCollectedDiff with value '1,806.50'.
+2025-05-06 10:41:18,957 - INFO - Successfully updated color for txtTotalRevHrsDiff with value '-45.49'.
+2025-05-06 10:41:18,959 - INFO - Successfully updated color for txtPRevHrsDiff with value '6.30'.
+2025-05-06 10:41:18,961 - INFO - Successfully updated color for txtBonusHrsDiff with value '0'.
+2025-05-06 10:41:18,962 - INFO - Successfully updated color for txtCoreRevDiff with value '-1,371.97'.
+2025-05-06 10:41:18,963 - INFO - Successfully updated color for txtTotEarningsDiff with value '-2,830.45'.
+2025-05-06 10:41:18,965 - INFO - Successfully updated color for txtDriversDiff with value '1'.
+2025-05-06 10:41:19,023 - INFO - Successfully updated color for txtCoreHrsDiff with value '33.75'.
+2025-05-06 10:41:19,024 - INFO - Successfully updated color for txtPRevHrsDiff with value '-0.20'.
+2025-05-06 10:41:19,027 - INFO - Successfully updated color for txtTotEarningsDiff with value '6,604.03'.
+2025-05-06 10:41:19,029 - INFO - Successfully updated color for txtTotalViolationsDiff with value '150.00'.
+2025-05-06 10:41:19,030 - INFO - Successfully updated color for txtDriversDiff with value '0'.
+2025-05-06 10:41:19,126 - INFO - Successfully updated color for txtstdPayHrsDiff with value '50.79'.
+2025-05-06 10:41:19,129 - INFO - Successfully updated color for txtstdExtraHrsDiff with value '-3.83'.
+2025-05-06 10:41:19,133 - INFO - Successfully updated color for txtTotEarningsDiff with value '1,391.52'.
+2025-05-06 10:41:20,368 - INFO - ComparedResults/Dashboard.xlsm has been successfully updated and saved.
+2025-05-06 10:41:23,331 - INFO - Picture name: HTTLRevTable found in Dashboard
+2025-05-06 10:41:23,377 - INFO - Deleted existing picture: HTTLRevTable in Dashboard
+2025-05-06 10:41:23,377 - INFO - Picture name: LeaseTable found in Dashboard
+2025-05-06 10:41:23,440 - INFO - Deleted existing picture: LeaseTable in Dashboard
+2025-05-06 10:41:23,440 - INFO - Picture name: ViolationsTable found in Dashboard
+2025-05-06 10:41:23,460 - INFO - Deleted existing picture: ViolationsTable in Dashboard
+2025-05-06 10:41:23,460 - INFO - Picture name: CashTable found in Dashboard
+2025-05-06 10:41:23,473 - INFO - Deleted existing picture: CashTable in Dashboard
+2025-05-06 10:41:23,514 - INFO - Picture name: TotalRevHrsTable found in ADA
+2025-05-06 10:41:23,554 - INFO - Deleted existing picture: TotalRevHrsTable in ADA
+2025-05-06 10:41:23,555 - INFO - Picture name: PRevHrsTable found in ADA
+2025-05-06 10:41:23,571 - INFO - Deleted existing picture: PRevHrsTable in ADA
+2025-05-06 10:41:23,571 - INFO - Picture name: BonusHrsTable found in ADA
+2025-05-06 10:41:23,586 - INFO - Deleted existing picture: BonusHrsTable in ADA
+2025-05-06 10:41:23,587 - INFO - Picture name: CoreRevTable found in ADA
+2025-05-06 10:41:23,603 - INFO - Deleted existing picture: CoreRevTable in ADA
+2025-05-06 10:41:23,603 - INFO - Picture name: TotEarningsTable found in ADA
+2025-05-06 10:41:23,620 - INFO - Deleted existing picture: TotEarningsTable in ADA
+2025-05-06 10:41:23,620 - INFO - Picture name: DriversTable found in ADA
+2025-05-06 10:41:23,634 - INFO - Deleted existing picture: DriversTable in ADA
+2025-05-06 10:41:26,830 - INFO - Copied picture from HourlyTTLRevComparison, width: 19.10 cm, height: 20.11 cm
+2025-05-06 10:41:27,979 - INFO - Table Name: HTTLRevTable
+2025-05-06 10:41:28,980 - INFO - 'HTTLRevTable' successfully pasted in the HourlyTTLRevComparison Sheet.
+2025-05-06 10:41:29,001 - INFO - Resized HTTLRevContainer to width: 19.17 cm, height: 22.08 cm
+2025-05-06 10:41:30,019 - INFO - Copied picture from LiftLeaseComparison, width: 13.18 cm, height: 19.58 cm
+2025-05-06 10:41:31,092 - INFO - Table Name: LeaseTable
+2025-05-06 10:41:32,093 - INFO - 'LeaseTable' successfully pasted in the LiftLeaseComparison Sheet.
+2025-05-06 10:41:32,115 - INFO - Resized LeaseContainer to width: 13.25 cm, height: 21.55 cm
+2025-05-06 10:41:33,136 - INFO - Copied picture from ViolationsComparison, width: 17.25 cm, height: 19.58 cm
+2025-05-06 10:41:34,223 - INFO - Table Name: ViolationsTable
+2025-05-06 10:41:35,225 - INFO - 'ViolationsTable' successfully pasted in the ViolationsComparison Sheet.
+2025-05-06 10:41:35,254 - INFO - Resized ViolationsContainer to width: 17.32 cm, height: 21.55 cm
+2025-05-06 10:41:36,277 - INFO - Copied picture from CashCollectedComparison, width: 13.18 cm, height: 19.58 cm
+2025-05-06 10:41:37,323 - ERROR - An error occurred: (-2147352567, 'Exception occurred.', (0, 'Microsoft Excel', 'Paste method of Worksheet class failed', 'xlmain11.chm', 0, -2146827284), None)
+2025-05-06 10:41:37,432 - INFO - A Dashboard error occurred: '<win32com.gen_py.Microsoft Excel 16.0 Object Library._Workbook instance at 0x1838384082576>' object has no attribute '__len__'
+2025-05-06 10:42:09,218 - INFO - Starting main comparison process.
+2025-05-06 10:42:09,218 - INFO - Loading sheets from the provided Excel files.
+2025-05-06 10:42:12,082 - INFO - Sheets loaded successfully.
+2025-05-06 10:42:12,083 - INFO - Total valid partners: 30
+2025-05-06 10:42:12,084 - INFO - Partner names: ['ANGELS WAY TRANSIT', 'ASH ELITE TRANSPORTATION', 'BM3 TRANSPORTATION LLC', 'BOM TRANSPORTATION', 'BREISHABREE TRANSPORTATION LLC', 'BROOKES TRANSPORTATION, LLC', 'BTS INVESTORS GROUP, LLC', 'CEASAR WS LLC', 'DAESHA SAFE TRANSPORT', 'HOUND OF JUSTICE', 'HUB SOLUTIONS', 'HUNDREDFOLD SERVICES, LLC', 'INNER CITY LOGISTICS LLC', 'LA PATRONA SERVICES LLC', 'LADY K HEALTHCARE', 'LAQUESHA HENDERSON', "LIZZY'S TRANSPORTATION LLC", 'LOVEDAY IGWE', 'LYNN TRAVELING', 'MELINIO TRANSIT (TX)', 'ON THE MOVE LLC', 'ON-DIME LLC', 'ORION TRANSIT, LLC', 'PICKUP PARTNERS LLC', 'QUNIFIA JACKSON', 'RESILIENT LOGISTICS MGMT LLC', 'ROYAL T KARE LLC', 'SERENITY CARE TRANSPORTATION', 'TRAVEL GALS AND GENTS LLC', 'UAD TRANSPORTATION']
+2025-05-06 10:42:12,084 - INFO - Total amount: 139183.51540000003
+2025-05-06 10:42:12,084 - INFO - Total calculated amount: 139183.51540000003
+2025-05-06 10:42:12,086 - INFO - Total valid partners: 27
+2025-05-06 10:42:12,086 - INFO - Partner names: ['ANGELS WAY TRANSIT', 'ASH ELITE TRANSPORTATION', 'BM3 TRANSPORTATION LLC', 'BOM TRANSPORTATION', 'BREISHABREE TRANSPORTATION LLC', 'BROOKES TRANSPORTATION, LLC', 'BTS INVESTORS GROUP, LLC', 'CEASAR WS LLC', 'DEECAL ENTERPRISE', 'GRAND TOUR TRANSPORTATION', 'HEALTH DIRECT TRANSPORTATION SERVICES INC.', 'HOUND OF JUSTICE', 'HUB SOLUTIONS', 'HUNDREDFOLD SERVICES, LLC', 'IGWE SIX TRANSIT LLC', 'INNER CITY LOGISTICS LLC', 'LA PATRONA SERVICES LLC', "LIZZY'S TRANSPORTATION LLC", 'LYNN TRAVELING', 'MELINIO TRANSIT (TX)', 'ON-DIME LLC', 'ORION TRANSIT, LLC', 'PICKUP PARTNERS LLC', 'ROYAL T KARE LLC', 'SERENITY CARE TRANSPORTATION LCC', 'TIFFANY MURDOCK', 'UAD TRANSPORTATION']
+2025-05-06 10:42:12,086 - INFO - Total amount: 136476.94150000002
+2025-05-06 10:42:12,086 - INFO - Total calculated amount: 136476.94150000002
+2025-05-06 10:42:12,086 - INFO - Comparing Totals between previous and latest values.
+2025-05-06 10:42:12,087 - INFO - Totals comparison completed.
+2025-05-06 10:42:12,092 - INFO - 
+Totals DF:       LATEST   PREVIOUS  DIFFERENCE     CHANGE
+0  136476.94  139183.52    -2706.57  Decreased
+2025-05-06 10:42:12,103 - INFO - Hourly TTL Rev Comparison DF:                                        PARTNER      LATEST    PREVIOUS     CHANGE
+1                           ANGELS WAY TRANSIT   2504.7680   2985.9200  -481.1520
+2                     ASH ELITE TRANSPORTATION   2473.2800   1870.1440   603.1360
+3                       BM3 TRANSPORTATION LLC   1938.8160   2554.8800  -616.0640
+4                           BOM TRANSPORTATION   2751.3600   3074.1067  -322.7467
+5               BREISHABREE TRANSPORTATION LLC   1996.2880   2373.4400  -377.1520
+6                  BROOKES TRANSPORTATION, LLC  34320.6011  36299.0782 -1978.4771
+7                     BTS INVESTORS GROUP, LLC   1873.6640   2093.8880  -220.2240
+8                                CEASAR WS LLC   4876.9600   4998.0000  -121.0400
+9                        DAESHA SAFE TRANSPORT      0.0000      0.0000     0.0000
+10                           DEECAL ENTERPRISE   1551.3600      0.0000  1551.3600
+11                   GRAND TOUR TRANSPORTATION    698.6240      0.0000   698.6240
+12  HEALTH DIRECT TRANSPORTATION SERVICES INC.   1422.9120      0.0000  1422.9120
+13                            HOUND OF JUSTICE    891.1360    235.2640   655.8720
+14                               HUB SOLUTIONS   3246.4000   3303.6800   -57.2800
+15                   HUNDREDFOLD SERVICES, LLC   7691.8577   9663.7691 -1971.9114
+16                        IGWE SIX TRANSIT LLC    407.2960      0.0000   407.2960
+17                    INNER CITY LOGISTICS LLC   3096.9920   4304.1960 -1207.2040
+18                     LA PATRONA SERVICES LLC   1948.4800   2627.8400  -679.3600
+19                           LADY K HEALTHCARE      0.0000    117.5040  -117.5040
+20                          LAQUESHA HENDERSON      0.0000      0.0000     0.0000
+21                  LIZZY'S TRANSPORTATION LLC   1937.5360   2456.6400  -519.1040
+22                                LOVEDAY IGWE      0.0000    224.0000  -224.0000
+23                              LYNN TRAVELING   2268.1600   2308.8000   -40.6400
+24                        MELINIO TRANSIT (TX)  54510.8107  45173.4017  9337.4090
+25                             ON THE MOVE LLC      0.0000      0.0000     0.0000
+26                                 ON-DIME LLC   2059.5840   2515.8400  -456.2560
+27                          ORION TRANSIT, LLC  37909.3049  38893.4690  -984.1641
+28                                    Operator      0.0000      0.0000     0.0000
+29                         PICKUP PARTNERS LLC   3036.6773   2836.3911   200.2862
+30                             QUNIFIA JACKSON      0.0000      0.0000     0.0000
+31                RESILIENT LOGISTICS MGMT LLC      0.0000      0.0000     0.0000
+32                            ROYAL T KARE LLC   9603.2698  10102.7736  -499.5038
+33                SERENITY CARE TRANSPORTATION      0.0000      0.0000     0.0000
+34            SERENITY CARE TRANSPORTATION LCC    346.6240      0.0000   346.6240
+35                             TIFFANY MURDOCK    815.3600      0.0000   815.3600
+36                   TRAVEL GALS AND GENTS LLC      0.0000      0.0000     0.0000
+37                          UAD TRANSPORTATION   2304.0000   2304.0000     0.0000
+2025-05-06 10:42:12,113 - INFO - Lift Lease DF:                                        PARTNER  LATEST  PREVIOUS  CHANGE
+1                     ASH ELITE TRANSPORTATION   685.0     685.0     0.0
+2                       BM3 TRANSPORTATION LLC   685.0     685.0     0.0
+3                           BOM TRANSPORTATION   685.0     685.0     0.0
+4               BREISHABREE TRANSPORTATION LLC   685.0     685.0     0.0
+5                  BROOKES TRANSPORTATION, LLC  6850.0    6850.0     0.0
+6                     BTS INVESTORS GROUP, LLC   685.0     685.0     0.0
+7                                CEASAR WS LLC   685.0     685.0     0.0
+8                        DAESHA SAFE TRANSPORT     0.0       0.0     0.0
+9                            DEECAL ENTERPRISE   548.0       0.0   548.0
+10                   GRAND TOUR TRANSPORTATION   274.0       0.0   274.0
+11  HEALTH DIRECT TRANSPORTATION SERVICES INC.   548.0       0.0   548.0
+12                            HOUND OF JUSTICE   685.0      68.5   616.5
+13                               HUB SOLUTIONS   685.0     685.0     0.0
+14                   HUNDREDFOLD SERVICES, LLC  2055.0    2055.0     0.0
+15                        IGWE SIX TRANSIT LLC   342.5       0.0   342.5
+16                    INNER CITY LOGISTICS LLC   685.0     685.0     0.0
+17                     LA PATRONA SERVICES LLC   685.0     685.0     0.0
+18                           LADY K HEALTHCARE     0.0     342.5  -342.5
+19                          LAQUESHA HENDERSON     0.0       0.0     0.0
+20                  LIZZY'S TRANSPORTATION LLC   685.0     685.0     0.0
+21                                LOVEDAY IGWE     0.0      68.5   -68.5
+22                              LYNN TRAVELING   685.0     685.0     0.0
+23                        MELINIO TRANSIT (TX)  8220.0    8220.0     0.0
+24                             ON THE MOVE LLC     0.0       0.0     0.0
+25                                 ON-DIME LLC   685.0     685.0     0.0
+26                          ORION TRANSIT, LLC  4795.0    4795.0     0.0
+27                                    Operator     0.0       0.0     0.0
+28                         PICKUP PARTNERS LLC   685.0     685.0     0.0
+29                             QUNIFIA JACKSON     0.0       0.0     0.0
+30                RESILIENT LOGISTICS MGMT LLC     0.0       0.0     0.0
+31                            ROYAL T KARE LLC  2740.0    2740.0     0.0
+32                SERENITY CARE TRANSPORTATION     0.0       0.0     0.0
+33            SERENITY CARE TRANSPORTATION LCC   342.5       0.0   342.5
+34                             TIFFANY MURDOCK   205.5       0.0   205.5
+35                   TRAVEL GALS AND GENTS LLC     0.0       0.0     0.0
+36                          UAD TRANSPORTATION   685.0     685.0     0.0
+2025-05-06 10:42:12,121 - INFO - Violations DF:                                        PARTNER   LATEST  PREVIOUS   CHANGE
+1                     ASH ELITE TRANSPORTATION     0.00     18.74   -18.74
+2                       BM3 TRANSPORTATION LLC     0.00     15.12   -15.12
+3                           BOM TRANSPORTATION    50.00     47.84     2.16
+4               BREISHABREE TRANSPORTATION LLC   106.36    542.51  -436.15
+5                  BROOKES TRANSPORTATION, LLC  1948.52    955.16   993.36
+6                     BTS INVESTORS GROUP, LLC    16.32      4.65    11.67
+7                                CEASAR WS LLC     0.00     97.17   -97.17
+8                        DAESHA SAFE TRANSPORT     0.00      0.00     0.00
+9                            DEECAL ENTERPRISE     0.00      0.00     0.00
+10                   GRAND TOUR TRANSPORTATION     0.00      0.00     0.00
+11  HEALTH DIRECT TRANSPORTATION SERVICES INC.     0.00      0.00     0.00
+12                            HOUND OF JUSTICE   100.00      0.00   100.00
+13                               HUB SOLUTIONS     0.00      0.00     0.00
+14                   HUNDREDFOLD SERVICES, LLC   232.60    501.46  -268.86
+15                        IGWE SIX TRANSIT LLC     0.00      0.00     0.00
+16                    INNER CITY LOGISTICS LLC   263.98     53.29   210.69
+17                     LA PATRONA SERVICES LLC     0.00      0.00     0.00
+18                           LADY K HEALTHCARE     0.00   -114.50   114.50
+19                          LAQUESHA HENDERSON     0.00      0.00     0.00
+20                  LIZZY'S TRANSPORTATION LLC     0.00      0.00     0.00
+21                                LOVEDAY IGWE     0.00      0.00     0.00
+22                              LYNN TRAVELING     0.00     25.64   -25.64
+23                        MELINIO TRANSIT (TX)  3870.31   2575.89  1294.42
+24                             ON THE MOVE LLC     0.00      0.00     0.00
+25                                 ON-DIME LLC     0.00    304.89  -304.89
+26                          ORION TRANSIT, LLC   400.00   1113.09  -713.09
+27                                    Operator     0.00      0.00     0.00
+28                         PICKUP PARTNERS LLC   400.00     15.00   385.00
+29                             QUNIFIA JACKSON     0.00      0.00     0.00
+30                RESILIENT LOGISTICS MGMT LLC     0.00      0.00     0.00
+31                            ROYAL T KARE LLC  1096.24   1209.90  -113.66
+32                SERENITY CARE TRANSPORTATION     0.00      0.00     0.00
+33            SERENITY CARE TRANSPORTATION LCC     0.00      0.00     0.00
+34                             TIFFANY MURDOCK     0.00      0.00     0.00
+35                   TRAVEL GALS AND GENTS LLC     0.00      0.00     0.00
+36                          UAD TRANSPORTATION   265.40      0.00   265.40
+2025-05-06 10:42:12,130 - INFO - Cash Collected DF:                                        PARTNER  LATEST  PREVIOUS  CHANGE
+1                     ASH ELITE TRANSPORTATION   197.5      81.0   116.5
+2                       BM3 TRANSPORTATION LLC    76.0     127.5   -51.5
+3                           BOM TRANSPORTATION   137.5    -209.0   346.5
+4               BREISHABREE TRANSPORTATION LLC   252.0       4.5   247.5
+5                  BROOKES TRANSPORTATION, LLC  1232.0    -634.0  1866.0
+6                     BTS INVESTORS GROUP, LLC    77.0      24.5    52.5
+7                                CEASAR WS LLC   396.0     373.5    22.5
+8                        DAESHA SAFE TRANSPORT     0.0       0.0     0.0
+9                            DEECAL ENTERPRISE   105.5       0.0   105.5
+10                   GRAND TOUR TRANSPORTATION    70.0       0.0    70.0
+11  HEALTH DIRECT TRANSPORTATION SERVICES INC.   196.0       0.0   196.0
+12                            HOUND OF JUSTICE    35.5     -35.0    70.5
+13                               HUB SOLUTIONS   -14.0     215.0  -229.0
+14                   HUNDREDFOLD SERVICES, LLC     0.0       0.0     0.0
+15                        IGWE SIX TRANSIT LLC     2.5       0.0     2.5
+16                    INNER CITY LOGISTICS LLC    88.5     292.0  -203.5
+17                     LA PATRONA SERVICES LLC   166.0     152.0    14.0
+18                           LADY K HEALTHCARE     0.0    -110.5   110.5
+19                          LAQUESHA HENDERSON     0.0     -81.0    81.0
+20                  LIZZY'S TRANSPORTATION LLC   143.5     165.0   -21.5
+21                                LOVEDAY IGWE     0.0      42.0   -42.0
+22                              LYNN TRAVELING   171.0     -87.0   258.0
+23                        MELINIO TRANSIT (TX)   311.5     301.0    10.5
+24                             ON THE MOVE LLC     0.0       0.0     0.0
+25                                 ON-DIME LLC   245.0       2.5   242.5
+26                          ORION TRANSIT, LLC  -282.5     500.5  -783.0
+27                                    Operator     0.0       0.0     0.0
+28                         PICKUP PARTNERS LLC     6.0      96.0   -90.0
+29                             QUNIFIA JACKSON     0.0       0.0     0.0
+30                RESILIENT LOGISTICS MGMT LLC     0.0       0.0     0.0
+31                            ROYAL T KARE LLC   -66.5     822.5  -889.0
+32                SERENITY CARE TRANSPORTATION     0.0     -33.0    33.0
+33            SERENITY CARE TRANSPORTATION LCC    42.0       0.0    42.0
+34                             TIFFANY MURDOCK    65.0       0.0    65.0
+35                   TRAVEL GALS AND GENTS LLC     0.0       0.0     0.0
+36                          UAD TRANSPORTATION   168.0       4.5   163.5
+2025-05-06 10:42:12,170 - INFO - Applying formatting to sheet: TotalInvoicePayment.
+2025-05-06 10:42:12,171 - INFO - Formatting applied successfully to sheet: TotalInvoicePayment.
+2025-05-06 10:42:12,171 - INFO - Applying formatting to sheet: HourlyTTLRevComparison.
+2025-05-06 10:42:12,178 - INFO - Formatting applied successfully to sheet: HourlyTTLRevComparison.
+2025-05-06 10:42:12,178 - INFO - Applying formatting to sheet: LiftLeaseComparison.
+2025-05-06 10:42:12,183 - INFO - Formatting applied successfully to sheet: LiftLeaseComparison.
+2025-05-06 10:42:12,183 - INFO - Applying formatting to sheet: ViolationsComparison.
+2025-05-06 10:42:12,188 - INFO - Formatting applied successfully to sheet: ViolationsComparison.
+2025-05-06 10:42:12,189 - INFO - Applying formatting to sheet: CashCollectedComparison.
+2025-05-06 10:42:12,194 - INFO - Formatting applied successfully to sheet: CashCollectedComparison.
+2025-05-06 10:42:12,217 - INFO - Main comparison process completed successfully. File saved to ComparedResults\DIV3_Main_Tables.xlsx.
+2025-05-06 10:42:12,218 - INFO - Comparing Total Revenue Hours
+2025-05-06 10:42:12,220 - INFO - Comparison of Total Revenue Hours and other metrics completed.
+2025-05-06 10:42:12,224 - INFO - ADA Total Revenue Hours DF:                                        PARTNER  LATEST  PREVIOUS  CHANGE
+0                           ANGELS WAY TRANSIT   84.13     93.31   -9.18
+1                     ASH ELITE TRANSPORTATION   77.29     68.38    8.91
+2                       BM3 TRANSPORTATION LLC   66.67     79.84  -13.17
+3               BREISHABREE TRANSPORTATION LLC   68.55     74.17   -5.62
+4                  BROOKES TRANSPORTATION, LLC  351.51    413.17  -61.66
+5                     BTS INVESTORS GROUP, LLC   62.18     71.20   -9.02
+6                                CEASAR WS LLC  143.44    147.00   -3.56
+7                            DEECAL ENTERPRISE   60.60      0.00   60.60
+8   HEALTH DIRECT TRANSPORTATION SERVICES INC.   46.41      0.00   46.41
+9                             HOUND OF JUSTICE   34.81      9.19   25.62
+10                               HUB SOLUTIONS  101.45    103.24   -1.79
+11                        IGWE SIX TRANSIT LLC   15.91      0.00   15.91
+12                    INNER CITY LOGISTICS LLC  113.86    140.66  -26.80
+13                     LA PATRONA SERVICES LLC   67.15     82.12  -14.97
+14                           LADY K HEALTHCARE    0.00      4.59   -4.59
+15                  LIZZY'S TRANSPORTATION LLC   66.61     76.77  -10.16
+16                                LOVEDAY IGWE    0.00      8.75   -8.75
+17                              LYNN TRAVELING   70.88     72.15   -1.27
+18                        MELINIO TRANSIT (TX)   76.66     76.64    0.02
+19                                 ON-DIME LLC   70.31     78.62   -8.31
+20                          ORION TRANSIT, LLC  126.50    142.19  -15.69
+21                            ROYAL T KARE LLC  344.33    366.29  -21.96
+22            SERENITY CARE TRANSPORTATION LCC   13.54      0.00   13.54
+2025-05-06 10:42:12,225 - INFO - Comparing % of Revenue Hours to Forecast
+2025-05-06 10:42:12,227 - INFO - Comparison of % of Revenue Hours to Forecast and other metrics completed.
+2025-05-06 10:42:12,231 - INFO - ADA % of Revenue Hours to Forecast DF:                                        PARTNER  LATEST  PREVIOUS  CHANGE
+0                           ANGELS WAY TRANSIT    0.97      1.00   -0.03
+1                     ASH ELITE TRANSPORTATION    1.00      0.89    0.11
+2                       BM3 TRANSPORTATION LLC    0.89      1.00   -0.11
+3               BREISHABREE TRANSPORTATION LLC    0.92      1.00   -0.08
+4                  BROOKES TRANSPORTATION, LLC    0.75      0.85   -0.10
+5                     BTS INVESTORS GROUP, LLC    0.75      0.87   -0.12
+6                                CEASAR WS LLC    0.99      1.00   -0.01
+7                            DEECAL ENTERPRISE    0.82      0.00    0.82
+8   HEALTH DIRECT TRANSPORTATION SERVICES INC.    0.62      0.00    0.62
+9                             HOUND OF JUSTICE    0.51      0.25    0.26
+10                               HUB SOLUTIONS    1.00      1.00    0.00
+11                        IGWE SIX TRANSIT LLC    0.48      0.00    0.48
+12                    INNER CITY LOGISTICS LLC    0.85      0.98   -0.13
+13                     LA PATRONA SERVICES LLC    0.93      0.99   -0.06
+14                           LADY K HEALTHCARE    0.00      0.13   -0.13
+15                  LIZZY'S TRANSPORTATION LLC    0.91      1.00   -0.09
+16                                LOVEDAY IGWE    0.00      0.26   -0.26
+17                              LYNN TRAVELING    1.00      1.00    0.00
+18                        MELINIO TRANSIT (TX)    0.17      0.16    0.00
+19                                 ON-DIME LLC    0.87      1.00   -0.12
+20                          ORION TRANSIT, LLC    0.64      0.71   -0.07
+21                            ROYAL T KARE LLC    0.89      0.80    0.10
+22            SERENITY CARE TRANSPORTATION LCC    0.37      0.00    0.37
+2025-05-06 10:42:12,231 - INFO - Comparing Bonus Hours
+2025-05-06 10:42:12,234 - INFO - Comparison of Bonus Hours and other metrics completed.
+2025-05-06 10:42:12,238 - INFO - ADA Bonus Hours DF:                                        PARTNER  LATEST  PREVIOUS  CHANGE
+0                           ANGELS WAY TRANSIT     0.0       0.0     0.0
+1                     ASH ELITE TRANSPORTATION     0.0       0.0     0.0
+2                       BM3 TRANSPORTATION LLC     0.0       0.0     0.0
+3               BREISHABREE TRANSPORTATION LLC     0.0       0.0     0.0
+4                  BROOKES TRANSPORTATION, LLC     0.0       0.0     0.0
+5                     BTS INVESTORS GROUP, LLC     0.0       0.0     0.0
+6                                CEASAR WS LLC     0.0       0.0     0.0
+7                            DEECAL ENTERPRISE     0.0       0.0     0.0
+8   HEALTH DIRECT TRANSPORTATION SERVICES INC.     0.0       0.0     0.0
+9                             HOUND OF JUSTICE     0.0       0.0     0.0
+10                               HUB SOLUTIONS     0.0       0.0     0.0
+11                        IGWE SIX TRANSIT LLC     0.0       0.0     0.0
+12                    INNER CITY LOGISTICS LLC     0.0       0.0     0.0
+13                     LA PATRONA SERVICES LLC     0.0       0.0     0.0
+14                           LADY K HEALTHCARE     0.0       0.0     0.0
+15                  LIZZY'S TRANSPORTATION LLC     0.0       0.0     0.0
+16                                LOVEDAY IGWE     0.0       0.0     0.0
+17                              LYNN TRAVELING     0.0       0.0     0.0
+18                        MELINIO TRANSIT (TX)     0.0       0.0     0.0
+19                                 ON-DIME LLC     0.0       0.0     0.0
+20                          ORION TRANSIT, LLC     0.0       0.0     0.0
+21                            ROYAL T KARE LLC     0.0       0.0     0.0
+22            SERENITY CARE TRANSPORTATION LCC     0.0       0.0     0.0
+2025-05-06 10:42:12,238 - INFO - Comparing Core Revenue
+2025-05-06 10:42:12,242 - INFO - Comparison of Core Revenue and other metrics completed.
+2025-05-06 10:42:12,245 - INFO - ADA Core Revenue DF:                                        PARTNER   LATEST  PREVIOUS   CHANGE
+0                           ANGELS WAY TRANSIT  2153.73   2388.74  -235.01
+1                     ASH ELITE TRANSPORTATION  1978.62   1750.53   228.10
+2                       BM3 TRANSPORTATION LLC  1706.75   2043.90  -337.15
+3               BREISHABREE TRANSPORTATION LLC  1754.88   1898.75  -143.87
+4                  BROOKES TRANSPORTATION, LLC  9561.07  11238.22 -1677.15
+5                     BTS INVESTORS GROUP, LLC  1591.81   1822.72  -230.91
+6                                CEASAR WS LLC  3901.57   3998.40   -96.83
+7                            DEECAL ENTERPRISE  1551.36      0.00  1551.36
+8   HEALTH DIRECT TRANSPORTATION SERVICES INC.  1188.10      0.00  1188.10
+9                             HOUND OF JUSTICE   891.14    235.26   655.87
+10                               HUB SOLUTIONS  2597.12   2642.94   -45.82
+11                        IGWE SIX TRANSIT LLC   407.30      0.00   407.30
+12                    INNER CITY LOGISTICS LLC  3096.99   3825.95  -728.96
+13                     LA PATRONA SERVICES LLC  1719.04   2102.27  -383.23
+14                           LADY K HEALTHCARE     0.00    117.50  -117.50
+15                  LIZZY'S TRANSPORTATION LLC  1705.22   1965.31  -260.10
+16                                LOVEDAY IGWE     0.00    224.00  -224.00
+17                              LYNN TRAVELING  1814.53   1847.04   -32.51
+18                        MELINIO TRANSIT (TX)  2085.15   2084.61     0.54
+19                                 ON-DIME LLC  1799.94   2012.67  -212.74
+20                          ORION TRANSIT, LLC  3440.80   3867.57  -426.77
+21                            ROYAL T KARE LLC  9365.78   9963.09  -597.31
+22            SERENITY CARE TRANSPORTATION LCC   346.62      0.00   346.62
+2025-05-06 10:42:12,246 - INFO - Comparing Total Earnings
+2025-05-06 10:42:12,248 - INFO - Comparison of Total Earnings and other metrics completed.
+2025-05-06 10:42:12,252 - INFO - ADA Total Earnings DF:                                        PARTNER   LATEST  PREVIOUS   CHANGE
+0                           ANGELS WAY TRANSIT  2504.77   2985.92  -481.15
+1                     ASH ELITE TRANSPORTATION  2473.28   1870.14   603.14
+2                       BM3 TRANSPORTATION LLC  1938.82   2554.88  -616.06
+3               BREISHABREE TRANSPORTATION LLC  1996.29   2373.44  -377.15
+4                  BROOKES TRANSPORTATION, LLC  9561.07  11238.22 -1677.15
+5                     BTS INVESTORS GROUP, LLC  1873.66   2093.89  -220.22
+6                                CEASAR WS LLC  4876.96   4998.00  -121.04
+7                            DEECAL ENTERPRISE  1551.36      0.00  1551.36
+8   HEALTH DIRECT TRANSPORTATION SERVICES INC.  1422.91      0.00  1422.91
+9                             HOUND OF JUSTICE   891.14    235.26   655.87
+10                               HUB SOLUTIONS  3246.40   3303.68   -57.28
+11                        IGWE SIX TRANSIT LLC   407.30      0.00   407.30
+12                    INNER CITY LOGISTICS LLC  3096.99   4304.20 -1207.20
+13                     LA PATRONA SERVICES LLC  1948.48   2627.84  -679.36
+14                           LADY K HEALTHCARE     0.00    117.50  -117.50
+15                  LIZZY'S TRANSPORTATION LLC  1937.54   2456.64  -519.10
+16                                LOVEDAY IGWE     0.00    224.00  -224.00
+17                              LYNN TRAVELING  2268.16   2308.80   -40.64
+18                        MELINIO TRANSIT (TX)  2085.15   2084.61     0.54
+19                                 ON-DIME LLC  2059.58   2515.84  -456.26
+20                          ORION TRANSIT, LLC  3440.80   3867.57  -426.77
+21                            ROYAL T KARE LLC  9365.78   9963.09  -597.31
+22            SERENITY CARE TRANSPORTATION LCC   346.62      0.00   346.62
+2025-05-06 10:42:12,252 - INFO - Comparing OS Operators between previous and latest sheets.
+2025-05-06 10:42:12,254 - INFO - Drivers comparison completed.
+2025-05-06 10:42:12,257 - INFO - ADA Drivers DF:                  PREVIOUS                 LATEST
+0            ASHLEY BROWN            ALEX THOMAS
+1          ASHLEY CHATMAN           ASHLEY BROWN
+2            AYANAH TERRY         ASHLEY CHATMAN
+3             BENNY YOUNG           AYANAH TERRY
+4         BRANDON JACKSON            BENNY YOUNG
+5          BRITTANY GREEN        BRANDON JACKSON
+6         BRYANT MATTHEWS         BRITTANY GREEN
+7       CATREANA ROBINSON        BRYANT MATTHEWS
+8         CHADWICK MILLER      CATREANA ROBINSON
+9      CHRISTOPHER BUTLER        CHADWICK MILLER
+10  COLYNN TENNYSON-NIXON     CHRISTOPHER BUTLER
+11         DEDRICC WILSON  COLYNN TENNYSON-NIXON
+12        DIAMOND LEGGETT            DAVID OAKES
+13       ELIZABETH GARCIA         DEDRICC WILSON
+14            ELVA GARCIA        DIAMOND LEGGETT
+15       FITZGERALD MOORE      DIANA VILLALPANDO
+16      JACQUELINE HARRIS       ELIZABETH GARCIA
+17       JALICEA MAYBERRY            ELVA GARCIA
+18         JAMES PHILLIPS      JACQUELINE HARRIS
+19           JANET SUTTON       JALICEA MAYBERRY
+20     JOHNATHAN DELAROSA           JANET SUTTON
+21      KENDRICK GASSAWAY     JOHNATHAN DELAROSA
+22       KIMBERLY ROBBINS            JOY JENKINS
+23              LEON KING         KENNETH CALVIN
+24          LINDA HOLLAND              LEON KING
+25           LOVEDAY IGWE          LINDA HOLLAND
+26            MANNY GOMEZ           LOVEDAY IGWE
+27             MARK KABAH            MANNY GOMEZ
+28            MIA VORTICE             MARK KABAH
+29          MICHAEL SMITH            MIA VORTICE
+30          MIRO PASKALEV          MIRO PASKALEV
+31         NATASHA TITTLE         NATASHA TITTLE
+32        QAYSSAR ALGBURI        QAYSSAR ALGBURI
+33      RIC SHANA SANDERS          RAE MESHA LEE
+34            SARAH JONES        RAPHELS UBAWIKE
+35         SHAMARA SCALES      RIC SHANA SANDERS
+36    SHAMBREISHA SPENCER            SARAH JONES
+37           SHEILA JONES         SHAMARA SCALES
+38        SHURONDA MOSLEY    SHAMBREISHA SPENCER
+39          TAIESHA MAJOR           SHEILA JONES
+40          TMYRA FRANCIS          TAIESHA MAJOR
+41              TROY SIMS        TIFFANY MURDOCK
+42        ULYSSES GRIFFIN          TMYRA FRANCIS
+43            URECHA DUNN              TROY SIMS
+44         VALECIA BROOKS            URECHA DUNN
+45                    NaN      YOHANNES MEKONNEN
+46                                           NaN
+2025-05-06 10:42:12,294 - INFO - Applying formatting to sheet: TotalRevHrsComparison.
+2025-05-06 10:42:12,298 - INFO - Formatting applied successfully to sheet: TotalRevHrsComparison.
+2025-05-06 10:42:12,298 - INFO - Applying formatting to sheet: %RevHrsComparison.
+2025-05-06 10:42:12,302 - INFO - Formatting applied successfully to sheet: %RevHrsComparison.
+2025-05-06 10:42:12,302 - INFO - Applying formatting to sheet: BonusHrsComparison.
+2025-05-06 10:42:12,306 - INFO - Formatting applied successfully to sheet: BonusHrsComparison.
+2025-05-06 10:42:12,306 - INFO - Applying formatting to sheet: CoreRevComparison.
+2025-05-06 10:42:12,310 - INFO - Formatting applied successfully to sheet: CoreRevComparison.
+2025-05-06 10:42:12,310 - INFO - Applying formatting to sheet: TotEarningsComparison.
+2025-05-06 10:42:12,314 - INFO - Formatting applied successfully to sheet: TotEarningsComparison.
+2025-05-06 10:42:12,314 - INFO - Applying formatting to sheet: DriversComparison.
+2025-05-06 10:42:12,317 - INFO - Formatting applied successfully to sheet: DriversComparison.
+2025-05-06 10:42:12,334 - INFO - ADA comparison process completed successfully. File saved to ComparedResults\DIV3_ADA_Tables.xlsx.
+2025-05-06 10:42:12,334 - INFO - Comparing Core Hours Worked
+2025-05-06 10:42:12,337 - INFO - Comparison of Core Hours Worked and other metrics completed.
+2025-05-06 10:42:12,340 - INFO - GOLINK Core Hours Worked DF:                        PARTNER   LATEST  PREVIOUS  CHANGE
+0  BROOKES TRANSPORTATION, LLC   728.22    737.08   -8.86
+1    HUNDREDFOLD SERVICES, LLC   282.79    314.17  -31.38
+2         MELINIO TRANSIT (TX)  1622.13   1535.35   86.78
+3           ORION TRANSIT, LLC  1013.78   1030.17  -16.39
+4             ROYAL T KARE LLC     8.73      5.14    3.60
+2025-05-06 10:42:12,340 - INFO - Comparing % of Revenue Hours to Forecast
+2025-05-06 10:42:12,342 - INFO - Comparison of % of Revenue Hours to Forecast and other metrics completed.
+2025-05-06 10:42:12,345 - INFO - GOLINK % Revenue Hours DF:                        PARTNER  LATEST  PREVIOUS  CHANGE
+0  BROOKES TRANSPORTATION, LLC    1.00      1.00    0.00
+1    HUNDREDFOLD SERVICES, LLC    0.88      0.97   -0.08
+2         MELINIO TRANSIT (TX)    0.99      0.93    0.05
+3           ORION TRANSIT, LLC    1.00      1.00    0.00
+4             ROYAL T KARE LLC    0.04      0.02    0.02
+2025-05-06 10:42:12,345 - INFO - Comparing Total Earnings
+2025-05-06 10:42:12,347 - INFO - Comparison of Total Earnings and other metrics completed.
+2025-05-06 10:42:12,349 - INFO - GOLINK Total Earnings DF:                        PARTNER    LATEST  PREVIOUS   CHANGE
+0  BROOKES TRANSPORTATION, LLC  24759.53  25060.85  -301.33
+1    HUNDREDFOLD SERVICES, LLC   7691.86   9663.77 -1971.91
+2         MELINIO TRANSIT (TX)  52425.66  43088.79  9336.86
+3           ORION TRANSIT, LLC  34468.50  35025.90  -557.40
+4             ROYAL T KARE LLC    237.49    139.69    97.81
+2025-05-06 10:42:12,349 - INFO - Comparing Total Duty Violation
+2025-05-06 10:42:12,351 - INFO - Comparison of Total Duty Violation and other metrics completed.
+2025-05-06 10:42:12,353 - INFO - GOLINK Total Duty Violation DF:                        PARTNER  LATEST  PREVIOUS  CHANGE
+0  BROOKES TRANSPORTATION, LLC    1000       950      50
+1    HUNDREDFOLD SERVICES, LLC     100       250    -150
+2         MELINIO TRANSIT (TX)    1700      1500     200
+3           ORION TRANSIT, LLC     350       350       0
+4             ROYAL T KARE LLC      50         0      50
+2025-05-06 10:42:12,353 - INFO - Comparing OS Operators between previous and latest sheets.
+2025-05-06 10:42:12,355 - INFO - Drivers comparison completed.
+2025-05-06 10:42:12,357 - INFO - GOLINK Drivers DF:            PREVIOUS          LATEST
+0       ALEX MOUTON     ALEX MOUTON
+1       ALI MOHAMED     ALEX THOMAS
+2         AMIR KHAN     ALI MOHAMED
+3       BENNY YOUNG       AMIR KHAN
+4   BRYANT MATTHEWS     BENNY YOUNG
+..              ...             ...
+58        WAYNE LEE     URECHA DUNN
+59  WILLIE WILLIAMS  VALECIA BROOKS
+60    YURANA HARRIS       WAYNE LEE
+61    ZAINAB MPIANA   YURANA HARRIS
+62                    ZAINAB MPIANA
+
+[63 rows x 2 columns]
+2025-05-06 10:42:12,390 - INFO - Applying formatting to sheet: CoreHoursComparison.
+2025-05-06 10:42:12,391 - INFO - Formatting applied successfully to sheet: CoreHoursComparison.
+2025-05-06 10:42:12,391 - INFO - Applying formatting to sheet: %RevHrsComparison.
+2025-05-06 10:42:12,392 - INFO - Formatting applied successfully to sheet: %RevHrsComparison.
+2025-05-06 10:42:12,392 - INFO - Applying formatting to sheet: TotEarningsComparison.
+2025-05-06 10:42:12,393 - INFO - Formatting applied successfully to sheet: TotEarningsComparison.
+2025-05-06 10:42:12,393 - INFO - Applying formatting to sheet: TotDutyViolationComparison.
+2025-05-06 10:42:12,394 - INFO - Formatting applied successfully to sheet: TotDutyViolationComparison.
+2025-05-06 10:42:12,395 - INFO - Applying formatting to sheet: DriversComparison.
+2025-05-06 10:42:12,398 - INFO - Formatting applied successfully to sheet: DriversComparison.
+2025-05-06 10:42:12,416 - INFO - GOLINK comparison process completed successfully. File saved to ComparedResults\DIV3_GOLINK_Tables.xlsx.
+2025-05-06 10:42:12,417 - INFO - Comparing StandBy Pay Hours
+2025-05-06 10:42:12,419 - INFO - Comparison of StandBy Pay Hours and other metrics completed.
+2025-05-06 10:42:12,422 - INFO - ADAGOLINK StandBy Pay Hours DF:                      PARTNER  LATEST  PREVIOUS  CHANGE
+0         BOM TRANSPORTATION   78.73     82.58   -3.85
+1  GRAND TOUR TRANSPORTATION   27.29      0.00   27.29
+2        PICKUP PARTNERS LLC   83.15     88.16   -5.01
+3            TIFFANY MURDOCK   31.85      0.00   31.85
+4         UAD TRANSPORTATION   78.88     78.37    0.51
+2025-05-06 10:42:12,423 - INFO - Comparing StandbyExtraHours
+2025-05-06 10:42:12,425 - INFO - Comparison of StandbyExtraHours and other metrics completed.
+2025-05-06 10:42:12,427 - INFO - ADAGOLINK StandBy Extra Hours DF:                      PARTNER  LATEST  PREVIOUS  CHANGE
+0         BOM TRANSPORTATION   13.98     24.07  -10.09
+1  GRAND TOUR TRANSPORTATION    0.00      0.00    0.00
+2        PICKUP PARTNERS LLC   22.90     16.64    6.26
+3            TIFFANY MURDOCK    0.00      0.00    0.00
+4         UAD TRANSPORTATION    0.00      0.00    0.00
+2025-05-06 10:42:12,427 - INFO - Comparing Total Earnings
+2025-05-06 10:42:12,429 - INFO - Comparison of Total Earnings and other metrics completed.
+2025-05-06 10:42:12,432 - INFO - ADAGOLINK Total Earnings DF:                      PARTNER   LATEST  PREVIOUS  CHANGE
+0         BOM TRANSPORTATION  2751.36   3074.11 -322.75
+1  GRAND TOUR TRANSPORTATION   698.62      0.00  698.62
+2        PICKUP PARTNERS LLC  3036.68   2836.39  200.29
+3            TIFFANY MURDOCK   815.36      0.00  815.36
+4         UAD TRANSPORTATION  2304.00   2304.00    0.00
+2025-05-06 10:42:12,451 - INFO - Applying formatting to sheet: StdByPayHrsComparison.
+2025-05-06 10:42:12,452 - INFO - Formatting applied successfully to sheet: StdByPayHrsComparison.
+2025-05-06 10:42:12,453 - INFO - Applying formatting to sheet: StByExtraHrsComparison.
+2025-05-06 10:42:12,454 - INFO - Formatting applied successfully to sheet: StByExtraHrsComparison.
+2025-05-06 10:42:12,454 - INFO - Applying formatting to sheet: TotEarningsComparison.
+2025-05-06 10:42:12,455 - INFO - Formatting applied successfully to sheet: TotEarningsComparison.
+2025-05-06 10:42:12,463 - INFO - ADAGOLINK comparison process completed successfully. File saved to ComparedResults\DIV3_ADAGOLINK_Tables.xlsx.
+2025-05-06 10:42:12,463 - INFO - VDP_DIV3_0324_0406 FINAL.xlsm + VDP_DIV3 UPDATED TEMPLATE.xlsm
+2025-05-06 10:42:13,467 - INFO - Successfully updated color for TextBox 90 with status 'Decreased'.
+2025-05-06 10:42:13,468 - INFO - Successfully updated color for txtHTTLRevtDiff with value '5,165.10'.
+2025-05-06 10:42:13,470 - INFO - Successfully updated color for txtLLeaseDiff with value '2,466.00'.
+2025-05-06 10:42:13,471 - INFO - Successfully updated color for txtViolationsDiff with value '1,383.88'.
+2025-05-06 10:42:13,473 - INFO - Successfully updated color for txtCashCollectedDiff with value '1,806.50'.
+2025-05-06 10:42:13,530 - INFO - Successfully updated color for txtTotalRevHrsDiff with value '-45.49'.
+2025-05-06 10:42:13,531 - INFO - Successfully updated color for txtPRevHrsDiff with value '6.30'.
+2025-05-06 10:42:13,532 - INFO - Successfully updated color for txtBonusHrsDiff with value '0'.
+2025-05-06 10:42:13,533 - INFO - Successfully updated color for txtCoreRevDiff with value '-1,371.97'.
+2025-05-06 10:42:13,534 - INFO - Successfully updated color for txtTotEarningsDiff with value '-2,830.45'.
+2025-05-06 10:42:13,536 - INFO - Successfully updated color for txtDriversDiff with value '1'.
+2025-05-06 10:42:13,580 - INFO - Successfully updated color for txtCoreHrsDiff with value '33.75'.
+2025-05-06 10:42:13,581 - INFO - Successfully updated color for txtPRevHrsDiff with value '-0.20'.
+2025-05-06 10:42:13,582 - INFO - Successfully updated color for txtTotEarningsDiff with value '6,604.03'.
+2025-05-06 10:42:13,583 - INFO - Successfully updated color for txtTotalViolationsDiff with value '150.00'.
+2025-05-06 10:42:13,584 - INFO - Successfully updated color for txtDriversDiff with value '0'.
+2025-05-06 10:42:13,672 - INFO - Successfully updated color for txtstdPayHrsDiff with value '50.79'.
+2025-05-06 10:42:13,675 - INFO - Successfully updated color for txtstdExtraHrsDiff with value '-3.83'.
+2025-05-06 10:42:13,683 - INFO - Successfully updated color for txtTotEarningsDiff with value '1,391.52'.
+2025-05-06 10:42:14,807 - INFO - ComparedResults/Dashboard.xlsm has been successfully updated and saved.
+2025-05-06 10:42:17,669 - INFO - Picture name: HTTLRevTable found in Dashboard
+2025-05-06 10:42:17,713 - INFO - Deleted existing picture: HTTLRevTable in Dashboard
+2025-05-06 10:42:17,713 - INFO - Picture name: LeaseTable found in Dashboard
+2025-05-06 10:42:17,772 - INFO - Deleted existing picture: LeaseTable in Dashboard
+2025-05-06 10:42:17,772 - INFO - Picture name: ViolationsTable found in Dashboard
+2025-05-06 10:42:17,791 - INFO - Deleted existing picture: ViolationsTable in Dashboard
+2025-05-06 10:42:17,791 - INFO - Picture name: CashTable found in Dashboard
+2025-05-06 10:42:17,806 - INFO - Deleted existing picture: CashTable in Dashboard
+2025-05-06 10:42:17,847 - INFO - Picture name: TotalRevHrsTable found in ADA
+2025-05-06 10:42:17,883 - INFO - Deleted existing picture: TotalRevHrsTable in ADA
+2025-05-06 10:42:17,883 - INFO - Picture name: PRevHrsTable found in ADA
+2025-05-06 10:42:17,897 - INFO - Deleted existing picture: PRevHrsTable in ADA
+2025-05-06 10:42:17,897 - INFO - Picture name: BonusHrsTable found in ADA
+2025-05-06 10:42:17,910 - INFO - Deleted existing picture: BonusHrsTable in ADA
+2025-05-06 10:42:17,911 - INFO - Picture name: CoreRevTable found in ADA
+2025-05-06 10:42:17,915 - INFO - Deleted existing picture: CoreRevTable in ADA
+2025-05-06 10:42:17,915 - INFO - Picture name: TotEarningsTable found in ADA
+2025-05-06 10:42:17,931 - INFO - Deleted existing picture: TotEarningsTable in ADA
+2025-05-06 10:42:17,931 - INFO - Picture name: DriversTable found in ADA
+2025-05-06 10:42:17,948 - INFO - Deleted existing picture: DriversTable in ADA
+2025-05-06 10:42:21,114 - INFO - Copied picture from HourlyTTLRevComparison, width: 19.10 cm, height: 20.11 cm
+2025-05-06 10:42:22,242 - INFO - Table Name: HTTLRevTable
+2025-05-06 10:42:23,244 - INFO - 'HTTLRevTable' successfully pasted in the HourlyTTLRevComparison Sheet.
+2025-05-06 10:42:23,266 - INFO - Resized HTTLRevContainer to width: 19.17 cm, height: 22.08 cm
+2025-05-06 10:42:24,288 - INFO - Copied picture from LiftLeaseComparison, width: 13.18 cm, height: 19.58 cm
+2025-05-06 10:42:25,372 - INFO - Table Name: LeaseTable
+2025-05-06 10:42:26,373 - INFO - 'LeaseTable' successfully pasted in the LiftLeaseComparison Sheet.
+2025-05-06 10:42:26,393 - INFO - Resized LeaseContainer to width: 13.25 cm, height: 21.55 cm
+2025-05-06 10:42:27,419 - INFO - Copied picture from ViolationsComparison, width: 17.25 cm, height: 19.58 cm
+2025-05-06 10:42:28,498 - INFO - Table Name: ViolationsTable
+2025-05-06 10:42:29,501 - INFO - 'ViolationsTable' successfully pasted in the ViolationsComparison Sheet.
+2025-05-06 10:42:29,522 - INFO - Resized ViolationsContainer to width: 17.32 cm, height: 21.55 cm
+2025-05-06 10:42:30,549 - INFO - Copied picture from CashCollectedComparison, width: 13.18 cm, height: 19.58 cm
+2025-05-06 10:42:31,629 - INFO - Table Name: CashTable
+2025-05-06 10:42:32,631 - INFO - 'CashTable' successfully pasted in the CashCollectedComparison Sheet.
+2025-05-06 10:42:32,654 - INFO - Resized CashContainer to width: 13.25 cm, height: 21.55 cm
+2025-05-06 10:42:33,856 - INFO - Copied picture from TotalRevHrsComparison, width: 13.18 cm, height: 12.70 cm
+2025-05-06 10:42:34,981 - INFO - Table Name: TotalRevHrsTable
+2025-05-06 10:42:35,981 - INFO - 'TotalRevHrsTable' successfully pasted in the TotalRevHrsComparison Sheet.
+2025-05-06 10:42:36,003 - INFO - Resized TotalRevHrsContainer to width: 13.25 cm, height: 14.68 cm
+2025-05-06 10:42:37,029 - INFO - Copied picture from %RevHrsComparison, width: 13.18 cm, height: 12.70 cm
+2025-05-06 10:42:38,107 - INFO - Table Name: PRevHrsTable
+2025-05-06 10:42:39,108 - INFO - 'PRevHrsTable' successfully pasted in the %RevHrsComparison Sheet.
+2025-05-06 10:42:39,128 - INFO - Resized PRevHrsContainer to width: 13.25 cm, height: 14.68 cm
+2025-05-06 10:42:40,150 - INFO - Copied picture from BonusHrsComparison, width: 13.18 cm, height: 12.70 cm
+2025-05-06 10:42:41,220 - INFO - Table Name: BonusHrsTable
+2025-05-06 10:42:42,222 - INFO - 'BonusHrsTable' successfully pasted in the BonusHrsComparison Sheet.
+2025-05-06 10:42:42,247 - INFO - Resized BonusHrsContainer to width: 13.25 cm, height: 14.68 cm
+2025-05-06 10:42:43,272 - INFO - Copied picture from CoreRevComparison, width: 13.73 cm, height: 12.70 cm
+2025-05-06 10:42:44,346 - INFO - Table Name: CoreRevTable
+2025-05-06 10:42:45,347 - INFO - 'CoreRevTable' successfully pasted in the CoreRevComparison Sheet.
+2025-05-06 10:42:45,384 - INFO - Resized CoreRevContainer to width: 13.80 cm, height: 14.68 cm
+2025-05-06 10:42:46,415 - INFO - Copied picture from TotEarningsComparison, width: 13.73 cm, height: 12.70 cm
+2025-05-06 10:42:47,496 - INFO - Table Name: TotEarningsTable
+2025-05-06 10:42:48,498 - INFO - 'TotEarningsTable' successfully pasted in the TotEarningsComparison Sheet.
+2025-05-06 10:42:48,523 - INFO - Resized TotEarningsContainer to width: 13.80 cm, height: 14.68 cm
+2025-05-06 10:42:49,545 - INFO - Copied picture from DriversComparison, width: 8.63 cm, height: 25.40 cm
+2025-05-06 10:42:50,635 - INFO - Table Name: DriversTable
+2025-05-06 10:42:51,637 - INFO - 'DriversTable' successfully pasted in the DriversComparison Sheet.
+2025-05-06 10:42:51,657 - INFO - Resized DriversContainer to width: 8.70 cm, height: 27.38 cm
+2025-05-06 10:42:52,900 - INFO - Copied picture from CoreHoursComparison, width: 10.58 cm, height: 3.18 cm
+2025-05-06 10:42:54,060 - INFO - Table Name: TotalCoreHrsTable
+2025-05-06 10:42:55,062 - INFO - 'TotalCoreHrsTable' successfully pasted in the CoreHoursComparison Sheet.
+2025-05-06 10:42:55,088 - INFO - Resized TotalCoreHrsContainer to width: 10.65 cm, height: 5.15 cm
+2025-05-06 10:42:56,112 - INFO - Copied picture from %RevHrsComparison, width: 10.40 cm, height: 3.18 cm
+2025-05-06 10:42:57,193 - INFO - Table Name: PRevHrsTable
+2025-05-06 10:42:58,194 - INFO - 'PRevHrsTable' successfully pasted in the %RevHrsComparison Sheet.
+2025-05-06 10:42:58,209 - INFO - Resized PRevHrsContainer to width: 10.47 cm, height: 5.15 cm
+2025-05-06 10:42:59,232 - INFO - Copied picture from TotEarningsComparison, width: 11.14 cm, height: 3.18 cm
+2025-05-06 10:43:00,312 - INFO - Table Name: TotEarningsTable
+2025-05-06 10:43:01,314 - INFO - 'TotEarningsTable' successfully pasted in the TotEarningsComparison Sheet.
+2025-05-06 10:43:01,337 - INFO - Resized TotEarningsContainer to width: 11.21 cm, height: 5.15 cm
+2025-05-06 10:43:02,361 - INFO - Copied picture from TotDutyViolationComparison, width: 10.40 cm, height: 3.18 cm
+2025-05-06 10:43:03,443 - INFO - Table Name: TotalViolationsTable
+2025-05-06 10:43:04,445 - INFO - 'TotalViolationsTable' successfully pasted in the TotDutyViolationComparison Sheet.
+2025-05-06 10:43:04,465 - INFO - Resized TotalViolationsContainer to width: 10.47 cm, height: 5.15 cm
+2025-05-06 10:43:05,488 - INFO - Copied picture from DriversComparison, width: 11.22 cm, height: 33.87 cm
+2025-05-06 10:43:06,580 - INFO - Table Name: DriversTable
+2025-05-06 10:43:07,582 - INFO - 'DriversTable' successfully pasted in the DriversComparison Sheet.
+2025-05-06 10:43:07,603 - INFO - Resized DriversContainer to width: 11.29 cm, height: 35.84 cm
+2025-05-06 10:43:08,828 - INFO - Copied picture from StdByPayHrsComparison, width: 10.03 cm, height: 3.18 cm
+2025-05-06 10:43:09,943 - INFO - Table Name: stdPayHrsTable
+2025-05-06 10:43:10,944 - INFO - 'stdPayHrsTable' successfully pasted in the StdByPayHrsComparison Sheet.
+2025-05-06 10:43:10,964 - INFO - Resized stdPayHrsContainer to width: 10.10 cm, height: 5.15 cm
+2025-05-06 10:43:11,986 - INFO - Copied picture from StByExtraHrsComparison, width: 10.03 cm, height: 3.18 cm
+2025-05-06 10:43:13,063 - INFO - Table Name: stdExtraHrsTable
+2025-05-06 10:43:14,064 - INFO - 'stdExtraHrsTable' successfully pasted in the StByExtraHrsComparison Sheet.
+2025-05-06 10:43:14,085 - INFO - Resized stdExtraHrsContainer to width: 10.10 cm, height: 5.15 cm
+2025-05-06 10:43:15,107 - INFO - Copied picture from TotEarningsComparison, width: 10.40 cm, height: 3.18 cm
+2025-05-06 10:43:16,191 - INFO - Table Name: TotEarningsTable
+2025-05-06 10:43:17,192 - INFO - 'TotEarningsTable' successfully pasted in the TotEarningsComparison Sheet.
+2025-05-06 10:43:17,209 - INFO - Resized TotEarningsContainer to width: 10.47 cm, height: 5.15 cm
+2025-05-06 10:43:18,489 - INFO - Data pasted as pictures successfully.
